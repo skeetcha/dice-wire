@@ -1,0 +1,5 @@
+res://combat/battlers/jobs/startingStats.gd
+res://combat/battlers/jobs/speeds.gd
+res://combat/battlers/jobs/abilityScores.gd
+res://combat/battlers/jobs/Goblin.tres
+res://combat/battlers/jobs/diceFormula.gd

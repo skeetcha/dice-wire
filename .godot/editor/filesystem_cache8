@@ -1,0 +1,8 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1716479166
+icon.svg::CompressedTexture2D::7151425158301183390::1715647650::1716476471::1::::<><>::
+test.json::JSON::-1::1716476560::0::1::::<><>::
+::res://combat/::1716475982
+::res://combat/battlers/::1716475982
+::res://combat/battlers/jobs/::1716477276
+startingStats.gd::GDScript::-1::1716477276::0::1::::StartingStats<>Resource<>::

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="StartingStats" load_steps=2 format=3 uid="uid://dkxfkigs7gxia"]
+
+[ext_resource type="Script" path="res://combat/battlers/jobs/startingStats.gd" id="1_svvh6"]
+
+[resource]
+script = ExtResource("1_svvh6")
+job_name = "Goblin"
+size = 1
+type = 9
+subtype = "Goblinoid"
+ac = 0
+speeds = {
+"climbing": 0,
+"flying": 0,
+"swimming": 0,
+"walking": 30
+}
+abilityScores = {
+"cha": 8,
+"con": 10,
+"dex": 14,
+"int": 10,
+"str": 8,
+"wis": 8
+}
+currentHP = 1.0
+hitDice = {
+"amount": 2,
+"bonus": 0,
+"size": 6
+}
