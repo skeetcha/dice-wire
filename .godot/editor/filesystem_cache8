@@ -1,8 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716479166
+::res://::1716945894
 icon.svg::CompressedTexture2D::7151425158301183390::1715647650::1716476471::1::::<><>::
 test.json::JSON::-1::1716476560::0::1::::<><>::
 ::res://combat/::1716475982
 ::res://combat/battlers/::1716475982
-::res://combat/battlers/jobs/::1716477276
-startingStats.gd::GDScript::-1::1716477276::0::1::::StartingStats<>Resource<>::
+::res://combat/battlers/jobs/::1716480449
+Goblin.tres::Resource/StartingStats::7908953049022373852::1716480449::0::1::::<><>::res://combat/battlers/jobs/startingStats.gd
+startingStats.gd::GDScript::-1::1716480175::0::1::::StartingStats<>Resource<>::
+::res://mannequiny/::1716963850
+Azul.material::StandardMaterial3D::-1::1716963850::0::1::::<><>::
+Blanco.material::StandardMaterial3D::-1::1716963850::0::1::::<><>::
+mannequiny-0.3.0.glb::PackedScene::4117638134921346810::1716963850::1716945895::1::::<><>::
+Negro.material::StandardMaterial3D::-1::1716963850::0::1::::<><>::
