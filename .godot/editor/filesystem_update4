@@ -1,3 +1,7 @@
-res://test.tscn
-res://player.tscn
-res://player.gd
+res://char-creator.tscn
+res://mannequiny/godot-toon.gdshader
+res://mannequiny/color-gradient.tres
+res://mannequiny/fresnel-gradient.tres
+res://char_creator.gd
+res://race_bg.tres
+res://class_bg.tres

@@ -1,0 +1,328 @@
+[gd_scene load_steps=7 format=3 uid="uid://db41mnxto4t0i"]
+
+[ext_resource type="PackedScene" uid="uid://b7ese1o60fiwj" path="res://player.tscn" id="1_81nub"]
+[ext_resource type="Script" path="res://char_creator.gd" id="2_lm3t6"]
+[ext_resource type="ButtonGroup" uid="uid://5b5kuflhm88" path="res://race_bg.tres" id="3_exk07"]
+[ext_resource type="ButtonGroup" uid="uid://b3gl5ugaqie8x" path="res://class_bg.tres" id="4_ahw28"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwrdj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_famp8"]
+
+[node name="Character Creator" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_kwrdj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("BoxMesh_famp8")
+
+[node name="Player" parent="." instance=ExtResource("1_81nub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.492664, 0)
+
+[node name="Pivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.93082, 0.365478, 0, -0.365478, 0.93082, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 1.115, 3.454)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 9.53266, 4)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_lm3t6")
+
+[node name="Grid" type="GridContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="RacePanel" type="Panel" parent="UI/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="UI/Grid/RacePanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.065
+offset_top = 18.0
+offset_bottom = -0.120007
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Choose your Race"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="UI/Grid/RacePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = 51.0
+offset_right = -6.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+columns = 3
+
+[node name="DwarfButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Dwarf"
+
+[node name="ElfButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Elf"
+
+[node name="HalflingButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Halfling"
+
+[node name="HumanButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Human"
+
+[node name="DragonbornButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Dragonborn"
+
+[node name="GnomeButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Gnome"
+
+[node name="HalfElfButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Half-Elf"
+
+[node name="HalfOrcButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Half-Orc"
+
+[node name="TieflingButton" type="Button" parent="UI/Grid/RacePanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("3_exk07")
+text = "Tiefling"
+
+[node name="ClassPanel" type="Panel" parent="UI/Grid"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="UI/Grid/ClassPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.065
+offset_top = 18.0
+offset_bottom = -0.120007
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Choose your Class"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="UI/Grid/ClassPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = 51.0
+offset_right = -6.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+columns = 3
+
+[node name="BarbarianButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Barbarian"
+
+[node name="BardButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Bard"
+
+[node name="ClericButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Cleric"
+
+[node name="DruidButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Druid"
+
+[node name="FighterButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Fighter"
+
+[node name="MonkButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Monk"
+
+[node name="PaladinButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Paladin"
+
+[node name="RangerButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Ranger"
+
+[node name="RogueButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Rogue"
+
+[node name="SorcererButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Sorcerer"
+
+[node name="WarlockButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Warlock"
+
+[node name="WizardButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("4_ahw28")
+text = "Wizard"
+
+[node name="MiddlePanel" type="HFlowContainer" parent="UI/Grid"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+
+[node name="Spacer1" type="ColorRect" parent="UI/Grid/MiddlePanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 0)
+
+[node name="NextButton" type="Button" parent="UI/Grid/MiddlePanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Next"
+
+[node name="Spacer2" type="ColorRect" parent="UI/Grid/MiddlePanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 0)
+
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/DwarfButton" to="UI" method="_on_dwarf_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/ElfButton" to="UI" method="_on_elf_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/HalflingButton" to="UI" method="_on_halfling_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/HumanButton" to="UI" method="_on_human_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/DragonbornButton" to="UI" method="_on_dragonborn_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/GnomeButton" to="UI" method="_on_gnome_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/HalfElfButton" to="UI" method="_on_half_elf_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/HalfOrcButton" to="UI" method="_on_half_orc_button_toggled"]
+[connection signal="toggled" from="UI/Grid/RacePanel/Grid/TieflingButton" to="UI" method="_on_tiefling_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/BarbarianButton" to="UI" method="_on_barbarian_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/BardButton" to="UI" method="_on_bard_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/ClericButton" to="UI" method="_on_cleric_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/DruidButton" to="UI" method="_on_druid_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/FighterButton" to="UI" method="_on_fighter_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/MonkButton" to="UI" method="_on_monk_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/PaladinButton" to="UI" method="_on_paladin_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/RangerButton" to="UI" method="_on_ranger_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/RogueButton" to="UI" method="_on_rogue_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/SorcererButton" to="UI" method="_on_sorcerer_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/WarlockButton" to="UI" method="_on_warlock_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/WizardButton" to="UI" method="_on_wizard_button_toggled"]
+[connection signal="pressed" from="UI/Grid/MiddlePanel/NextButton" to="UI" method="_on_next_button_pressed"]

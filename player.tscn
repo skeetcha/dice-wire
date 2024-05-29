@@ -1,12 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7ese1o60fiwj"]
+[gd_scene load_steps=3 format=3 uid="uid://b7ese1o60fiwj"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_m2ns4"]
 [ext_resource type="PackedScene" uid="uid://rxoe4v2uxumd" path="res://mannequiny/mannequiny-new.tscn" id="2_o0nav"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_we53s"]
 
 [node name="Player" type="Node3D"]
-script = ExtResource("1_m2ns4")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
