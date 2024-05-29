@@ -4,3 +4,5 @@ res://mannequiny/color-gradient.tres
 res://mannequiny/fresnel-gradient.tres
 res://char_creator.gd
 res://background_bg.tres
+res://mannequiny/mannequiny-new.tscn
+res://mannequiny/mannequiny.gd

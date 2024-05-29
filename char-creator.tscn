@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://db41mnxto4t0i"]
+[gd_scene load_steps=9 format=3 uid="uid://db41mnxto4t0i"]
 
 [ext_resource type="PackedScene" uid="uid://b7ese1o60fiwj" path="res://player.tscn" id="1_81nub"]
 [ext_resource type="Script" path="res://char_creator.gd" id="2_lm3t6"]
+[ext_resource type="Script" path="res://char_creator_ui.gd" id="3_4dwwn"]
 [ext_resource type="ButtonGroup" uid="uid://5b5kuflhm88" path="res://race_bg.tres" id="3_exk07"]
 [ext_resource type="ButtonGroup" uid="uid://b3gl5ugaqie8x" path="res://class_bg.tres" id="4_ahw28"]
 [ext_resource type="ButtonGroup" uid="uid://u0yfr45mhgp2" path="res://background_bg.tres" id="5_f2ll8"]
@@ -12,6 +13,7 @@ size = Vector3(20, 1, 20)
 [sub_resource type="BoxMesh" id="BoxMesh_famp8"]
 
 [node name="Character Creator" type="Node3D"]
+script = ExtResource("2_lm3t6")
 
 [node name="Ground" type="StaticBody3D" parent="."]
 
@@ -23,7 +25,7 @@ transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
 mesh = SubResource("BoxMesh_famp8")
 
 [node name="Player" parent="." instance=ExtResource("1_81nub")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.492664, 0)
+transform = Transform3D(0.671229, 0, -0.74125, 0, 1, 0, 0.74125, 0, 0.671229, 1.30956, 0.492664, 0)
 
 [node name="Pivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.93082, 0.365478, 0, -0.365478, 0.93082, 0, 0, 0)
@@ -41,7 +43,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_lm3t6")
+script = ExtResource("3_4dwwn")
 
 [node name="Grid" type="GridContainer" parent="UI"]
 layout_mode = 1
@@ -473,6 +475,9 @@ layout_mode = 2
 size_flags_horizontal = 3
 color = Color(1, 1, 1, 0)
 
+[connection signal="background_changed" from="UI" to="." method="_on_ui_background_changed"]
+[connection signal="class_changed" from="UI" to="." method="_on_ui_class_changed"]
+[connection signal="race_changed" from="UI" to="." method="_on_ui_race_changed"]
 [connection signal="toggled" from="UI/Grid/RacePanel/Grid/DwarfButton" to="UI" method="_on_dwarf_button_toggled"]
 [connection signal="toggled" from="UI/Grid/RacePanel/Grid/ElfButton" to="UI" method="_on_elf_button_toggled"]
 [connection signal="toggled" from="UI/Grid/RacePanel/Grid/HalflingButton" to="UI" method="_on_halfling_button_toggled"]
