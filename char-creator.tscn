@@ -1,23 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://db41mnxto4t0i"]
+[gd_scene load_steps=8 format=3 uid="uid://db41mnxto4t0i"]
 
 [ext_resource type="PackedScene" uid="uid://b7ese1o60fiwj" path="res://player.tscn" id="1_81nub"]
 [ext_resource type="Script" path="res://char_creator.gd" id="2_lm3t6"]
 [ext_resource type="ButtonGroup" uid="uid://5b5kuflhm88" path="res://race_bg.tres" id="3_exk07"]
 [ext_resource type="ButtonGroup" uid="uid://b3gl5ugaqie8x" path="res://class_bg.tres" id="4_ahw28"]
+[ext_resource type="ButtonGroup" uid="uid://u0yfr45mhgp2" path="res://background_bg.tres" id="5_f2ll8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kwrdj"]
+size = Vector3(20, 1, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_famp8"]
 
 [node name="Character Creator" type="Node3D"]
 
 [node name="Ground" type="StaticBody3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
 shape = SubResource("BoxShape3D_kwrdj")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
 mesh = SubResource("BoxMesh_famp8")
 
 [node name="Player" parent="." instance=ExtResource("1_81nub")]
@@ -283,6 +285,173 @@ toggle_mode = true
 button_group = ExtResource("4_ahw28")
 text = "Wizard"
 
+[node name="BackgroundPanel" type="Panel" parent="UI/Grid"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="UI/Grid/BackgroundPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.065
+offset_top = 18.0
+offset_bottom = -0.120007
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Choose your Background"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="UI/Grid/BackgroundPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.085
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.0800018
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+columns = 3
+
+[node name="AcolyteButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Acolyte"
+
+[node name="ArtisanButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Artisan"
+
+[node name="CharlatanButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Charlatan"
+
+[node name="CriminalButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Criminal"
+
+[node name="CultistButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Cultist"
+
+[node name="EntertainerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Entertainer"
+
+[node name="ExileButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Exile"
+
+[node name="FarmerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Farmer"
+
+[node name="FolkHeroButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Folk Hero"
+
+[node name="GamblerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Gambler"
+
+[node name="GuardButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Guard"
+
+[node name="GuildMemberButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Guild Member"
+
+[node name="HermitButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Hermit"
+
+[node name="MarauderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Marauder"
+
+[node name="NobleButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Noble"
+
+[node name="OutlanderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Outlander"
+
+[node name="SageButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Sage"
+
+[node name="SailorButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Sailor"
+
+[node name="SoldierButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Soldier"
+
+[node name="TraderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Trader"
+
+[node name="UrchinButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("5_f2ll8")
+text = "Urchin"
+
 [node name="MiddlePanel" type="HFlowContainer" parent="UI/Grid"]
 visible = false
 layout_mode = 2
@@ -325,4 +494,25 @@ color = Color(1, 1, 1, 0)
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/SorcererButton" to="UI" method="_on_sorcerer_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/WarlockButton" to="UI" method="_on_warlock_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/WizardButton" to="UI" method="_on_wizard_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/AcolyteButton" to="UI" method="_on_acolyte_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/ArtisanButton" to="UI" method="_on_artisan_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/CharlatanButton" to="UI" method="_on_charlatan_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/CriminalButton" to="UI" method="_on_criminal_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/CultistButton" to="UI" method="_on_cultist_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/EntertainerButton" to="UI" method="_on_entertainer_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/ExileButton" to="UI" method="_on_exile_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/FarmerButton" to="UI" method="_on_farmer_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/FolkHeroButton" to="UI" method="_on_folk_hero_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/GamblerButton" to="UI" method="_on_gambler_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/GuardButton" to="UI" method="_on_guard_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/GuildMemberButton" to="UI" method="_on_guild_member_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/HermitButton" to="UI" method="_on_hermit_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/MarauderButton" to="UI" method="_on_marauder_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/NobleButton" to="UI" method="_on_noble_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/OutlanderButton" to="UI" method="_on_outlander_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/SageButton" to="UI" method="_on_sage_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/SailorButton" to="UI" method="_on_sailor_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/SoldierButton" to="UI" method="_on_soldier_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/TraderButton" to="UI" method="_on_trader_button_toggled"]
+[connection signal="toggled" from="UI/Grid/BackgroundPanel/GridContainer/UrchinButton" to="UI" method="_on_urchin_button_toggled"]
 [connection signal="pressed" from="UI/Grid/MiddlePanel/NextButton" to="UI" method="_on_next_button_pressed"]
