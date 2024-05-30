@@ -1,8 +1,7 @@
-res://char-creator.tscn
-res://mannequiny/godot-toon.gdshader
-res://mannequiny/color-gradient.tres
-res://mannequiny/fresnel-gradient.tres
-res://char_creator.gd
-res://background_bg.tres
-res://mannequiny/mannequiny-new.tscn
-res://mannequiny/mannequiny.gd
+res://cel_shader/godot-toon.gdshader
+res://cel_shader/color-gradient.tres
+res://cel_shader/fresnel-gradient.tres
+res://main_menu/main_menu.tscn
+res://char_creator/char-creator.tscn
+res://main_menu/main_menu_ui.gd
+res://char_creator/char_creator.tscn

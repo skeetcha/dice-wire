@@ -15,10 +15,10 @@ func _ready():
 func race_button(val: int, toggle: bool):
 	if race == 0 and toggle:
 		race = val
-		$Grid/MiddlePanel.visible = true
+		$Grid/MiddlePanel/NextButton.visible = true
 	elif race == val and not toggle:
 		race = 0
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
 	else:
 		race = val
 	
@@ -27,10 +27,10 @@ func race_button(val: int, toggle: bool):
 func class_button(val: int, toggle: bool):
 	if class_val == 0 and toggle:
 		class_val = val
-		$Grid/MiddlePanel.visible = true
+		$Grid/MiddlePanel/NextButton.visible = true
 	elif class_val == val and not toggle:
 		class_val = 0
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
 	else:
 		class_val = val
 	
@@ -39,10 +39,10 @@ func class_button(val: int, toggle: bool):
 func background_button(val: int, toggle: bool):
 	if background == 0 and toggle:
 		background = val
-		$Grid/MiddlePanel.visible = true
+		$Grid/MiddlePanel/NextButton.visible = true
 	elif background == val and not toggle:
 		background = 0
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
 	else:
 		background = val
 	
@@ -80,18 +80,28 @@ func _on_next_button_pressed():
 		assert(race != 0)
 		$Grid/RacePanel.visible = false
 		$Grid/ClassPanel.visible = true
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
+		$Grid/MiddlePanel/BackButton.visible = true
+		
+		if class_val != 0:
+			$Grid/MiddlePanel/NextButton.visible = true
+		
 		panel = 1
 	elif panel == 1:
 		assert(class_val != 0)
 		$Grid/ClassPanel.visible = false
 		$Grid/BackgroundPanel.visible = true
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
+		
+		if background != 0:
+			$Grid/MiddlePanel/NextButton.visible = true
+		
 		panel = 2
 	elif panel == 2:
 		assert(background != 0)
 		$Grid/BackgroundPanel.visible = false
-		$Grid/MiddlePanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = false
+		$Grid/SpacePanel.visible = true
 		panel = 3
 
 func _on_barbarian_button_toggled(toggled_on):
@@ -192,3 +202,18 @@ func _on_trader_button_toggled(toggled_on):
 
 func _on_urchin_button_toggled(toggled_on):
 	background_button(21, toggled_on)
+
+func _on_back_button_pressed():
+	if panel == 0:
+		assert(false) # this shouldn't be happening
+	elif panel == 1:
+		$Grid/RacePanel.visible = true
+		$Grid/ClassPanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = true
+		$Grid/MiddlePanel/BackButton.visible = false
+		panel = 0
+	elif panel == 2:
+		$Grid/ClassPanel.visible = true
+		$Grid/BackgroundPanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = true
+		panel = 1
