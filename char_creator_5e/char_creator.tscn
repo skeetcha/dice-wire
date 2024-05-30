@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://db41mnxto4t0i"]
 
-[ext_resource type="Script" path="res://char_creator/char_creator.gd" id="1_b6778"]
+[ext_resource type="Script" path="res://char_creator_5e/char_creator.gd" id="1_b6778"]
 [ext_resource type="PackedScene" uid="uid://b7ese1o60fiwj" path="res://player.tscn" id="2_8i46k"]
-[ext_resource type="Script" path="res://char_creator/char_creator_ui.gd" id="3_xt3ot"]
-[ext_resource type="ButtonGroup" uid="uid://5b5kuflhm88" path="res://char_creator/race_bg.tres" id="4_uj8wo"]
-[ext_resource type="ButtonGroup" uid="uid://b3gl5ugaqie8x" path="res://char_creator/class_bg.tres" id="5_mwu68"]
-[ext_resource type="ButtonGroup" uid="uid://u0yfr45mhgp2" path="res://char_creator/background_bg.tres" id="6_lvp53"]
+[ext_resource type="Script" path="res://char_creator_5e/char_creator_ui.gd" id="3_xt3ot"]
+[ext_resource type="ButtonGroup" uid="uid://5b5kuflhm88" path="res://char_creator_5e/race_bg.tres" id="4_uj8wo"]
+[ext_resource type="ButtonGroup" uid="uid://b3gl5ugaqie8x" path="res://char_creator_5e/class_bg.tres" id="5_mwu68"]
+[ext_resource type="ButtonGroup" uid="uid://u0yfr45mhgp2" path="res://char_creator_5e/background_bg.tres" id="6_lvp53"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kwrdj"]
 size = Vector3(20, 1, 20)

@@ -1,4 +1,6 @@
 Button
+ScrollContainer
+Node
 Label
 VFlowContainer
 ColorRect
@@ -6,9 +8,7 @@ GridContainer
 Control
 VBoxContainer
 HBoxContainer
-ScrollContainer
 Panel
 HFlowContainer
 PanelContainer
 HSeparator
-VSeparator

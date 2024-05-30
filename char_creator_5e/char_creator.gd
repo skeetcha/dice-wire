@@ -12,10 +12,10 @@ func _process(delta):
 
 
 func _on_ui_background_changed(idx):
-	$"Player/mannequiny-0_3_0".set_color(idx, "background")
+	$"Player/mannequiny-0_3_0".set_color(idx, "background", "5e")
 
 func _on_ui_class_changed(idx):
-	$"Player/mannequiny-0_3_0".set_color(idx, "class")
+	$"Player/mannequiny-0_3_0".set_color(idx, "class", "5e")
 
 func _on_ui_race_changed(idx):
-	$"Player/mannequiny-0_3_0".set_color(idx, "race")
+	$"Player/mannequiny-0_3_0".set_color(idx, "race", "5e")

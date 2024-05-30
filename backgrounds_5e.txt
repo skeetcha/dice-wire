@@ -3,7 +3,7 @@ Acolyte: Religion, and either Insight or Persuasion
 Artisan: Persuasion, and either Insight or History
   + Artisan's tools or Smith's tools
 Charlatan: Deception, and either Insight or Sleight of Hand
-  + Disguise kit and Forgery kit (?)
+  + Disguise kit and Forgery Kit
 Criminal: Stealth, and either Deception or Intimidation
   + Gaming set and Thieves' Tools
 Cultist: Religion, and either Arcana or Deception
@@ -25,7 +25,7 @@ Hermit: Religion, and either Medicine or Survival
   + Herbalism kit
 Marauder: Survival, and either Intimidation or Stealth
   + Artisan's tools
-Noble (Perhaps a specific background for the campaign?): History, and either Animal Handling or Persuasion
+Noble (Perhaps a specific background for the campaign?): History, and either Insight or Persuasion
   + Gaming set
   + Extra language
 Outlander: Survival, and either Athletics or Intimidation

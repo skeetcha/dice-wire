@@ -49,9 +49,13 @@ layout_mode = 2
 size_flags_vertical = 3
 color = Color(1, 1, 1, 0)
 
-[node name="NewGameButton" type="Button" parent="UI/Grid/MainPanel"]
+[node name="NewGame5EButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
-text = "New Game"
+text = "New Game (5E)"
+
+[node name="NewGamePFButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "New Game (PF2E)"
 
 [node name="QuitButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
@@ -69,5 +73,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(1, 1, 1, 0)
 
-[connection signal="pressed" from="UI/Grid/MainPanel/NewGameButton" to="UI" method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGame5EButton" to="UI" method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGamePFButton" to="UI" method="_on_new_game_pf_button_pressed"]
 [connection signal="pressed" from="UI/Grid/MainPanel/QuitButton" to="UI" method="_on_quit_button_pressed"]
