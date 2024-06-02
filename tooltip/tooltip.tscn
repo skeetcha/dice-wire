@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqh52f1dutaha"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xmtao"]
+font_size = 32
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Header" type="Label" parent="."]
+layout_mode = 2
+text = "Header"
+label_settings = SubResource("LabelSettings_xmtao")
+
+[node name="Body" type="Label" parent="."]
+custom_minimum_size = Vector2(500, 20)
+layout_mode = 2
+text = "Body"
+autowrap_mode = 3

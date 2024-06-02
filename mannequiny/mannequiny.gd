@@ -29,7 +29,7 @@ func update_colors():
 	$root/Skeleton3D/body_001.set_surface_override_material(2, class_mat)
 
 func set_color(color_idx: int, which: String, version: String):
-	assert(version == "5e" or version == "pf2e")
+	assert(version == "5e" or version == "pf2e" or version == "a5e")
 	
 	if version == "5e":
 		assert(which == "race" or which == "class" or which == "background")
@@ -67,5 +67,23 @@ func set_color(color_idx: int, which: String, version: String):
 				background_color = Color("B0C4DE")
 			else:
 				background_color = Color(background_colors_pf2e[color_idx - 1])
+	elif version == "a5e":
+		assert(which == "heritage" or which == "class" or which == "background")
+		
+		if which == "heritage":
+			if color_idx == 0:
+				race_color = Color("B0C4DE")
+			else:
+				race_color = Color(race_colors_5e[color_idx - 1])
+		elif which == "class":
+			if color_idx == 0:
+				class_color = Color("B0C4DE")
+			else:
+				class_color = Color(class_colors_5e[color_idx - 1])
+		elif which == "background":
+			if color_idx == 0:
+				background_color = Color("B0C4DE")
+			else:
+				background_color = Color(background_colors_5e[color_idx - 1])
 	
 	update_colors()

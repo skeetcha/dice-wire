@@ -43,6 +43,7 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.11
 text = "Main Menu"
+horizontal_alignment = 1
 
 [node name="SpacePanel2" type="ColorRect" parent="UI/Grid/MainPanel"]
 layout_mode = 2

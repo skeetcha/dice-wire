@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt4mm07ig1ud2"]
+
+[ext_resource type="Script" path="res://char_creator_a5e/feature_label.gd" id="1_o3ivg"]
+
+[node name="FeatureLabel" type="Label"]
+script = ExtResource("1_o3ivg")
