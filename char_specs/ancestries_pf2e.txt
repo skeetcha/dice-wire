@@ -1,0 +1,296 @@
+Dwarf
+=====
+Speed: 20 feet
+Darkvision
+Clan Dagger
+HP: 10
+Languages: Common, Dwarven, additional equal to Int mod from Gnomish, Goblin, Jotun, Orcish, Petran, Sakvroth, and human languages
+
+Feats
+-----
+Dwarven Doughtiness (1)
+Dwarven Lore (1)
+Dwarven Weapon Familiarity (1)
+Mountain Strategy (1)
+Rock Runner (1)
+Stonemason's Eye (1)
+Unburdened Iron (1)
+Boulder Roll (5) (requires Rock Runner)
+Defy the Darkness (5) (requires darkvision)
+Dwarven Reinforcement (5) (requires Expert proficiency in Crafting)
+Echoes in Stone (9)
+Mountain's Stoutness (9)
+Stone Bones (9)
+Stonewalker (9)
+March the Mines (13)
+Telluric Power (13)
+Stonegate (17) (requires Stonewalker)
+Stonewall (17)
+
+Heritages
+---------
+Forge Dwarf
+Rock Dwarf
+Ancient-Blooded Dwarf
+Death Warden Dwarf
+Strong-Blooded Dwarf
+
+Elf
+===
+Speed: 30 feet
+Low-light vision
+HP: 6
+Languages: Common, Elven, additional equal to Int mod from Draconic, Empyrean, Fey, Gnomish, Kholo, Orcish, and human languages
+
+Feats
+-----
+Ancestral Longevity (1) (requires 100 year age)
+Elven Lore (1)
+Elven Weapon Familiarity (1)
+Forlorn (1)
+Nimble Elf (1)
+Otherworldly Magic (1)
+Unwavering Mien (1)
+Ageless Patience (5)
+Ancestral Suspicion (5)
+Martial Experience (5)
+Elf Step (9)
+Expert Longevity (9) (requires Ancestral Longevity)
+Otherworldly Acumen (9) (requires at least one innate spell gained from an elf ancestry feat)
+Tree Climber (9)
+Avenge Ally (13)
+Universal Longevity (13) (requires Expert Longevity)
+Magic Rider (17)
+
+Heritages
+---------
+Ancient Elf
+Cavern Elf
+Arctic Elf
+Seer Elf
+Whisper Elf
+Woodland Elf
+
+Gnome
+=====
+Speed: 25 feet
+Low-light vision
+HP: 8
+Languages: Common, Fey, Gnomish, additional equal to Int mod from Draconic, Dwarven, Elven, Goblin, Jotun, Orcish, and human languages
+
+Feats
+-----
+Animal Accomplice (1)
+Animal Elocutionist (1)
+Fey Fellowship (1)
+First World Magic (1)
+Gnome Obsession (1)
+Gnome Weapon Familiarity (1)
+Illusion Sense (1)
+Razzle-Dazzle (1)
+Energized Font (5) (requires a focus pool, at least one innate spell from a gnome heritage or ancestry feat that shares a tradition with at least one of your focus spells)
+Project Persona (5)
+Cautious Curiosity (9) (requires at least one arcane or occult innate spell gained from a gnome heritage or gnome ancestry feat)
+First World Adept (9) (requires at least one primal innate spell)
+Life Leap (9)
+Vivacious Conduit (9)
+Instinctive Obfuscation (13) (requires at least one arcane or occult innate spell gained from a gnome heritage or gnome ancestry feat)
+Homeward Bound (17)
+
+Heritages
+---------
+Fey-Touched Gnome
+Umbral Gnome
+Wellspring Gnome
+Sensate Gnome
+Chameleon Gnome
+
+Goblin
+======
+Speed: 25 feet
+Darkvision
+HP: 6
+Languages: Common, Goblin, additional equal to Int mod from Draconic, Dwarven, Gnomish, Halfling, Kholo, Orcish, and human languages
+
+Feats
+-----
+Burn It! (1)
+City Scavenger (1)
+Goblin Lore (1)
+Goblin Scuttle (1)
+Goblin Song (1)
+Goblin Weapon Familiarity (1)
+Junk Tinker (1)
+Rough Rider (1)
+Very Sneaky (1)
+Kneecap (5)
+Loud Singer (5) (requires Goblin Song)
+Vandal (5)
+Cave Climber (9)
+Cling (9)
+Skittering Scuttle (9) (requires Goblin Scuttle)
+Very, Very Sneaky (13) (requires Very Sneaky)
+Reckless Abandon (17)
+
+Heritages
+---------
+Razortooth Goblin
+Unbreakable Goblin
+Snow Goblin
+Charhide Goblin
+Irongut Goblin
+
+Halfling
+========
+Speed: 25 feet
+Keen Eyes: +2 circumstance bonus to Seek to find hidden or undetected creatures within 30 feet; targeting a concealed or hidden creature requires a flat check of DC 3 instead for a concealed target or 9 for a hidden one
+HP: 6
+Languages: Common, Halfling, additional equal to Int mod from Dwarven, Elven, Gnomish, Goblin, and human languages
+
+Feats
+-----
+Distracting Shadows (1)
+Folksy Patter (1)
+Halfling Lore (1)
+Halfling Luck (1)
+Halfling Weapon Familiarity (1)
+Prairie Rider (1)
+Sure Feet (1)
+Titan Slinger (1)
+Unfettered Halfling (1)
+Watchful Halfling (1)
+Cultural Adaptability (5)
+Step Lively (5)
+Dance Underfoot (9) (requires Step Lively)
+Guiding Luck (9) (requires Halfling Luck)
+Irrepressible (9)
+Unhampered Passage (9)
+Ceaseless Shadows (13) (requires Distracting Shadows)
+Toppling Dance (13) (requires Dance Underfoot)
+Shadow Self (17) (requires Legendary proficiency in Stealth)
+
+Heritages
+---------
+Twilight Halfling
+Gutsy Halfling
+Wildwood Halfling
+Nomadic Halfling
+Hillock Halfling
+
+Human
+=====
+Speed: 25 feet
+HP: 8
+Languages: Common, additional equal to 1 + Int mod from common languages and human languages
+
+Feats
+-----
+Adapted Cantrip (1) (requires spellcasting class feature)
+Cooperative Nature (1)
+General Training (1)
+Haughty Obstinacy (1)
+Natural Ambition (1)
+Natural Skill (1)
+Unconventional Weaponry (1)
+Adaptive Adept (5) (requires Adapted Cantrip; requires 3rd-level spellcasting)
+Clever Improviser (5)
+Sense Allies (5)
+Cooperative Soul (9)
+Group Aid (9)
+Hardy Traveler (9)
+Incredible Improvisation (9) (requires Clever Improviser)
+Multitalented (9)
+Advanced General Training (13)
+Bounce Back (13)
+Stubborn Persistence (13)
+Heroic Presence (17)
+
+Heritages
+---------
+Skilled Human
+Versatile Human
+
+Leshy
+=====
+Speed: 25 feet
+Low-light vision
+Plant Nourishment
+Languages: Common, Fey, additional equal to Int mod from Draconic, Elven, Gnomish, Goblin, Halfling, Sakvroth, and human languages
+
+Feats
+-----
+Grasping Reach (1)
+Harmlessly Cute (1)
+Leshy Lore (1)
+Leshy Superstition (1)
+Seedpod (1)
+Shadow of the Wilds (1)
+Undaunted (1)
+Anchoring Roots (5)
+Leshy Glide (5) (requires Leaf Leshy heritage or Cat Fall)
+Ritual Reversion (5)
+Speak with Kindred (5)
+Bark and Tendril (9)
+Lucky Keepsake (9) (requires Leshy Superstition)
+Solar Rejuvenation (9)
+Thorned Seedpod (9) (requires Seedpod)
+Call of the Green Man (13)
+Cloak of Poison (13)
+Flourish and Ruin (17)
+Regrowth (17)
+
+Heritages
+---------
+Cactus Leshy
+Fruit Leshy
+Fungus Leshy
+Gourd Leshy
+Leaf Leshy
+Lotus Leshy
+Root Leshy
+Seaweed Leshy
+Wine Leshy
+
+Orc
+===
+Speed: 25 feet
+Darkvision
+HP: 10
+Languages: Common, Orcish, additional equal to Int mod from Goblin, Jotun, Petran, Sakvroth, and human languages
+
+Feats
+-----
+Beast Trainer (1)
+Hold Mark (1)
+Iron Fists (1)
+Orc Ferocity (1)
+Orc Lore (1)
+Orc Superstition (1)
+Orc Weapon Familiarity (1)
+Tusks (1)
+Athletic Might (5)
+Bloody Blows (5)
+Defy Death (5) (requires Orc Ferocity)
+Scar-Thick Skin (5)
+Pervasive Superstition (9) (requires Orc Superstition)
+Undying Ferocity (9) (requires Orc Ferocity)
+Ferocious Beasts (13) (requires Bonded Animal, animal companion, or Pet; requires Orc Ferocity)
+Incredible Ferocity (13) (requires Orc Ferocity)
+Spell Devourer (13) (requires Pervasive Superstition)
+Rampaging Ferocity (17) (requires Orc Ferocity)
+
+Heritages
+---------
+Badlands Orc
+Battle-Ready Orc
+Deep Orc
+Grave Orc
+Hold-Scarred Orc
+Rainfall Orc
+Winter Orc
+
+Versatile Heritages
+===================
+Aiuvarin
+Dromaar
+Nephilim

@@ -53,6 +53,10 @@ color = Color(1, 1, 1, 0)
 layout_mode = 2
 text = "New Game (5E)"
 
+[node name="NewGameA5EButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "New Game (A5E)"
+
 [node name="NewGamePFButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
 text = "New Game (PF2E)"
@@ -74,5 +78,6 @@ size_flags_vertical = 3
 color = Color(1, 1, 1, 0)
 
 [connection signal="pressed" from="UI/Grid/MainPanel/NewGame5EButton" to="UI" method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGameA5EButton" to="UI" method="_on_new_game_a_5e_button_pressed"]
 [connection signal="pressed" from="UI/Grid/MainPanel/NewGamePFButton" to="UI" method="_on_new_game_pf_button_pressed"]
 [connection signal="pressed" from="UI/Grid/MainPanel/QuitButton" to="UI" method="_on_quit_button_pressed"]
