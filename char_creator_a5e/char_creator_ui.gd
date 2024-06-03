@@ -17,7 +17,125 @@ var heritage_features: Dictionary = {
 		},
 		{
 			"name": "Dragon Breath",
-			"desc": "You can use your dragon breath as an action.\nChoose the type of damage dealt by your breath weapon from the following list: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder.\nAdditionally, choose between a 30-foot line that is 5 feet wide or a 15-foot cone for the area that your breath weapon affects. Each creature in the breath’s area makes a Dexterity saving throw. If your breath weapon deals psychic damage, a Wisdom saving throw is made instead of Dexterity; if cold, necrotic, poison, radiant, or thunder, a Constitution saving throw. The DC is 8 + your Constitution modifier + your proficiency bonus.\nA creature takes 2d6 damage on a failed saving throw, or half damage on a success. The damage increases to 3d6 at 4th level, 4d6 at 9th level, 5d6 at 14th level, and 6d6 at 19th level.\nAfter you use your dragon breath, you can’t use it again until you finish a rest."
+			"desc": "You can use your dragon breath as an action.\nChoose the type of damage dealt by your breath weapon from the following list: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder.\nAdditionally, choose between a 30-foot line that is 5 feet wide or a 15-foot cone for the area that your breath weapon affects. Each creature in the breath's area makes a Dexterity saving throw. If your breath weapon deals psychic damage, a Wisdom saving throw is made instead of Dexterity; if cold, necrotic, poison, radiant, or thunder, a Constitution saving throw. The DC is 8 + your Constitution modifier + your proficiency bonus.\nA creature takes 2d6 damage on a failed saving throw, or half damage on a success. The damage increases to 3d6 at 4th level, 4d6 at 9th level, 5d6 at 14th level, and 6d6 at 19th level.\nAfter you use your dragon breath, you can't use it again until you finish a rest."
+		}
+	],
+	"dwarf": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 25 feet. Your Speed is not reduced by wearing heavy armor or wielding tower shields."
+		},
+		{
+			"name": "Darkvision",
+			"desc": "You have darkvision to 60 feet."
+		},
+		{
+			"name": "Creator's Blessing",
+			"desc": "You gain proficiency with one set of artisan's tools (either brewer's supplies or mason's tools) or smith's tools. During a long rest, you can use these tools for crafting instead of sleeping and still receive the full benefits of the long rest."
+		},
+		{
+			"name": "Tough",
+			"desc": "Your character level is added to your hit point maximum."
+		}
+	],
+	"elf": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 30 feet."
+		},
+		{
+			"name": "Darkvision",
+			"desc": "You have darkvision to 60 feet."
+		},
+		{
+			"name": "Fey Ancestry",
+			"desc": "You gain an expertise die on saving throws against being charmed, and you are immune to magical effects that would put you to sleep."
+		},
+		{
+			"name": "Trance",
+			"desc": "Instead of sleeping, elves enter a trance state. When you take a long rest, you spend 4 hours in your trance state (instead of sleeping for 6 hours). During the trance you suffer no penalty to passive Perception. A long rest remains 8 hours for you as normal, and the remainder of the time must be filled only with light activity."
+		}
+	],
+	"gnome": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 25 feet."
+		},
+		{
+			"name": "Darkvision",
+			"desc": "You have darkvision to 60 feet."
+		},
+		{
+			"name": "Gnome Cunning",
+			"desc": "You gain an expertise die on Intelligence, Wisdom, and Charisma saving throws made against spells and magical effects."
+		},
+		{
+			"name": "Gnomish Magic",
+			"desc": "You know the [i]minor illusion[/i] cantrip. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (whichever is highest)."
+		}
+	],
+	"halfling": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 25 feet."
+		},
+		{
+			"name": "Fearless",
+			"desc": "You are immune to the effects of the frightened condition."
+		},
+		{
+			"name": "Nimble Steps",
+			"desc": "If a creature is at least one size larger than you, you can move through its space."
+		},
+		{
+			"name": "Halfling's Luck",
+			"desc": "When you make an ability check, attack roll, or saving throw and roll a 1, you can choose to roll again, taking the second result."
+		}
+	],
+	"human": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 30 feet."
+		},
+		{
+			"name": "Fast Learner",
+			"desc": "You gain proficiency in one additional skill of your choice. In addition, you require half as much time as normal to train yourself in the use of a suit of armor, tool, or weapon during downtime."
+		},
+		{
+			"name": "Intrepid",
+			"desc": "Once between rests, when you make an ability check, attack roll, or saving throw, you can choose to gain an expertise die on that roll."
+		}
+	],
+	"orc": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 30 feet."
+		},
+		{
+			"name": "Darkvision",
+			"desc": "You have darkvision to 60 feet."
+		},
+		{
+			"name": "Heavy Lifter",
+			"desc": "When determining your carrying capacity and the weight that you can push, drag, or lift, your size is considered to be Large."
+		},
+		{
+			"name": "Mighty Attacks",
+			"desc": "When you critically hit with a melee weapon attack, roll one of the weapon's damage dice again and add the result to the attack's damage."
+		}
+	],
+	"planetouched": [
+		{
+			"name": "Speed",
+			"desc": "You have a walking speed of 30 feet."
+		},
+		{
+			"name": "Darkvision",
+			"desc": "You have darkvision to 60 feet."
+		},
+		{
+			"name": "Immortal Blessing",
+			"desc": "Once between long rests, when damage would reduce you to 0 hit points, you are instead reduced to 1 hit point."
 		}
 	]
 }
@@ -46,7 +164,240 @@ var heritage_gifts: Dictionary = {
 				},
 				{
 					"name": "Hard to Hit",
-					"desc": "While you aren’t wearing armor or your only armor is a shield, your AC is 12 + your Dexterity modifier."
+					"desc": "While you aren't wearing armor or your only armor is a shield, your AC is 12 + your Dexterity modifier."
+				}
+			]
+		},
+		{
+			"name": "Draconic Wings",
+			"features": [
+				{
+					"name": "Flight",
+					"desc": "You have a fly speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor. Whenever you spend 3 full consecutive rounds airborne without landing, you gain a level of fatigue. Any fatigue gained in this way is removed upon finishing a rest."
+				}
+			]
+		}
+	],
+	"dwarf": [
+		{
+			"name": "Dwarven Stability",
+			"features": [
+				{
+					"name": "Dwarven Stability",
+					"desc": "You gain an expertise die on saving throws against effects that would knock you prone, and on saving throws made to resist being shoved."
+				}
+			]
+		},
+		{
+			"name": "Dwarven Toughness",
+			"features": [
+				{
+					"name": "Dwarven Toughness",
+					"desc": "As a bonus action, you gain a number of temporary hit points equal to 1d10 plus your level. These temporary hit points last for 1 minute. You can't use this trait again until after you finish a long rest.\nYou gain an expertise die on saving throws against poison, and you have resistance against poison damage."
+				}
+			]
+		}
+	],
+	"elf": [
+		{
+			"name": "Mystic Rapport",
+			"features": [
+				{
+					"name": "Arcane Sensitivity",
+					"desc": "You gain proficiency with Arcana."
+				},
+				{
+					"name": "Arcane Empathy",
+					"desc": "You can speak telepathically to a creature within 30 feet of you that you can see. Though this grants the creature no ability to respond telepathically, they can understand you if you share a language. You can speak in this way to one creature at a time."
+				}
+			]
+		},
+		{
+			"name": "Prescient Vision",
+			"features": [
+				{
+					"name": "Glance the Future",
+					"desc": "Your eyes can see a few moments into the future, and your mind apprehends the divergent possibilities. Once between rests you can use a bonus action to roll a d20 and record the result. Before the end of your next rest, when a creature you can see within 60 feet makes an ability check, attack roll, or saving throw, you can use your reaction to replace their roll with your recorded result. When the creature is also rolling an expertise die, only the d20 roll is replaced. When the creature is rolling more than one d20, such as when it has advantage or when a halfling is using their Halfling's Luck trait, the replacement applies to the creature's final roll."
+				}
+			]
+		},
+		{
+			"name": "Preternatural Awareness",
+			"features": [
+				{
+					"name": "Keen Senses",
+					"desc": "You gain proficiency in Perception."
+				},
+				{
+					"name": "Prophetic Instincts",
+					"desc": "Your ability to detect danger is nearly supernatural. You gain a bonus to initiative rolls equal to your Wisdom modifier (minumum 1), and you can't be surprised while conscious (including during your Trance)."
+				}
+			]
+		}
+	],
+	"gnome": [
+		{
+			"name": "Gnomish Agility",
+			"features": [
+				{
+					"name": "Gnomish Agility",
+					"desc": "You gain +1 to your Armor Class against creatures of a size category larger than your own."
+				}
+			]
+		},
+		{
+			"name": "Into Mist",
+			"features": [
+				{
+					"name": "Into Mist",
+					"desc": "Once between rests, as a bonus action or as a reaction immediately after taking damage, you can turn invisible. The invisibility lasts until the end of your next turn, and it ends early if you attack, deal damage, or cast a spell."
+				}
+			]
+		}
+	],
+	"halfling": [
+		{
+			"name": "Burrowing Claws",
+			"features": [
+				{
+					"name": "Burrow",
+					"desc": "You have a burrowing speed of 10 feet. You can use your burrowing speed to move through nonmagical sand, loose earth, loamy soil, mud, or snow, but not solid rock. You do not naturally leave any sort of tunnel behind but you can attempt to create a 5-foot by 5-foot wide tunnel in earth, soil, or snow by spending extra time and effort shoring it up and adding support. This reduces your burrowing speed to 5 feet every 15 minutes."
+				},
+				{
+					"name": "Claws",
+					"desc": "Your nails grow into strong shovel-like claws. The claws are natural weapons, which you can use to make unarmed strikes that deal slashing damage equal to 1d4 + your Strength modifier."
+				}
+			]
+		},
+		{
+			"name": "Tuft Feet",
+			"features": [
+				{
+					"name": "Big Feet",
+					"desc": "You gain an expertise die on checks and saving throws made to resist being knocked prone."
+				},
+				{
+					"name": "Thick Soles",
+					"desc": "You are immune to damage from sharp terrain hazards (such as caltrops, broken glass, or the [i]spike growth[/i] spell) and ignore difficult terrain caused by them. Additionally, other kinds of difficult terrain reduce your movement speed by 5 feet instead of halving it."
+				}
+			]
+		},
+		{
+			"name": "Twilight-Touched",
+			"features": [
+				{
+					"name": "Darkvision",
+					"desc": "You have darkvision to 60 feet."
+				},
+				{
+					"name": "Telepathy",
+					"desc": "You can speak telepathically to a creature within 30 feet of you that you can see. Though this grants the creature no ability to respond telepathically, they can understand you if you share a language. You can speak in this way to one creature at a time."
+				}
+			]
+		}
+	],
+	"human": [
+		{
+			"name": "Diehard Survivor",
+			"features": [
+				{
+					"name": "Feast and Famine",
+					"desc": "You can go a number of days equal to your Constitution modifier without suffering any fatigue from lack of Supply. Afterwards you require twice as much Supply for as many days as you went without."
+				},
+				{
+					"name": "Radical Perserverance",
+					"desc": "You only die after failing 4 death saving throws instead of 3."
+				}
+			]
+		},
+		{
+			"name": "Ingenious Focus",
+			"features": [
+				{
+					"name": "Inexorable Concentration",
+					"desc": "When you fail a Constitution saving throw to maintain concentration, you can immediately reroll it, taking the new result. You may use this trait a number of times equal to your Intelligence modifier (minimum 1), and regain all expended uses after a long rest."
+				},
+				{
+					"name": "Resident Expert",
+					"desc": "Choose two tools with which you are proficient, or a skill with which you are proficient from Animal Handling, Arcana, Culture, Engineering, History, Medicine, Nature, or Religion. When you make a check with that tool or skill and the d20 shows a natural result of less than 10, you can count the d20 result as being 10."
+				}
+			]
+		},
+		{
+			"name": "Spirited Traveler",
+			"features": [
+				{
+					"name": "Desperate Dash",
+					"desc": "Once between rests, when you take the Dash action, your movement this turn does not provoke opportunity attacks. During this movement, you gain an expertise die on Acrobatics checks made to avoid hazards and Dexterity saving throws."
+				},
+				{
+					"name": "Marathon Runner",
+					"desc": "The first time between each long rest you would gain a level of fatigue, you do not gain that level of fatigue. You still suffer a level of fatigue from finishing a long rest without any Supply."
+				}
+			]
+		}
+	],
+	"orc": [
+		{
+			"name": "Just Like Home",
+			"features": [
+				{
+					"name": "Just Like Home",
+					"desc": "Choose one type of terrain, reflecting the area from which your family hails: arctic, desert, mountain, or swamp. You ignore all naturally created difficult terrain of that type. Additionally, you gain an expertise die on Survival checks made within this terrain type, and gain a type of damage resistance related to your chosen terrain: arctic—cold, desert—fire, mountain—lightning, swamp—poison."
+				}
+			]
+		},
+		{
+			"name": "Ancestral Blessing",
+			"features": [
+				{
+					"name": "Divine Protection",
+					"desc": "You have resistance to radiant damage."
+				},
+				{
+					"name": "Touch of Divinity",
+					"desc": "You know the [i]resistance[/i] cantrip. In addition, you can cast the [i]shield[/i] spell once per long rest."
+				}
+			]
+		},
+		{
+			"name": "Magic Adept",
+			"features": [
+				{
+					"name": "Magic Adept",
+					"desc": "You are born with magic coursing through your veins, and are able to utilize it in a number of ways. You learn one cantrip of your choice from the wizard spell list. At 3rd level, choose one 1st- or 2nd-level spell from the wizard spell list. Once between long rests, you can cast the chosen spell without any material components. A 1st-level spell chosen this way can be cast at 2nd-level using this trait, if the spell allows. Your spellcasting ability for this trait is the same as the ability score used in the spellcasting class in which you have the highest level, or Charisma if you have no levels in a spellcasting class."
+				}
+			]
+		}
+	],
+	"planetouched": [
+		{
+			"name": "Aasimar",
+			"features": [
+				{
+					"name": "Celestial Legacy",
+					"desc": "You know the [i]guidance[/i] cantrip. In addition, once between long rests you can use an action to touch a willing creature and restore a number of hit points equal to your level."
+				},
+				{
+					"name": "Divine Protection",
+					"desc": "You have resistance to radiant damage."
+				},
+				{
+					"name": "Language",
+					"desc": "You have an innate ability to recognize Celestial, and are able to speak, read, write, and sign it."
+				}
+			]
+		},
+		{
+			"name": "Tiefling",
+			"features": [
+				{
+					"name": "Hellish Resistance",
+					"desc": "You have resistance to fire damage."
+				},
+				{
+					"name": "Infernal Legacy",
+					"desc": "You know the [i]produce flame[/i] cantrip. Once you reach 3rd level, you can cast [i]arcane riposte[/i] (fire damage only) once between long rests. At 5th level, you can cast [i]heat metal[/i] without material components once between long rests. Charisma is your spellcasting ability for these spells."
 				}
 			]
 		}
@@ -115,53 +466,41 @@ func features(key: String, toggled: bool):
 		for child in $Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.get_children():
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.remove_child(child)
 
-func _on_gift_items_item_activated(index):
+func _on_gift_items_item_selected(index):
+	var keys: Array[String] = ["", "dwarf", "elf", "halfling", "human", "dragonborn", "gnome", "orc", "planetouched"]
+	
 	if heritage == 0:
 		# Null
 		pass
-	elif heritage == 1:
-		# Dwarf
-		pass
-	elif heritage == 2:
-		# Elf
-		pass
-	elif heritage == 3:
-		# Halfling
-		pass
-	elif heritage == 4:
-		# Human
-		pass
-	elif heritage == 5:
-		# Dragonborn
-		for i in len(heritage_gifts["dragonborn"][index]):
-			var feature: Dictionary = heritage_gifts["dragonborn"][index]["features"][i]
+	else:
+		# Others
+		for child in $Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.get_children():
+			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.remove_child(child)
+		
+		for i in len(heritage_gifts[keys[heritage]][index]["features"]):
+			var feature: Dictionary = heritage_gifts[keys[heritage]][index]["features"][i]
 			var label: Node = preload("res://char_creator_a5e/feature_label.tscn").instantiate()
 			label.text = feature["name"]
 			label.set_tooltip_text(JSON.stringify(feature))
 			label.name = "FeatureLabel" + str(i)
 			label.set_mouse_filter(MOUSE_FILTER_PASS)
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.add_child(label)
-	elif heritage == 6:
-		# Gnome
-		pass
-	elif heritage == 7:
-		# Orc
-		pass
-	elif heritage == 8:
-		# Planetouched
-		pass
 
 func _on_dwarf_button_toggled(toggled_on):
 	heritage_button(1, toggled_on)
+	features("dwarf", toggled_on)
 
 func _on_elf_button_toggled(toggled_on):
 	heritage_button(2, toggled_on)
+	features("elf", toggled_on)
 
 func _on_halfling_button_toggled(toggled_on):
 	heritage_button(3, toggled_on)
+	features("halfling", toggled_on)
 
 func _on_human_button_toggled(toggled_on):
 	heritage_button(4, toggled_on)
+	features("human", toggled_on)
 
 func _on_dragonborn_button_toggled(toggled_on):
 	heritage_button(5, toggled_on)
@@ -169,12 +508,15 @@ func _on_dragonborn_button_toggled(toggled_on):
 
 func _on_gnome_button_toggled(toggled_on):
 	heritage_button(6, toggled_on)
+	features("gnome", toggled_on)
 
 func _on_orc_button_toggled(toggled_on):
 	heritage_button(7, toggled_on)
+	features("orc", toggled_on)
 
 func _on_planetouched_button_toggled(toggled_on):
 	heritage_button(8, toggled_on)
+	features("planetouched", toggled_on)
 
 func _on_next_button_pressed():
 	if panel == 0:

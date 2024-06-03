@@ -17,8 +17,9 @@ layout_mode = 2
 text = "Header"
 label_settings = SubResource("LabelSettings_xmtao")
 
-[node name="Body" type="Label" parent="."]
+[node name="Body" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(500, 20)
 layout_mode = 2
+bbcode_enabled = true
 text = "Body"
-autowrap_mode = 3
+fit_content = true
