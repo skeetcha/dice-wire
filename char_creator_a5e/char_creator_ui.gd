@@ -1,6 +1,7 @@
 extends Control
 
 var heritage: int = 0
+var culture: int = 0
 var class_val: int = 0
 var background: int = 0
 var panel: int = 0
@@ -8,6 +9,7 @@ var panel: int = 0
 signal class_changed(idx: int)
 signal heritage_changed(idx: int)
 signal background_changed(idx: int)
+signal culture_changed(idx: int)
 
 var heritage_features: Dictionary = {
 	"dragonborn": [
@@ -410,7 +412,6 @@ func _ready():
 func heritage_button(val: int, toggle: bool):
 	if heritage == 0 and toggle:
 		heritage = val
-		$Grid/MiddlePanel/NextButton.visible = true
 	elif heritage == val and not toggle:
 		heritage = 0
 		$Grid/MiddlePanel/NextButton.visible = false
@@ -485,6 +486,8 @@ func _on_gift_items_item_selected(index):
 			label.name = "FeatureLabel" + str(i)
 			label.set_mouse_filter(MOUSE_FILTER_PASS)
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.add_child(label)
+		
+		$Grid/MiddlePanel/NextButton.visible = true
 
 func _on_dwarf_button_toggled(toggled_on):
 	heritage_button(1, toggled_on)
@@ -518,19 +521,100 @@ func _on_planetouched_button_toggled(toggled_on):
 	heritage_button(8, toggled_on)
 	features("planetouched", toggled_on)
 
+func move_button(button_array: Array[Node], name_array: Array, name: String):
+	var index: int = name_array.find(name)
+	button_array[index].reparent($Grid/CulturePanel/SuggestedGrid)
+	button_array.remove_at(index)
+	name_array.remove_at(index)
+
+func setup_culture_buttons(forward: bool):
+	if forward:
+		if len($Grid/CulturePanel/SuggestedGrid.get_children()) != 0:
+			var old_buttons: Array[Node] = $Grid/CulturePanel/SuggestedGrid.get_children()
+			
+			for button in old_buttons:
+				button.reparent($Grid/CulturePanel/Scroll/Grid)
+		
+		var culture_buttons: Array[Node] = $Grid/CulturePanel/Scroll/Grid.get_children()
+		culture_buttons.sort_custom(func(a, b): return a.name.naturalnocasecmp_to(b.name))
+		culture_buttons.reverse()
+		var culture_names: Array = culture_buttons.map(func(x) -> String: return x.name.replace("Button", ""))
+		assert(heritage != 0)
+		
+		if heritage == 1:
+			# Dwarf
+			# Deep Dwarf, Forsaken, Godbound, Hill Dwarf, Mountain Dwarf
+			move_button(culture_buttons, culture_names, "DeepDwarf")
+			move_button(culture_buttons, culture_names, "Forsaken")
+			move_button(culture_buttons, culture_names, "Godbound")
+			move_button(culture_buttons, culture_names, "HillDwarf")
+			move_button(culture_buttons, culture_names, "MountainDwarf")
+		elif heritage == 2:
+			# Elf
+			# Eladrin, High Elf, Shadow Elf, Wood Elf
+			move_button(culture_buttons, culture_names, "Eladrin")
+			move_button(culture_buttons, culture_names, "HighElf")
+			move_button(culture_buttons, culture_names, "ShadowElf")
+			move_button(culture_buttons, culture_names, "WoodElf")
+		elif heritage == 3:
+			# Halfling
+			# Kithbáin Halfling, Mistbairn Halfling, Stout Halfling, Tunnel Halfling
+			move_button(culture_buttons, culture_names, "KithbainHalfling")
+			move_button(culture_buttons, culture_names, "MistbairnHalfling")
+			move_button(culture_buttons, culture_names, "StoutHalfling")
+			move_button(culture_buttons, culture_names, "TunnelHalfling")
+		elif heritage == 4:
+			# Human
+			# Cosmopolitan, Imperial, Settler, Villager
+			move_button(culture_buttons, culture_names, "Cosmopolitan")
+			move_button(culture_buttons, culture_names, "Imperial")
+			move_button(culture_buttons, culture_names, "Settler")
+			move_button(culture_buttons, culture_names, "Villager")
+		elif heritage == 5:
+			# Dragonborn
+			# Dragonbound, Dragoncult
+			move_button(culture_buttons, culture_names, "Dragonbound")
+			move_button(culture_buttons, culture_names, "Dragoncult")
+		elif heritage == 6:
+			# Gnome
+			# Deep Gnome, Forest Gnome, Forgotten Folx, Tinker Gnome
+			move_button(culture_buttons, culture_names, "DeepGnome")
+			move_button(culture_buttons, culture_names, "ForestGnome")
+			move_button(culture_buttons, culture_names, "ForgottenFolx")
+			move_button(culture_buttons, culture_names, "TinkerGnome")
+		elif heritage == 7:
+			# Orc
+			# Caravanner, Stoic Orc, Wildling
+			move_button(culture_buttons, culture_names, "Caravanner")
+			move_button(culture_buttons, culture_names, "StoicOrc")
+			move_button(culture_buttons, culture_names, "Wildling")
+	else:
+		pass
+
 func _on_next_button_pressed():
 	if panel == 0:
 		assert(heritage != 0)
 		$Grid/HeritagePanel.visible = false
-		$Grid/ClassPanel.visible = true
+		$Grid/CulturePanel.visible = true
 		$Grid/MiddlePanel/NextButton.visible = false
 		$Grid/MiddlePanel/BackButton.visible = true
+		
+		if culture != 0:
+			$Grid/MiddlePanel/NextButton.visible = true
+		
+		setup_culture_buttons(true)
+		panel = 1
+	elif panel == 1:
+		assert(culture != 0)
+		$Grid/CulturePanel.visible = false
+		$Grid/ClassPanel.visible = true
+		$Grid/MiddlePanel/NextButton.visible = false
 		
 		if class_val != 0:
 			$Grid/MiddlePanel/NextButton.visible = true
 		
-		panel = 1
-	elif panel == 1:
+		panel = 2
+	elif panel == 2:
 		assert(class_val != 0)
 		$Grid/ClassPanel.visible = false
 		$Grid/BackgroundPanel.visible = true
@@ -539,8 +623,8 @@ func _on_next_button_pressed():
 		if background != 0:
 			$Grid/MiddlePanel/NextButton.visible = true
 		
-		panel = 2
-	elif panel == 2:
+		panel = 3
+	elif panel == 3:
 		assert(background != 0)
 		$Grid/BackgroundPanel.visible = false
 		$Grid/MiddlePanel/NextButton.visible = false
@@ -651,12 +735,153 @@ func _on_back_button_pressed():
 		assert(false) # this shouldn't be happening
 	elif panel == 1:
 		$Grid/HeritagePanel.visible = true
-		$Grid/ClassPanel.visible = false
+		$Grid/CulturePanel.visible = false
 		$Grid/MiddlePanel/NextButton.visible = true
 		$Grid/MiddlePanel/BackButton.visible = false
+		setup_culture_buttons(false)
 		panel = 0
 	elif panel == 2:
+		$Grid/CulturePanel.visible = true
+		$Grid/ClassPanel.visible = false
+		$Grid/MiddlePanel/NextButton.visible = true
+		panel = 1
+	elif panel == 3:
 		$Grid/ClassPanel.visible = true
 		$Grid/BackgroundPanel.visible = false
 		$Grid/MiddlePanel/NextButton.visible = true
-		panel = 1
+		panel = 2
+
+func _on_caravanner_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_circusfolk_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_collegiate_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_cosmopolitan_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_deep_dwarf_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_dragonbound_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_deep_gnome_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_dragoncult_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_eladrin_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_forest_gnome_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_forgotten_folx_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_forsaken_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_godbound_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_high_elf_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_hill_dwarf_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_imperial_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_kithbain_halfling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_lone_wanderer_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_mountain_dwarf_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_mistbairn_halfling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_nomad_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_settler_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_shadow_elf_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_steamforged_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_stoic_orc_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_stoneworthy_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_stout_halfling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_tinker_gnome_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_tunnel_halfling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_tyrannized_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_villager_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_warhordling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_wildling_button_toggled(toggled_on):
+	pass # Replace with function body.
+
+
+func _on_wood_elf_button_toggled(toggled_on):
+	pass # Replace with function body.

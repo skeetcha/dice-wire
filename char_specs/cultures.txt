@@ -1,0 +1,44 @@
+Caravanner
+Circusfolk
+Collegiate
+Cosmopolitan
+Deep Dwarf
+Deep Gnome
+Dragonbound
+Dragoncult
+Eladrin
+Forest Gnome
+Forgotten Folx
+Forsaken
+Godbound
+High Elf
+Hill Dwarf
+Imperial
+Itinerant
+Kithbáin Halfling
+Lone Wanderer
+Mountain Dwarf
+Mistbairn Halfling
+Nomad
+Settler
+Shadow Elf
+Steamforged
+Stoic Orc
+Stoneworthy
+Stout Halfling
+Tinker Gnome
+Tunnel Halfling
+Tyrannized
+Villager
+Warhordling
+Wildling
+Wood Elf
+
+Dragonborn: Dragonbound, Dragoncult
+Dwarf: Deep Dwarf, Forsaken, Godbound, Hill Dwarf, Mountain Dwarf
+Elf: Eladrin, High Elf, Shadow Elf, Wood Elf
+Gnome: Deep Gnome, Forest Gnome, Forgotten Folx, Tinker Gnome
+Halfling: Kithbáin Halfling, Mistbairn Halfling, Stout Halfling, Tunnel Halfling
+Human: Cosmopolitan, Imperial, Settler, Villager
+Orc: Caravanner, Stoic Orc, Wildling
+Planetouched: None
