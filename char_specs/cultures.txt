@@ -1,38 +1,1107 @@
 Caravanner
+==========
+Caravanner: You are proficient in Animal Handling and with land vehicles.
+Long Hauler: You have proficiency in Survival. In addition, you have advantage on checks made to avoid fatigue from a forced march.
+Mobile Living: You can create a ramshackle version of a cart or wagon with 30 minutes of work if you have access to raw or reclaimed materials. Ramshackle vehicles created in this way function identically to their normal counterparts, except their gold piece value is always 0, they have half as many hit points as their normal counterparts, and they break and become useless if they are hit by any attack roll with a result of natural 20.
+Trampling Charge: When you or a mount you’re riding uses the Dash action or a vehicle you’re driving uses the Ahead Full action, you can move through spaces occupied by creatures with a size category smaller than you, or your mount, or the vehicle. Creatures moved through in this way make a Dexterity saving throw (DC equal to 8 + your Dexterity modifier + your proficiency bonus). On a failed save, creatures are knocked prone and take an amount of bludgeoning damage equal to your level. Creatures cannot be damaged twice from the same trampling charge. Once you use this trait, you cannot do so again until you finish a short or rest.
+Languages: You can speak, read, write, and sign Common and one other language.
+
 Circusfolk
+==========
+Rapid Escape: You can use the Disengage action as a bonus action.
+Slapstick: You are proficient with improvised weapons, and improvised weapons you use can deal 1d6 damage rather than the damage they normally deal. You can use Dexterity instead of Strength for the attack and damage rolls of your improvised weapons.
+Trickster’s Veil: You can cast disguise self once per rest. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (whichever is highest).
+Languages: You can speak, read, write, and sign Common.
+
 Collegiate
+==========
+Philosophic Mind: Once between rests, at the start of your turn you can suppress the effects of an enchantment spell you are under for 1 round as your logic overrides it.
+Practiced Artisan: You are proficient with calligrapher’s supplies and two other artisan’s tools.
+Studied Discipline: You have extensive knowledge in certain fields. For all skill proficiencies gained through this trait, you always choose which ability score to use for these rolls (Intelligence, Wisdom, or Charisma).
+Languages: You can speak, read, write, and sign Common and three additional languages.
+
 Cosmopolitan
+============
+Discreetly Armed: You gain an expertise die on checks made to persuade others to let you remain armed or to conceal weapons or items about your person.
+Fashion Sense: After you spend at least 1 minute observing a creature within 60 feet, you can use an action to make either an Insight or History check against a DC equal to the creature’s passive Deception check score. On a success, you learn the following information about that creature:
+* Whether the creature has a lower Charisma score than yourself.
+* The creature’s culture and national origin (if any).
+* The creature’s social standing in the local majority culture.
+Skill Versatility: You gain proficiency in Culture and one other skill of your choice.
+Urban Denizen: You can make an Investigation check to learn the location of (or at the Narrator’s discretion gain a helpful clue to the trail of) a person by discreetly asking around in the right places. The difficulty of the check is DC 15 if the individual is not hiding, or DC 20 if they are trying to conceal their location.
+Well-Connected: You gain an extra connection, selected from a background of your choice. This person is of a different heritage or national origin than yourself.
+Languages: You can speak, read, write, and sign in Common and two additional languages.
+
 Deep Dwarf
+==========
+Superior Darkvision: You have darkvision to 60 feet, or the range of your existing darkvision increases by 60 feet.
+Deep Magic: You know the resistance cantrip. Once you reach 3rd level, you can cast jump once per rest. At 5th level, you can castenlarge/reduceonce per rest. You don’t need material components for these spells, but you can’t cast them while you’re in direct sunlight (although sunlight has no effect on them once cast). Intelligence is your spellcasting ability for these spells.
+Deep Suspicion: You gain an expertise die on Wisdom saving throws against illusions and against being charmed or frightened.
+Underground Combat Training: You are proficient with hand crossbows, short swords, and war picks.
+Languages: You can speak, read, write, and sign Common, Dwarvish, and Undercommon.
+
 Deep Gnome
+==========
+Superior Darkvision: You have darkvision to 60 feet, or the range of your existing darkvision increases by 60 feet.
+Dark Gnome Magic: You can cast disguise self once per rest. Once you reach 3rd level, you can cast blindness/deafness (blindness only) once per rest. At 5th level, you can cast nondetection once per rest. You don’t need material components for these spells, and when casting them your spellcasting ability is Intelligence, Wisdom, or Charisma (whichever is highest).
+Subterranean Camouflage: You gain an expertise die on Stealth checks made to hide in rocky terrain.
+Languages: You can speak, read, write, and sign Common, Gnomish, and Undercommon.
+
 Dragonbound
+===========
+Draconic Diplomacy: You gain an expertise die on Charisma checks madeto influence dragon creatures.
+Dragonbound Teachings: You knowone cantrip of your choice from the clericor wizard spell lists. Your spellcastingability for this cantrip is Intelligence orWisdom (whichever is highest).
+Progenitor’s Boon. Choose a type of boon.
+Languages: You can speak, read, write, and sign Common and Draconic.
+
 Dragoncult
+==========
+Characters raised in the dragoncult culture
+share a variety of traits in common with one
+another.
+Draconic Umbra.
+As a bonus action,
+you can cause draconic power to course
+around you in a draconic umbra. This
+draconic umbra lasts for 1 minute or until
+you use a bonus action to end it. Once
+you have used this trait, you cannot use it
+again until after you finish a rest. Choose
+one of the following effects:
+Damaging Umbra:
+Once on each of
+your turns while this umbra is active,
+you can deal extra damage of the type
+dealt by your Dragon Breath to one
+target when you deal damage to it with
+an attack or a spell. The extra damage
+equals half your level (minimum 1). If
+you are not dragonborn, choose the
+damage type dealt by your umbra from
+those available in the Dragon Breath
+trait.
+Ethereal Umbra:
+While this umbra is
+active you can move through
+nonmagical solid objects and occupied
+spaces as if they were difficult terrain.
+Opportunity attacks made against you
+while this umbra is active have
+disadvantage. You cannot move further
+than 5 feet into walls or other solid
+objects in this way. If you would end
+your turn in an occupied space, you are
+shunted into the nearest unoccupied
+space and take 1d6 force damage.
+Spiritual Umbra:
+While this umbra is
+active you gain an expertise die on
+Stealth checks, and once on each of
+your turns you may alter your
+appearance (as the
+disguise self
+spell).
+When your umbra ends, so do any
+illusions conjured by it.
+Protective Umbra:
+While this umbra is
+active you gain resistance to the
+damage type dealt by your Dragon
+Breath (if you already had resistance to
+that damage type, you gain immunity
+instead), and you gain an expertise die
+on Wisdom or Intelligence checks. If
+you are not dragonborn, choose the
+damage type for your umbra from those
+available in the Dragon Breath trait.
+Secrets of the Wyrm.
+Choose two skills
+from among Arcana, Deception,
+Persuasion, Religion, or Stealth. You
+have proficiency in the chosen skills.
+Languages.
+You can speak, read,
+write, and sign Common and Draconic.
 Eladrin
+Characters raised in the eladrin culture
+share a variety of traits in common with one
+another.
+Eladrin Weapon Training.
+You have
+proficiency with longswords and rapiers.
+Fey Sublimation.
+In addition to being
+humanoid, you also have the fey creature
+type.
+Invocation of the Eladrin Lords.
+You
+know one cantrip from
+Table: Eladrin
+Invocations
+, based on the aspect of
+nature you wish to manifest or that of your
+liege. Your spellcasting ability for this
+cantrip is Intelligence, Wisdom, or
+Charisma (whichever is highest).
+At the end of a rest, you can change
+your selected aspect.
+Knowledge of the Faerie Courts.
+You
+are proficient in one of the following skills:
+Arcana, Culture, Deception, History,
+Insight, Persuasion, Survival.
+Twilight Step.
+You can forego your
+movement on your turn to teleport 30 feet
+to an unoccupied space you can see.
+Once you have used this trait, you cannot
+do so again until you finish a rest.
+Languages.
+You can speak, read, write,
+and sign in Common, Elvish, and Sylvan.
+TABLE: ELADRIN INVOCATIONS
+ASPECT
+CANTRIP
+Autumn
+resistance
+Hiding
+minor illusion
+Respite
+mending
+Rot
+chill touch
+Spring
+druidcraft
+Stars
+dancing lights
+Storm
+shocking grasp
+Summer
+produce flame
+Toxicity
+pestilence
+Winter
+ray of frost
 Forest Gnome
+Characters raised in the forest gnome
+culture share a variety of traits in common
+with one another.
+Artistic Pursuits.
+You have proficiency
+with one type of artisans’ tools of your
+choice.
+Natural Illusionist.
+You can cast
+disguise self
+once per rest. Once you
+reach 3rd level, you can cast
+blur
+once
+per rest. At 5th level, you can cast
+major
+image
+once per rest. You don’t need
+material components for these spells, and
+when casting them your spellcasting
+ability is Intelligence or Wisdom
+(whichever is higher).
+Small Beast Speech.
+You have an
+innate ability to communicate simple
+thoughts and ideas with beasts of size
+Small or smaller.
+Languages.
+You can speak, read, write,
+and sign Common and Gnomish.
 Forgotten Folx
+Characters raised in the forgotten folx
+culture share a variety of traits in common
+with one another.
+Eyes Everywhere.
+As long as an ally is
+within 60 feet of you, you always know
+their general location even if you cannot
+see or otherwise sense them. This effect
+is blocked by 1 foot of lead or iron and
+magical effects like the
+nondetection
+spell.
+It Takes a Village.
+You can use the Help
+action as a bonus action. Additionally,
+when you do so, the range at which you
+can Help an ally increases to 15 feet.
+Once per rest when you Help an ally, in
+addition to granting advantage you may
+also choose for your ally to gain an
+expertise die.
+Languages.
+You can speak, read, write,
+and sign Common, Gnomish, and one
+other language.
 Forsaken
+Characters raised in the forsaken culture
+share a variety of traits in common with one
+another.
+Eat Like a Bird.
+You can go a number
+of days equal to half your Constitution
+modifier without suffering any fatigue from
+lack of Supply.
+Fleet of Foot.
+Your Speed increases by
+5 feet.
+Improvised Tools.
+During a rest, when
+you have access to raw materials you can
+jury-rig an improvised tool kit. If you roll a
+1 while making a check using the
+improvised tools or the next time you take
+a rest, they break.
+Pack Rat.
+You count as one size larger
+when determining your carrying capacity.
+Roll With the Punches.
+After you fail
+an ability check, you have advantage on
+your next ability check. You can’t use this
+trait again until you finish a short or rest.
+Languages.
+You can speak, read, write,
+and sign Common, and two additional
+languages.
 Godbound
+Characters raised in the godbound culture
+share a variety of traits in common with one
+another.
+Arts of Worship.
+You are proficient with
+your choice of either Performance, two
+musical instruments, or two artisan’s
+tools.
+Bonus Connection.
+You have one
+additional connection, selected from the
+Acolyte background.
+Detect Faith.
+After you speak with a
+person for at least 1 minute, you can use
+an action to make either an Insight or
+Religion check opposed by their
+Deception check. On a success, you
+learn the following information about
+them:
+●
+Whether they have a lower
+Wisdom score than yourself.
+●
+Whether they are religious; if
+so, you also learn their faith.
+●
+Whether they have class levels
+in the cleric or herald class.
+Devotion.
+You gain an expertise die on
+saving throws made to resist being
+charmed or frightened.
+Religious Education.
+You are proficient
+in the Religion skill and know one cantrip
+of your choice from the cleric, druid, or
+herald spell list. Your spellcasting ability
+score for this cantrip is Intelligence,
+Wisdom, or Charisma (whichever is
+highest).
+Siblings in Faith.
+You have advantage
+on checks made to socially interact with
+members of your current or former faith,
+such as when requesting services or
+gathering information.
+Languages.
+You can speak, read, write,
+and sign in Common and one other
+language.
 High Elf
+Characters raised in high elf culture share
+a variety of traits in common with one
+another.
+Cunning Diplomat.
+You can always
+choose to use Intelligence when making a
+Deception, Insight, Intimidation, or
+Persuasion check.
+High Elf Education.
+You are proficient
+in Culture and one additional skill of your
+choice.
+High Elf Weapon Training.
+You have
+proficiency with rapiers and longswords.
+Magical Versatility.
+You know a cantrip
+of your choice, which can be chosen from
+any spell list. Your spellcasting ability
+score for this cantrip is Intelligence,
+Wisdom, or Charisma (whichever is
+highest).
+Languages.
+You can speak, read, write,
+and sign in Common, Elvish, and one
+other language.
 Hill Dwarf
+Characters raised in the hill dwarf culture
+share a variety of traits in common with one
+another.
+Community Magic.
+You know the
+friends
+cantrip. Once you reach 3rd level,
+you can cast charm person once per rest.
+At 5th level, you can cast
+suggestion
+once per rest. You don’t need material
+components for these spells, and when
+casting them your spellcasting ability is
+Charisma.
+Friendly.
+You are proficient in either
+Deception or Persuasion.
+Wagoner.
+You are either proficient in
+either Animal Handling or with land
+vehicles.
+Ways of the Land.
+You are proficient in
+Survival and gain an expertise die on
+checks using it.
+Languages.
+You can speak, read, write,
+and sign Common, Dwarvish, and two
+additional languages.
 Imperial
+Characters raised in the imperial culture
+share a variety of traits in common with one
+another.
+Conscript.
+You are proficient with light
+armor, spears, and light crossbows.
+Learned Teachers.
+You gain proficiency
+in History and one other skill of your
+choice.
+Local Healers.
+Whenever your hit point
+maximum or one of your ability scores
+would be reduced, it is reduced by half as
+much instead (minimum 1).
+Languages.
+You can speak, read, write,
+and sign Common and one other
+language.
 Itinerant
+Characters raised as itinerants share a
+variety of traits in common with one another.
+Blending In.
+You gain proficiency with
+the disguise kit.
+Conscientious Socializer.
+The first
+time you interact with strangers in an
+unfamiliar land or region, you gain an
+expertise die to the first Charisma check
+you make. This trait does not work on
+groups if at least one person in a group
+knows you.
+I Know Someone.
+You gain one
+additional connection, which you can
+choose from any background other than
+your own.
+Many Cultures.
+You gain proficiency in
+Culture. In addition, choose Intelligence
+or Wisdom. You gain an expertise die on
+ability checks using the chosen ability
+score that are made to understand the
+social customs of, interact with, or recall
+knowledge about individuals, objects, or
+environments associated with any culture
+or society you have been surrounded by
+for a month or longer.
+Motive and Reason.
+Choose one of the
+following:
+Homeland Seeker:
+You gain
+proficiency in Arcana and History.
+Labor Migrant:
+You are proficient with
+a set of artisan’s tools and one skill of
+your choice.
+Shadow Exile:
+You are proficient in
+Deception or Stealth. If you pick Stealth,
+once between rests you can make a
+Stealth check to replace a Perception
+check. If you pick Deception, once
+between rests you can make a
+Deception check to replace an Insight
+check.
+Refugee:
+You are proficient in
+Survival, and when in an urban
+environment can roll Survival checks
+when using Intimidation or Persuasion.
+Languages.
+You can speak, read, write,
+and sign Common and three additional
+languages.
 Kithbáin Halfling
+Characters raised in the kithbáin halfling
+culture share a variety of traits in common
+with one another.
+Superior Darkvision.
+You have
+darkvision to 60 feet, or the range of your
+existing darkvision increases by 60 feet
+.
+Sunlight Sensitivity.
+You have
+disadvantage on attack rolls and on
+Perception checks that rely on sight when
+you, the target of your attack, or whatever
+you are trying to perceive is in direct
+sunlight.
+The Ken.
+You can cast
+telepathic bond
+without the need for material components
+once per rest.
+Without Secrets.
+You are proficient in
+Insight, and you gain an expertise die on
+checks made with it.
+Languages.
+You can speak, read, write,
+and sign Common, Halfling, and Sylvan.
 Lone Wanderer
+Characters raised as lone wanderers
+share a variety of traits in common with one
+another.
+Culture of My Own.
+You gain four skill
+or tool proficiencies of your choice.
+Heirloom.
+Choose one weapon worth
+100 gold or less. You begin play with a
+masterwork version of that weapon.
+Languages.
+You can speak, read, write,
+and sign Common and two additional
+languages.
 Mountain Dwarf
-Mistbairn Halfling
+Characters raised in the mountain dwarf
+culture share a variety of traits in common
+with one another.
+Dwarven Weapon Training.
+You have
+proficiency with the battleaxe, handaxe,
+light hammer, and warhammer.
+Dwarven Armor Training.
+You have
+proficiency with light and medium armor.
+Heart of the Forge.
+You have
+resistance to fire damage. In addition, you
+have proficiency in Engineering.
+Mountain Born.
+You’re acclimated to
+high and low altitudes, including
+elevations above 20,000 feet or depths
+below 20,000 feet. You’re also naturally
+adapted to cold climates.
+Stonecunning.
+Whenever you make a
+History check related to the origin of
+stonework, you are considered proficient
+in the History skill and gain an expertise
+die.
+Languages.
+You can speak, read, write,
+and sign Common, Dwarvish, and one
+other language.
+Mustbairn Halfling
+Characters raised in the mustbairn culture
+share a variety of traits in common with one
+another.
+Child of the Soil.
+You ignore difficult
+terrain caused by any form of earth or
+soil, such as mud, or mountainous terrain.
+In addition, you know the
+druidcraft
+cantrip.
+Earthspeak.
+You can attempt to divine
+the earth’s wisdom (as the
+augury
+spell)
+by submerging your feet or hands into
+mud or soil. You can’t use this trait again
+until after you finish a rest.
+Wild and Unshackled.
+You have the
+Chaotic alignment for the purposes of any
+spell or ability that would detect or affect
+Chaotic creatures. In addition, you gain
+proficiency in two of the following skills:
+Acrobatics, Animal Handling, Nature,
+Religion, or Survival.
+Languages.
+You can speak, read, write,
+and sign Common, Halfling, and Terran.
 Nomad
+Characters raised as nomads share a
+variety of traits in common with one another.
+Nature Minded.
+You are proficient in
+Animal Handling and Survival, and either
+Medicine, Nature, or Perception.
+On the Road Again.
+You are proficient
+with land vehicles and tinker’s tools. You
+can use tinker’s tools to repair a land
+vehicle you have travelled in for at least 1
+month, and gain an expertise die on any
+checks made to do so. Additionally, you
+gain an expertise die on checks made to
+control or navigate a land vehicle.
+Sense Weather.
+After observing an
+outside area for 1 minute, you can predict
+the weather within the next 24 hours. You
+cannot foresee magical changes, but you
+can use an action to make an Insight or
+Perception check to notice them.
+Languages.
+You can speak, read, write,
+and sign Common and two additional
+languages.
 Settler
+Characters raised in the settler culture
+share a variety of traits in common with one
+another.
+Claim Staker.
+Whenever you begin a
+rest, you can choose to spend the first
+hour of that rest making the area into a
+fortified position for the duration. While
+resting in a fortified position, the ground in
+a 60-foot radius area around you is
+considered difficult terrain for any
+creatures other than those you consider
+allies. In addition, the first time a hidden
+creature enters the fortified area, it makes
+a Dexterity saving throw (DC 8 + your
+Wisdom modifier + your proficiency
+bonus). On a failed save, the creature
+inadvertently makes loud noises and is no
+longer hidden.
+Frontier Survival.
+You are proficient in
+the Insight and Survival skills.
+Strange Forager.
+You gain an expertise
+die on any check made to determine if
+something is poisonous.
+Languages.
+You can speak, read, write,
+and sign Common, and two additional
+languages.
 Shadow Elf
+Characters raised in the shadow elf culture
+share a variety of traits in common with one
+another.
+Superior Darkvision.
+You have
+darkvision to 60 feet, or the range of your
+existing darkvision increases by 60 feet
+.
+Shadow Elf Weapon Training.
+You
+have proficiency with rapiers and hand
+crossbows.
+Shadow Lore.
+You know a cantrip:
+either
+dancing lights
+or
+minor illusion
+.
+Once you reach 3rd level, you can cast
+faerie fire
+once per rest. At 5th level, you
+can cast
+darkness
+once per rest. You
+don’t need material components for these
+spells, and when casting them your
+spellcasting ability is Intelligence,
+Wisdom, or Charisma (whichever is
+highest).
+Languages.
+You can speak, read, write,
+and sign Common, Elvish, and
+Undercommon.
 Steamforged
+Characters raised in the steamforged
+culture share a variety of traits in common
+with one another.
+Mind Like a Steel Trap.
+You have
+proficiency in either History, Investigation,
+or Nature, and you gain an expertise die
+on checks made using the chosen skill.
+Tech Savvy.
+You have proficiency with
+tinker’s tools and Engineering, plus one
+other artisan’s tool of your choice.
+War Scholar.
+Choose one of the
+following:
+Student of Martial Arts:
+When you
+replace an attack or use an action to
+Disarm, Grapple, Overrun, Shove, or
+Tumble, you gain an expertise die.
+Student of Martial Science:
+Choose
+one 1st degree combat maneuver from
+any tradition. You can use this combat
+maneuver once without spending
+exertion. You can’t use it again until you
+finish a rest.
+Languages.
+You can speak, read, write,
+and sign in Common and one other
+language.
 Stoic Orc
+Characters raised in the stoic culture share
+a variety of traits in common with one
+another.
+Clarity of Mind.
+You have advantage on
+saving throws made to resist being
+charmed or frightened.
+Stoic Traditions.
+You gain proficiency
+in one of the following skills: Arcana,
+History, Insight, Medicine, Nature, or
+Religion.
+Ritualistic Focus.
+You know two
+1st-level spells of your choice. These
+spells must have the ritual tag and you
+may only cast them as rituals. Wisdom is
+your spellcasting ability for these spells.
+In addition, you may cast other spells you
+learn as rituals if those spells have the
+ritual tag.
+Languages.
+You can speak, read, write,
+and sign Common and Orc.
 Stoneworthy
+Characters raised in the stoneworthy
+culture share a variety of traits in common
+with one another.
+Focused Patience.
+Once between
+rests, you can do one of the following:
+Concentrate:
+You gain an expertise
+die on a Constitution saving throw made
+to maintain concentration.
+Persist:
+You may reattempt a failed
+ability check.
+Natural Barterer.
+When bartering,
+haggling, or negotiating an exchange of
+goods, you gain an expertise die on
+Intimidation and Persuasion checks, and
+you may always choose which ability
+score to use for these rolls (Intelligence,
+Wisdom, or Charisma).
+Natural Survivalist.
+You gain
+proficiency in Survival.
+Temporary Expert.
+Each time you gain
+a level, you may choose to lose
+proficiency in one skill or tool and gain
+proficiency in a different skill or tool in its
+place. You cannot trade a skill proficiency
+for a tool proficiency, and vice versa.
+Versatile Crafter.
+You may spend 4
+hours between rests crafting one
+non-metal tool or simple weapon, or five
+pieces of ammunition, provided you have
+access to the materials needed and the
+final cost of the items does not exceed 5
+gold.
+Languages.
+You can speak, read, write,
+and sign Common and one other
+language.
 Stout Halfling
+Characters raised in the stout halfling
+culture share a variety of traits in common
+with one another.
+Borough Cooking.
+Whenever you
+begin a rest, you and up to 6 allies can
+each consume 1 Supply to partake in
+your borough cooking, gaining 1d6
+temporary hit points.
+Home Gardening.
+You gain proficiency
+in either Animal Handling or Nature.
+Memoirist.
+You gain proficiency with
+calligrapher’s supplies. In addition, you
+gain an expertise die on Intelligence
+checks to recall details about past events
+you took part in by first checking your
+journals.
+Languages.
+You can speak, read, write,
+and sign Common, Halfling, and one
+other language.
 Tinker Gnome
+Characters raised in the tinker gnome
+culture share a variety of traits in common
+with one another.
+Cunning Creative.
+You gain proficiency
+with tinker’s tools, Engineering, and either
+Arcana or History. You gain an expertise
+die whenever you use them to make a
+check related to alchemical, magical, or
+technological items.
+By spending 1 hour and 10 gold worth of
+materials, you may build a clockwork
+device that has an AC of 5 and 1 hit point.
+The device will cease to function after 24
+hours, or if you choose to dismantle it,
+unless you spend an hour maintaining it.
+An hour can be spent to repair a device
+that has ceased to function. You can have
+up to three devices functioning at a time.
+Each device has one of the following
+functions:
+Audiophone:
+When started, this device
+plays a pre-recorded sound at a
+moderate volume. The device stops
+playing when it reaches the end of the
+recording, or when shut off. You can
+use your action to record any 1 minute
+of audio, and can use a bonus action to
+start and shut off the device.
+Clockwork Figure:
+This figure can be a
+Tiny animal, monster, or even a
+humanoid. When placed on the ground,
+you can use a bonus action to direct the
+figure to march up to 10 feet in a
+direction of your choice. You can
+choose to have the figure make a noise
+that is appropriate to the creature it
+represents, or to have it be silent. If you
+choose for the figure to be silent, you
+can instead equip it with a small flame
+that sheds dim light 5 feet in front of the
+figure.
+Flame Box:
+When a bonus action is
+used to activate this device it creates a
+small flame that can be used to light a
+candle, torch, or campfire. Alternatively,
+you can use a bonus action to shoot a
+small ball of fire from the device as a
+ranged weapon attack with a range of
+30 feet, dealing 1d6 + 1 fire damage.
+You are considered proficient with the
+flame box. Using the device this way
+damages it, and it must be repaired
+over the course of a rest before it can
+be used again.
+Sensor:
+This device can be attached
+to a wall or any smooth, sturdy surface.
+When placed, it begins monitoring the
+area around it. Choose one sort of
+activity to monitor: noise or movement.
+The device detects these things up to
+30 feet around it, including through
+openings, but cannot sense through
+total cover. The device relays the
+information back to you telepathically,
+and can share either clips of sound
+(limited to 30 seconds at a time, with a
+minimum of 10 minutes in between
+relays) or information on the size and
+number of creatures moving in the area.
+Languages.
+You can speak, read, write,
+and sign Common, Gnomish, and one other
+language.
 Tunnel Halfling
+Characters raised in the tunnel halfling
+culture share a variety of traits in common
+with one another.
+Fleet of Foot.
+Your speed increases by
+5 feet.
+Rebellious Tactics.
+You gain
+proficiency with one of the following skills:
+Acrobatics, Deception, Nature, or Stealth.
+Slippery.
+When you are grappled, you
+can use your reaction to automatically
+escape that grapple. Once you have used
+this trait, you cannot do so again until you
+finish a rest.
+Trained Filcher.
+You gain proficiency in
+Sleight of Hand, and you gain an
+expertise die when picking a pocket or
+otherwise taking an item without notice.
+Languages.
+You can speak, read, write,
+and sign Common and Halfling.
 Tyrannized
+Characters raised in the tyrannized culture
+share a variety of traits in common with one
+another.
+All Hail the Tyrant.
+You gain proficiency
+in either Deception or Intimidation.
+Defiant Will.
+You gain an expertise die
+on saving throws made to resist being
+charmed, frightened, paralyzed,
+poisoned, stunned, or put to sleep.
+Saving Face.
+If you miss with an attack
+roll or fail an ability check, you can gain a
+bonus to the roll equal to the number of
+allies you can see within 30 feet of you
+(maximum +3), possibly changing a
+failure into a success. Once you use this
+trait, you can’t use it again until you finish
+a short or rest.
+Scars of the Scourge.
+Choose either
+scars or scourge, and then choose one of
+the following damage types: acid, cold,
+fire, force, lightning, necrotic, poison,
+psychic, radiant, or thunder.
+Scars:
+You have resistance to the
+chosen damage type.
+Scourge:
+As a bonus action, you can
+enhance the next attack you make this
+turn. If that attack hits, it deals extra
+damage of the chosen type equal to
+your proficiency bonus. However, the
+sting of the scourge lessens after the
+initial strike, so after you deal this extra
+damage to a creature, this trait cannot
+deal extra damage to it during the same
+combat.
+Languages.
+You can speak, read, write,
+and sign Common and one other
+language.
 Villager
+Characters raised in the village culture
+share a variety of traits in common with one
+another.
+Farm Life.
+You gain proficiency in
+Animal Handling.
+Sharpened Tools.
+You are proficient
+with improvised weapons.
+Tall Tales.
+You may always choose to
+use Wisdom when making History,
+Nature, or Religion checks. However, the
+Narrator may decide that the results of a
+check made in this way are distorted or
+exaggerated forms of the truth.
+Village Watch.
+You gain an expertise
+die on Perception checks made while
+keeping watch during a rest.
+Languages.
+You can speak, read, sign,
+and write Common and one other
+language.
 Warhordling
+Characters raised in the warhordling
+culture share a variety of traits in common
+with one another.
+Aggressive.
+As a bonus action, you can
+move up to your Speed towards an
+enemy that you can see or hear.
+Menacing.
+You gain proficiency in
+Intimidation.
+War Horde Weapon Training.
+You are
+proficient with two martial weapons of
+your choice and with light armor. You are
+also able to cobble together functional if
+somewhat ramshackle weapons from
+whatever you have on hand. You can
+create a ramshackle version of any
+simple weapon (except crossbows) with
+10 minutes of work if you have access to
+simple materials such as common
+household items, the rusted scraps found
+among battlefields, or the bounty of the
+forest. Ramshackle weapons created in
+this way function identically to their
+normal counterparts, except their gold
+value is always 0 and they break and
+become useless if you critically fumble.
+Wartime Scrounger.
+Once per rest, you
+can spend 4 hours of time to locate
+Supply for yourself and one other
+creature while traveling through urban
+environments, warzones, and battlefields.
+Languages.
+You can speak, read, write,
+and sign Common and one other
+language.
 Wildling
+Characters raised in the wildling culture
+share a variety of traits in common with one
+another.
+Enhanced Vision.
+You gain proficiency
+in Perception. Choose one of the
+following.
+Nightwalker:
+You gain an expertise die
+on Investigation and Perception checks
+made in moonlight or starlight.
+Sunseeing:
+You gain an expertise die
+on Investigation and Perception checks
+made in daylight.
+Expert Forager.
+Once per rest, you can
+spend 4 hours of time to locate Supply for
+yourself and one other creature, or
+magical reagents worth up to 5 gold.
+Internal Clock.
+By observing the
+environment when on your home plane,
+you can estimate the time of year down to
+within a week of the actual date. When
+you are outdoors, you know the time of
+day.
+Living Off The Land.
+You gain
+proficiency in Nature, and can always
+choose to use Wisdom when making a
+Nature check. Choose one of the
+following:
+Agriculturalist:
+You gain an expertise
+die on Persuasion checks made against
+farmers, horticulturalists, and those who
+cultivate for a living, and when making
+an ability check to use a land vehicle.
+Beastwarden:
+When you have a
+hunting animal such as a falcon or
+hunting dog assisting you, you gain an
+expertise die on checks made to hunt or
+track. In addition, you gain an expertise
+die on Animal Handling checks.
+Land Hunter:
+You gain an expertise
+die on Intimidation and Stealth checks.
+Additionally, you can march up to 12
+hours before you need to save against
+fatigue.
+Water Drifter:
+You gain an expertise
+die when making an ability check to use
+a water vehicle. In addition, you gain an
+expertise die on Athletics checks, and
+you can hold your breath for up to 15
+minutes by using an action to prepare to
+do so.
+Weather Sense.
+Pick a terrain type.
+After observing the area for 1 minute, you
+can predict the weather in this terrain
+within the next 24 hours. You cannot
+foresee magical changes, but you can
+use an action to make an Insight or
+Perception check to notice them. When
+you have successfully predicted the
+weather, you gain an expertise die on
+saving throws made against its effects.
+Languages.
+You can speak, read, write,
+and sign Common and one other
+language.
 Wood Elf
+Characters raised in the wood elf culture
+share a variety of traits in common with one
+another.
+Fleet of Foot.
+Your Speed increases by
+5 feet.
+Nature’s Ally.
+You can cast
+animal
+friendship
+without material components
+once per rest. Your spellcasting ability for
+this spell is Intelligence, Wisdom, or
+Charisma (whichever is highest).
+Nature’s Touch.
+Choose one of the
+following.
+Way with Animals:
+You gain
+proficiency in Animal Handling and with
+land vehicles.
+Way with Plants:
+You gain proficiency
+in Nature and with herbalism kits.
+Treeborne Scout.
+You gain a climb
+speed equal to your Speed.
+Wood Elf Weapon Training.
+You are
+proficient with longbows and shortswords.
+Languages.
+You can speak, read, write,
+and sign Common and Elvish.
 
 Dragonborn: Dragonbound, Dragoncult
 Dwarf: Deep Dwarf, Forsaken, Godbound, Hill Dwarf, Mountain Dwarf
