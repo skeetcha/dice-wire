@@ -406,19 +406,31 @@ var heritage_gifts: Dictionary = {
 	]
 }
 
-func _ready():
-	pass
-
-func heritage_button(val: int, toggle: bool):
+func heritage_button(toggle: bool, instance: Node):
+	var index = instance.get_meta("index", -1)
+	var key = instance.get_meta("key", "")
+	
 	if heritage == 0 and toggle:
-		heritage = val
-	elif heritage == val and not toggle:
+		heritage = index
+	elif heritage == index and not toggle:
 		heritage = 0
 		$Grid/MiddlePanel/NextButton.visible = false
 	else:
-		heritage = val
+		heritage = index
 	
 	heritage_changed.emit(heritage)
+	features(key, toggle)
+
+func _ready():
+	for i in range($Grid/HeritagePanel/VBoxContainer/Grid.get_child_count()):
+		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).add_user_signal("toggled_with_instance", [
+			{ "name": "toggle", "type": TYPE_BOOL },
+			{ "name": "instance", "type": PROPERTY_HINT_NODE_TYPE }
+		])
+		
+		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).toggled.connect(heritage_button.bind($Grid/HeritagePanel/VBoxContainer/Grid.get_child(i)))
+		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).set_meta("index", i + 1)
+		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).set_meta("key", $Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).name.to_lower().replace("button", ""))
 
 func class_button(val: int, toggle: bool):
 	if class_val == 0 and toggle:
@@ -458,6 +470,8 @@ func features(key: String, toggled: bool):
 		for i in len(heritage_gifts[key]):
 			var gift: Dictionary = heritage_gifts[key][i]
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftItems.add_item(gift["name"])
+		
+		$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftItems.ready.emit()
 	else:
 		for child in $Grid/HeritagePanel/VBoxContainer/Features/Container.get_children():
 			$Grid/HeritagePanel/VBoxContainer/Features/Container.remove_child(child)
@@ -468,7 +482,7 @@ func features(key: String, toggled: bool):
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.remove_child(child)
 
 func _on_gift_items_item_selected(index):
-	var keys: Array[String] = ["", "dwarf", "elf", "halfling", "human", "dragonborn", "gnome", "orc", "planetouched"]
+	var keys: Array[String] = ["", "dragonborn", "dwarf", "elf", "gnome", "halfling", "human", "orc", "planetouched"]
 	
 	if heritage == 0:
 		# Null
@@ -488,38 +502,6 @@ func _on_gift_items_item_selected(index):
 			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftFeatures.add_child(label)
 		
 		$Grid/MiddlePanel/NextButton.visible = true
-
-func _on_dwarf_button_toggled(toggled_on):
-	heritage_button(1, toggled_on)
-	features("dwarf", toggled_on)
-
-func _on_elf_button_toggled(toggled_on):
-	heritage_button(2, toggled_on)
-	features("elf", toggled_on)
-
-func _on_halfling_button_toggled(toggled_on):
-	heritage_button(3, toggled_on)
-	features("halfling", toggled_on)
-
-func _on_human_button_toggled(toggled_on):
-	heritage_button(4, toggled_on)
-	features("human", toggled_on)
-
-func _on_dragonborn_button_toggled(toggled_on):
-	heritage_button(5, toggled_on)
-	features("dragonborn", toggled_on)
-
-func _on_gnome_button_toggled(toggled_on):
-	heritage_button(6, toggled_on)
-	features("gnome", toggled_on)
-
-func _on_orc_button_toggled(toggled_on):
-	heritage_button(7, toggled_on)
-	features("orc", toggled_on)
-
-func _on_planetouched_button_toggled(toggled_on):
-	heritage_button(8, toggled_on)
-	features("planetouched", toggled_on)
 
 func move_button(button_array: Array[Node], name_array: Array, name: String):
 	var index: int = name_array.find(name)
@@ -541,7 +523,7 @@ func setup_culture_buttons(forward: bool):
 		var culture_names: Array = culture_buttons.map(func(x) -> String: return x.name.replace("Button", ""))
 		assert(heritage != 0)
 		
-		if heritage == 1:
+		if heritage == 2:
 			# Dwarf
 			# Deep Dwarf, Forsaken, Godbound, Hill Dwarf, Mountain Dwarf
 			move_button(culture_buttons, culture_names, "DeepDwarf")
@@ -549,33 +531,33 @@ func setup_culture_buttons(forward: bool):
 			move_button(culture_buttons, culture_names, "Godbound")
 			move_button(culture_buttons, culture_names, "HillDwarf")
 			move_button(culture_buttons, culture_names, "MountainDwarf")
-		elif heritage == 2:
+		elif heritage == 3:
 			# Elf
 			# Eladrin, High Elf, Shadow Elf, Wood Elf
 			move_button(culture_buttons, culture_names, "Eladrin")
 			move_button(culture_buttons, culture_names, "HighElf")
 			move_button(culture_buttons, culture_names, "ShadowElf")
 			move_button(culture_buttons, culture_names, "WoodElf")
-		elif heritage == 3:
+		elif heritage == 5:
 			# Halfling
 			# Kithbáin Halfling, Mistbairn Halfling, Stout Halfling, Tunnel Halfling
 			move_button(culture_buttons, culture_names, "KithbainHalfling")
 			move_button(culture_buttons, culture_names, "MistbairnHalfling")
 			move_button(culture_buttons, culture_names, "StoutHalfling")
 			move_button(culture_buttons, culture_names, "TunnelHalfling")
-		elif heritage == 4:
+		elif heritage == 6:
 			# Human
 			# Cosmopolitan, Imperial, Settler, Villager
 			move_button(culture_buttons, culture_names, "Cosmopolitan")
 			move_button(culture_buttons, culture_names, "Imperial")
 			move_button(culture_buttons, culture_names, "Settler")
 			move_button(culture_buttons, culture_names, "Villager")
-		elif heritage == 5:
+		elif heritage == 1:
 			# Dragonborn
 			# Dragonbound, Dragoncult
 			move_button(culture_buttons, culture_names, "Dragonbound")
 			move_button(culture_buttons, culture_names, "Dragoncult")
-		elif heritage == 6:
+		elif heritage == 4:
 			# Gnome
 			# Deep Gnome, Forest Gnome, Forgotten Folx, Tinker Gnome
 			move_button(culture_buttons, culture_names, "DeepGnome")
