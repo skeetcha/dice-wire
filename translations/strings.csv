@@ -493,3 +493,52 @@ CULTURE_WOOD4_DESC,You gain a climb speed equal to your Speed.
 CULTURE_WOOD5_NAME,Wood Elf Weapon Training
 CULTURE_WOOD5_DESC,You are proficient with longbows and shortswords.
 CULTURE_WOOD_LANG,"You can speak, read, write, and sign Common and Elvish."
+HERITAGE_SPEED,Speed
+HERITAGE_DARKVISION,Darkvision
+HERITAGE_DRAG_SPEED,Your walking speed is 30 feet.
+HERITAGE_DRAG2_NAME,Dragon Breath
+HERITAGE_DRAG2_DESC,"You can use your dragon breath as an action.
+Choose the type of damage dealt by your breath weapon from the following list: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder.
+Additionally, choose between a 30-foot line that is 5 feet wide or a 15-foot cone for the area that your breath weapon affects. Each creature in the breath's area makes a Dexterity saving throw. If your breath weapon deals psychic damage, a Wisdom saving throw is made instead of Dexterity; if cold, necrotic, poison, radiant, or thunder, a Constitution saving throw. The DC is 8 + your Constitution modifier + your proficiency bonus.
+A creature takes 2d6 damage on a failed saving throw, or half damage on a success. The damage increases to 3d6 at 4th level, 4d6 at 9th level, 5d6 at 14th level, and 6d6 at 19th level.
+After you use your dragon breath, you can't use it again until you finish a rest."
+HERITAGE_DWAR_SPEED,You have a walking speed of 25 feet. Your Speed is not reduced by wearing heavy armor or wielding tower shields.
+HERITAGE_DWAR_DARKVISION,You have darkvision to 60 feet.
+HERITAGE_DWAR3_NAME,Creator's Blessing
+HERITAGE_DWAR3_DESC,"You gain proficiency with one set of artisan's tools (either brewer's supplies or mason's tools) or smith's tools. During a long rest, you can use these tools for crafting instead of sleeping and still receive the full benefits of the long rest."
+HERITAGE_DWAR4_NAME,Tough
+HERITAGE_DWAR4_DESC,Your character level is added to your hit point maximum.
+HERITAGE_ELF_SPEED,You have a walking speed of 30 feet.
+HERITAGE_ELF_DARKVISION,You have darkvision to 60 feet.
+HERITAGE_ELF3_NAME,Fey Ancestry
+HERITAGE_ELF3_DESC,"You gain an expertise die on saving throws against being charmed, and you are immune to magical effects that would put you to sleep."
+HERITAGE_ELF4_NAME,Trance
+HERITAGE_ELF4_DESC,"Instead of sleeping, elves enter a trance state. When you take a long rest, you spend 4 hours in your trance state (instead of sleeping for 6 hours). During the trance you suffer no penalty to passive Perception. A long rest remains 8 hours for you as normal, and the remainder of the time must be filled only with light activity."
+HERITAGE_GNOM_SPEED,You have a walking speed of 25 feet.
+HERITAGE_GNOM_DARKVISION,You have darkvision to 60 feet.
+HERITAGE_GNOM3_NAME,Gnome Cunning
+HERITAGE_GNOM3_DESC,"You gain an expertise die on Intelligence, Wisdom, and Charisma saving throws made against spells and magical effects."
+HERITAGE_GNOM4_NAME,Gnomish Magic
+HERITAGE_GNOM4_DESC,"You know the [i]minor illusion[/i] cantrip. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (whichever is highest)."
+HERITAGE_HALF_SPEED,You have a walking speed of 25 feet.
+HERITAGE_HALF2_NAME,Fearless
+HERITAGE_HALF2_DESC,You are immune to the effects of the frightened condition.
+HERITAGE_HALF3_NAME,Nimble Steps
+HERITAGE_HALF3_DESC,"If a creature is at least one size larger than you, you can move through its space."
+HERITAGE_HALF4_NAME,Halfling's Luck
+HERITAGE_HALF4_DESC,"When you make an ability check, attack roll, or saving throw and roll a 1, you can choose to roll again, taking the second result."
+HERITAGE_HUMA_SPEED,You have a walking speed of 30 feet.
+HERITAGE_HUMA2_NAME,Fast Learner
+HERITAGE_HUMA2_DESC,"You gain proficiency in one additional skill of your choice. In addition, you require half as much time as normal to train yourself in the use of a suit of armor, tool, or weapon during downtime."
+HERITAGE_HUMA3_NAME,Intrepid
+HERITAGE_HUMA3_DESC,"Once between rests, when you make an ability check, attack roll, or saving throw, you can choose to gain an expertise die on that roll."
+HERITAGE_ORC_SPEED,You have a walking speed of 30 feet.
+HERITAGE_ORC_DARKVISION,You have darkvision to 60 feet.
+HERITAGE_ORC3_NAME,Heavy Lifter
+HERITAGE_ORC3_DESC,"When determining your carrying capacity and the weight that you can push, drag, or lift, your size is considered to be Large."
+HERITAGE_ORC4_NAME,Mighty Attacks
+HERITAGE_ORC4_DESC,"When you critically hit with a melee weapon attack, roll one of the weapon's damage dice again and add the result to the attack's damage."
+HERITAGE_PLAN_SPEED,You have a walking speed of 30 feet.
+HERITAGE_PLAN_DARKVISION,You have darkvision to 60 feet.
+HERITAGE_PLAN3_NAME,Immortal Blessing
+HERITAGE_PLAN3_DESC,"Once between long rests, when damage would reduce you to 0 hit points, you are instead reduced to 1 hit point."
