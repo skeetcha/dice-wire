@@ -542,3 +542,95 @@ HERITAGE_PLAN_SPEED,You have a walking speed of 30 feet.
 HERITAGE_PLAN_DARKVISION,You have darkvision to 60 feet.
 HERITAGE_PLAN3_NAME,Immortal Blessing
 HERITAGE_PLAN3_DESC,"Once between long rests, when damage would reduce you to 0 hit points, you are instead reduced to 1 hit point."
+HGIFT_DRAG1_NAME,Draconic Armor
+HGIFT_DRAG1_FEAT1_NAME,Claws
+HGIFT_DRAG1_FEAT1_DESC,"You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes that deal slashing damage equal to 1d4 + your Strength modifier."
+HGIFT_DRAG2_NAME,Draconic Fins
+HGIFT_DRAG2_FEAT1_NAME,Swimmer
+HGIFT_DRAG2_FEAT1_DESC,You have a swimming speed of 30 feet and you can hold your breath for up to 15 minutes at a time.
+HGIFT_DRAG2_FEAT2_NAME,Deep Darkvision
+HGIFT_DRAG2_FEAT2_DESC,"You have darkvision to 60 feet. In addition, your eyes are perfectly adapted for spotting movement at depth, and the radius of your darkvision increases to 120 feet while underwater."
+HGIFT_DRAG2_FEAT3_NAME,Hard to Hit
+HGIFT_DRAG2_FEAT3_DESC,"While you aren't wearing armor or your only armor is a shield, your AC is 12 + your Dexterity modifier."
+HGIFT_DRAG3_NAME,Draconic Wings
+HGIFT_DRAG3_FEAT1_NAME,Flight
+HGIFT_DRAG3_FEAT1_DESC,"You have a fly speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor. Whenever you spend 3 full consecutive rounds airborne without landing, you gain a level of fatigue. Any fatigue gained in this way is removed upon finishing a rest."
+HGIFT_DWAR1_NAME,Dwarven Stability
+HGIFT_DWAR1_FEAT1_NAME,Dwarven Stability
+HGIFT_DWAR1_FEAT1_DESC,"You gain an expertise die on saving throws against effects that would knock you prone, and on saving throws made to resist being shoved."
+HGIFT_DWAR2_NAME,Dwarven Toughness
+HGIFT_DWAR2_FEAT1_NAME,Dwarven Toughness
+HGIFT_DWAR2_FEAT1_DESC,"As a bonus action, you gain a number of temporary hit points equal to 1d10 plus your level. These temporary hit points last for 1 minute. You can't use this trait again until after you finish a long rest.
+You gain an expertise die on saving throws against poison, and you have resistance against poison damage."
+HGIFT_ELF1_NAME,Mystic Rapport
+HGIFT_ELF1_FEAT1_NAME,Arcane Sensitivity
+HGIFT_ELF1_FEAT1_DESC,You gain proficiency with Arcana.
+HGIFT_ELF1_FEAT2_NAME,Arcane Empathy
+HGIFT_ELF1_FEAT2_DESC,"You can speak telepathically to a creature within 30 feet of you that you can see. Though this grants the creature no ability to respond telepathically, they can understand you if you share a language. You can speak in this way to one creature at a time."
+HGIFT_ELF2_NAME,Prescient Vision
+HGIFT_ELF2_FEAT1_NAME,Glance the Future
+HGIFT_ELF2_FEAT1_DESC,"Your eyes can see a few moments into the future, and your mind apprehends the divergent possibilities. Once between rests you can use a bonus action to roll a d20 and record the result. Before the end of your next rest, when a creature you can see within 60 feet makes an ability check, attack roll, or saving throw, you can use your reaction to replace their roll with your recorded result. When the creature is also rolling an expertise die, only the d20 roll is replaced. When the creature is rolling more than one d20, such as when it has advantage or when a halfling is using their Halfling's Luck trait, the replacement applies to the creature's final roll."
+HGIFT_ELF3_NAME,Preternatural Awareness
+HGIFT_ELF3_FEAT1_NAME,Keen Senses
+HGIFT_ELF3_FEAT1_DESC,You gain proficiency in Perception.
+HGIFT_ELF3_FEAT2_NAME,Prophetic Instincts
+HGIFT_ELF3_FEAT2_DESC,"Your ability to detect danger is nearly supernatural. You gain a bonus to initiative rolls equal to your Wisdom modifier (minumum 1), and you can't be surprised while conscious (including during your Trance)."
+HGIFT_GNOM1_NAME,Gnomish Agility
+HGIFT_GNOM1_FEAT1_NAME,Gnomish Agility
+HGIFT_GNOM1_FEAT1_DESC,You gain +1 to your Armor Class against creatures of a size category larger than your own.
+HGIFT_GNOM2_NAME,Into Mist
+HGIFT_GNOM2_FEAT1_NAME,Into Mist
+HGIFT_GNOM2_FEAT1_DESC,"Once between rests, as a bonus action or as a reaction immediately after taking damage, you can turn invisible. The invisibility lasts until the end of your next turn, and it ends early if you attack, deal damage, or cast a spell."
+HGIFT_HALF1_NAME,Burrowing Claws
+HGIFT_HALF1_FEAT1_NAME,Burrow
+HGIFT_HALF1_FEAT1_DESC,"You have a burrowing speed of 10 feet. You can use your burrowing speed to move through nonmagical sand, loose earth, loamy soil, mud, or snow, but not solid rock. You do not naturally leave any sort of tunnel behind but you can attempt to create a 5-foot by 5-foot wide tunnel in earth, soil, or snow by spending extra time and effort shoring it up and adding support. This reduces your burrowing speed to 5 feet every 15 minutes."
+HGIFT_HALF1_FEAT2_NAME,Claws
+HGIFT_HALF1_FEAT2_DESC,"Your nails grow into strong shovel-like claws. The claws are natural weapons, which you can use to make unarmed strikes that deal slashing damage equal to 1d4 + your Strength modifier."
+HGIFT_HALF2_NAME,Tuft Feet
+HGIFT_HALF2_FEAT1_NAME,Big Feet
+HGIFT_HALF2_FEAT1_DESC,You gain an expertise die on checks and saving throws made to resist being knocked prone.
+HGIFT_HALF2_FEAT2_NAME,Thick Soles
+HGIFT_HALF2_FEAT2_DESC,"You are immune to damage from sharp terrain hazards (such as caltrops, broken glass, or the [i]spike growth[/i] spell) and ignore difficult terrain caused by them. Additionally, other kinds of difficult terrain reduce your movement speed by 5 feet instead of halving it."
+HGIFT_HALF3_NAME,Twilight-Touched
+HGIFT_HALF3_FEAT1_NAME,Darkvision
+HGIFT_HALF3_FEAT1_DESC,You have darkvision to 60 feet.
+HGIFT_HALF3_FEAT2_NAME,Telepathy
+HGIFT_HALF3_FEAT2_DESC,"You can speak telepathically to a creature within 30 feet of you that you can see. Though this grants the creature no ability to respond telepathically, they can understand you if you share a language. You can speak in this way to one creature at a time."
+HGIFT_HUMA1_NAME,Diehard Survivor
+HGIFT_HUMA1_FEAT1_NAME,Feast and Famine
+HGIFT_HUMA1_FEAT1_DESC,You can go a number of days equal to your Constitution modifier without suffering any fatigue from lack of Supply. Afterwards you require twice as much Supply for as many days as you went without.
+HGIFT_HUMA1_FEAT2_NAME,Radical Perserverance
+HGIFT_HUMA1_FEAT2_DESC,You only die after failing 4 death saving throws instead of 3.
+HGIFT_HUMA2_NAME,Ingenious Focus
+HGIFT_HUMA2_FEAT1_NAME,Inexorable Concentration
+HGIFT_HUMA2_FEAT1_DESC,"When you fail a Constitution saving throw to maintain concentration, you can immediately reroll it, taking the new result. You may use this trait a number of times equal to your Intelligence modifier (minimum 1), and regain all expended uses after a long rest."
+HGIFT_HUMA2_FEAT2_NAME,Resident Expert
+HGIFT_HUMA2_FEAT2_DESC,"Choose two tools with which you are proficient, or a skill with which you are proficient from Animal Handling, Arcana, Culture, Engineering, History, Medicine, Nature, or Religion. When you make a check with that tool or skill and the d20 shows a natural result of less than 10, you can count the d20 result as being 10."
+HGIFT_HUMA3_NAME,Spirited Traveler
+HGIFT_HUMA3_FEAT1_NAME,Desperate Dash
+HGIFT_HUMA3_FEAT1_DESC,"Once between rests, when you take the Dash action, your movement this turn does not provoke opportunity attacks. During this movement, you gain an expertise die on Acrobatics checks made to avoid hazards and Dexterity saving throws."
+HGIFT_HUMA3_FEAT2_NAME,Marathon Runner
+HGIFT_HUMA3_FEAT2_DESC,"The first time between each long rest you would gain a level of fatigue, you do not gain that level of fatigue. You still suffer a level of fatigue from finishing a long rest without any Supply."
+HGIFT_ORC1_NAME,Just Like Home
+HGIFT_ORC1_FEAT1_NAME,Just Like Home
+HGIFT_ORC1_FEAT1_DESC,"Choose one type of terrain, reflecting the area from which your family hails: arctic, desert, mountain, or swamp. You ignore all naturally created difficult terrain of that type. Additionally, you gain an expertise die on Survival checks made within this terrain type, and gain a type of damage resistance related to your chosen terrain: arctic—cold, desert—fire, mountain—lightning, swamp—poison."
+HGIFT_ORC2_NAME,Ancestral Blessing
+HGIFT_ORC2_FEAT1_NAME,Divine Protection
+HGIFT_ORC2_FEAT1_DESC,You have resistance to radiant damage.
+HGIFT_ORC2_FEAT2_NAME,Touch of Divinity
+HGIFT_ORC2_FEAT2_DESC,"You know the [i]resistance[/i] cantrip. In addition, you can cast the [i]shield[/i] spell once per long rest."
+HGIFT_ORC3_NAME,Magic Adept
+HGIFT_ORC3_FEAT1_NAME,Magic Adept
+HGIFT_ORC3_FEAT1_DESC,"You are born with magic coursing through your veins, and are able to utilize it in a number of ways. You learn one cantrip of your choice from the wizard spell list. At 3rd level, choose one 1st- or 2nd-level spell from the wizard spell list. Once between long rests, you can cast the chosen spell without any material components. A 1st-level spell chosen this way can be cast at 2nd-level using this trait, if the spell allows. Your spellcasting ability for this trait is the same as the ability score used in the spellcasting class in which you have the highest level, or Charisma if you have no levels in a spellcasting class."
+HGIFT_PLAN1_NAME,Aasimar
+HGIFT_PLAN1_FEAT1_NAME,Celestial Legacy
+HGIFT_PLAN1_FEAT1_DESC,"You know the [i]guidance[/i] cantrip. In addition, once between long rests you can use an action to touch a willing creature and restore a number of hit points equal to your level."
+HGIFT_PLAN1_FEAT2_NAME,Divine Protection
+HGIFT_PLAN1_FEAT2_DESC,You have resistance to radiant damage.
+HGIFT_PLAN1_FEAT3_NAME,Language
+HGIFT_PLAN1_FEAT3_DESC,"You have an innate ability to recognize Celestial, and are able to speak, read, write, and sign it."
+HGIFT_PLAN2_NAME,Tiefling
+HGIFT_PLAN2_FEAT1_NAME,Hellish Resistance
+HGIFT_PLAN2_FEAT1_DESC,You have resistance to fire damage.
+HGIFT_PLAN2_FEAT2_NAME,Infernal Legacy
+HGIFT_PLAN2_FEAT2_DESC,"You know the [i]produce flame[/i] cantrip. Once you reach 3rd level, you can cast [i]arcane riposte[/i] (fire damage only) once between long rests. At 5th level, you can cast [i]heat metal[/i] without material components once between long rests. Charisma is your spellcasting ability for these spells."

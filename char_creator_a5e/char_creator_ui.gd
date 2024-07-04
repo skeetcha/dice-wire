@@ -174,7 +174,7 @@ func features(key: String, toggled: bool):
 		
 		for i in len(heritage_gifts[key]):
 			var gift: Dictionary = heritage_gifts[key][i]
-			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftItems.add_item(gift["name"])
+			$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftItems.add_item(tr(gift["name"]))
 		
 		$Grid/HeritagePanel/VBoxContainer/GiftContainer/GiftItems.ready.emit()
 	else:
