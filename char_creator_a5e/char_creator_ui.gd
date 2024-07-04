@@ -77,7 +77,14 @@ func class_button(toggle: bool, instance: Node):
 	else:
 		set_view_panel("class", "Level 1 " + tr(instance.get_text()))
 	
-	roll_values()
+	if class_val == 0:
+		for label in $Grid/CharacterPanel/StarBox.get_children():
+			label.set_text("")
+		
+		for label in $Grid/CharacterPanel/ModBox.get_children():
+			label.set_text("")
+	else:
+		roll_values()
 
 func background_button(toggle: bool, instance: Node):
 	var index = instance.get_meta("index", -1)
@@ -378,6 +385,18 @@ func roll_values():
 		
 		return total
 	
+	var calculate_mod = func(val: int):
+		var mod = floori(float(val - 10) / 2.0)
+		var mstr = ""
+		
+		if mod >= 0:
+			mstr += "+"
+		
+		mstr += str(mod)
+		return mstr
+	
+	var get_str = func(val: int): return "{val}\n{mod}".format({"val": val, "mod": calculate_mod.call(val)})
+	
 	var scores: Array[int]
 	
 	for i in range(6):
@@ -385,4 +404,32 @@ func roll_values():
 		var values: Array[int] = roll[1].filter(func(val): return val != roll[1].min())
 		scores.append(sum.call(values))
 	
-	print(scores)
+	var set_strs = func(key: int, order: Array, scores: Array[int]):
+		for label in $Grid/CharacterPanel/StarBox.get_children():
+			label.set_text("")
+		
+		$Grid/CharacterPanel/StarBox.get_child(key).set_text("⭐")
+		
+		for i in range(len(order)):
+			$Grid/CharacterPanel/ModBox.get_child(i).set_text(get_str.call(scores[order[i]]))
+	
+	scores.sort()
+	scores.reverse()
+	
+	var orders = [
+		[1, [3, 0, 1, 5, 2, 4]], # Adept (DEX,CON,WIS,STR,CHA,INT)
+		[5, [5, 1, 2, 3, 4, 5]], # Bard (CHA,DEX,CON,INT,WIS,STR)
+		[0, [0, 2, 1, 5, 3, 4]], # Berserker (STR,CON,DEX,WIS,CHA,INT)
+		[4, [1, 4, 2, 5, 0, 3]], # Cleric (WIS,STR,CON,CHA,DEX,INT)
+		[4, [4, 1, 2, 5, 0, 3]], # Druid (WIS,DEX,CON,CHA,STR,INT)
+		[0, [0, 2, 1, 4, 3, 5]], # Fighter (STR,CON,DEX,WIS,INT,CHA)
+		[0, [0, 3, 2, 5, 4, 1]], # Herald (STR,CHA,CON,DEX,WIS,INT)
+		[0, [0, 2, 1, 4, 3, 5]], # Marshal (STR,CON,DEX,WIS,INT,CHA)
+		[1, [3, 0, 2, 5, 1, 4]], # Ranger (DEX,WIS,CON,STR,CHA,INT)
+		[1, [5, 0, 1, 3, 2, 4]], # Rogue (DEX,CON,WIS,INT,CHA,STR)
+		[5, [5, 2, 1, 3, 4, 0]], # Sorcerer (CHA,CON,DEX,INT,WIS,STR)
+		[5, [5, 2, 1, 3, 4, 0]], # Warlock (CHA,CON,DEX,INT,WIS,STR)
+		[3, [5, 2, 1, 0, 4, 3]], # Wizard (INT,CON,DEX,CHA,WIS,STR)
+	]
+	
+	set_strs.call(orders[class_val - 1][0], orders[class_val - 1][1], scores)
