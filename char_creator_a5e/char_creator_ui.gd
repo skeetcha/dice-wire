@@ -148,18 +148,12 @@ func _ready():
 	
 	rand = RandomNumberGenerator.new()
 	
-	var f = FileAccess.open('res://char_creator_a5e/heritage_features.json', FileAccess.READ)
-	var json_string = f.get_as_text()
-	heritage_features = JSON.parse_string(json_string)
-	f.close()
-	f = FileAccess.open('res://char_creator_a5e/heritage_gifts.json', FileAccess.READ)
-	json_string = f.get_as_text()
-	heritage_gifts = JSON.parse_string(json_string)
-	f.close()
-	f = FileAccess.open('res://char_creator_a5e/culture_features.json', FileAccess.READ)
-	json_string = f.get_as_text()
-	culture_features = JSON.parse_string(json_string)
-	f.close()
+	var f = load("res://char_creator_a5e/heritage_features.tres")
+	heritage_features = f.data
+	f = load("res://char_creator_a5e/heritage_gifts.tres")
+	heritage_gifts = f.data
+	f = load("res://char_creator_a5e/culture_features.tres")
+	culture_features = f.data
 
 func features(key: String, toggled: bool):
 	if toggled:
@@ -357,6 +351,8 @@ func _on_back_button_pressed():
 		panel = 2
 
 func set_view_panel(field: String, value: Variant):
+	value = tr(value).replace("\n", " ")
+	
 	if field == "heritage":
 		$Grid/CharacterPanel/HeritageLabel.set_text(value)
 	elif field == "culture":
