@@ -30,5 +30,4 @@ enabled=PackedStringArray()
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://translations/strings.en_US.translation", "res://translations/strings.es.translation")
-locale/translations_pot_files=PackedStringArray("res://char_creator_a5e/char_creator.tscn", "res://main_menu/main_menu.tscn")
+locale/translations=PackedStringArray("res://translations/strings.en_US.translation")

@@ -432,5 +432,4 @@ func roll_values():
 		[3, [5, 2, 1, 0, 4, 3]], # Wizard (INT,CON,DEX,CHA,WIS,STR)
 	]
 	
-	print(scores)
 	set_strs.call(orders[class_val - 1][0], orders[class_val - 1][1], scores)
