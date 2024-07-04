@@ -42,7 +42,7 @@ color = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.11
-text = "Main Menu"
+text = "MENU_LABEL"
 horizontal_alignment = 1
 
 [node name="SpacePanel2" type="ColorRect" parent="UI/Grid/MainPanel"]
@@ -52,19 +52,19 @@ color = Color(1, 1, 1, 0)
 
 [node name="NewGame5EButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
-text = "New Game (5E)"
+text = "NEW_GAME_5E"
 
 [node name="NewGameA5EButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
-text = "New Game (A5E)"
+text = "NEW_GAME_A5E"
 
 [node name="NewGamePFButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
-text = "New Game (PF2E)"
+text = "NEW_GAME_PF2E"
 
 [node name="QuitButton" type="Button" parent="UI/Grid/MainPanel"]
 layout_mode = 2
-text = "Quit Game"
+text = "MENU_QUIT"
 
 [node name="SpacePanel3" type="ColorRect" parent="UI/Grid/MainPanel"]
 layout_mode = 2

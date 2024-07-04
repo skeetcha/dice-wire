@@ -15,7 +15,7 @@ config/name_localized={
 "en_US": "Project Varhaven",
 "es": "Projecto Varhaven"
 }
-run/main_scene="res://char_creator_a5e/char_creator.tscn"
+run/main_scene="res://main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -26,7 +26,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/tres_translation/plugin.cfg")
+enabled=PackedStringArray()
 
 [internationalization]
 

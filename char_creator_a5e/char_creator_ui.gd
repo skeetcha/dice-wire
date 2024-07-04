@@ -401,8 +401,8 @@ func roll_values():
 	
 	for i in range(6):
 		var roll = roll_value.call(4, 6, 0)
-		var values: Array[int] = roll[1].filter(func(val): return val != roll[1].min())
-		scores.append(sum.call(values))
+		roll[1].remove_at(roll[1].find(roll[1].min()))
+		scores.append(sum.call(roll[1]))
 	
 	var set_strs = func(key: int, order: Array, scores: Array[int]):
 		for label in $Grid/CharacterPanel/StarBox.get_children():
@@ -418,7 +418,7 @@ func roll_values():
 	
 	var orders = [
 		[1, [3, 0, 1, 5, 2, 4]], # Adept (DEX,CON,WIS,STR,CHA,INT)
-		[5, [5, 1, 2, 3, 4, 5]], # Bard (CHA,DEX,CON,INT,WIS,STR)
+		[5, [5, 1, 2, 3, 4, 0]], # Bard (CHA,DEX,CON,INT,WIS,STR)
 		[0, [0, 2, 1, 5, 3, 4]], # Berserker (STR,CON,DEX,WIS,CHA,INT)
 		[4, [1, 4, 2, 5, 0, 3]], # Cleric (WIS,STR,CON,CHA,DEX,INT)
 		[4, [4, 1, 2, 5, 0, 3]], # Druid (WIS,DEX,CON,CHA,STR,INT)
@@ -432,4 +432,5 @@ func roll_values():
 		[3, [5, 2, 1, 0, 4, 3]], # Wizard (INT,CON,DEX,CHA,WIS,STR)
 	]
 	
+	print(scores)
 	set_strs.call(orders[class_val - 1][0], orders[class_val - 1][1], scores)
