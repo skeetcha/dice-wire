@@ -100,20 +100,44 @@ func _ready():
 		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).set_meta("index", i + 1)
 		$Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).set_meta("key", $Grid/HeritagePanel/VBoxContainer/Grid.get_child(i).name.to_lower().replace("button", ""))
 	
+	var heritage_buttons = $Grid/HeritagePanel/VBoxContainer/Grid.get_children()
+	heritage_buttons.sort_custom(func(a, b): return tr(a.get_text()) < tr(b.get_text()))
+	
+	for i in range(len(heritage_buttons)):
+		$Grid/HeritagePanel/VBoxContainer/Grid.move_child(heritage_buttons[i], i)
+	
 	for i in range($Grid/CulturePanel/Scroll/Grid.get_child_count()):
 		$Grid/CulturePanel/Scroll/Grid.get_child(i).toggled.connect(culture_button.bind($Grid/CulturePanel/Scroll/Grid.get_child(i)))
 		$Grid/CulturePanel/Scroll/Grid.get_child(i).set_meta("index", i + 1)
 		$Grid/CulturePanel/Scroll/Grid.get_child(i).set_meta("key", $Grid/CulturePanel/Scroll/Grid.get_child(i).name.to_lower().replace("button", ""))
+	
+	var culture_buttons = $Grid/CulturePanel/Scroll/Grid.get_children()
+	culture_buttons.sort_custom(func(a, b): return tr(a.get_text()) < tr(b.get_text()))
+	
+	for i in range(len(culture_buttons)):
+		$Grid/CulturePanel/Scroll/Grid.move_child(culture_buttons[i], i)
 	
 	for i in range($Grid/ClassPanel/Grid.get_child_count()):
 		$Grid/ClassPanel/Grid.get_child(i).toggled.connect(class_button.bind($Grid/ClassPanel/Grid.get_child(i)))
 		$Grid/ClassPanel/Grid.get_child(i).set_meta("index", i + 1)
 		$Grid/ClassPanel/Grid.get_child(i).set_meta("key", $Grid/ClassPanel/Grid.get_child(i).name.to_lower().replace("button", ""))
 	
+	var class_buttons = $Grid/ClassPanel/Grid.get_children()
+	class_buttons.sort_custom(func(a, b): return tr(a.get_text()) < tr(b.get_text()))
+	
+	for i in range(len(class_buttons)):
+		$Grid/ClassPanel/Grid.move_child(class_buttons[i], i)
+	
 	for i in range($Grid/BackgroundPanel/GridContainer.get_child_count()):
 		$Grid/BackgroundPanel/GridContainer.get_child(i).toggled.connect(background_button.bind($Grid/BackgroundPanel/GridContainer.get_child(i)))
 		$Grid/BackgroundPanel/GridContainer.get_child(i).set_meta("index", i + 1)
 		$Grid/BackgroundPanel/GridContainer.get_child(i).set_meta("key", $Grid/BackgroundPanel/GridContainer.get_child(i).name.to_lower().replace("button", ""))
+	
+	var background_buttons = $Grid/BackgroundPanel/GridContainer.get_children()
+	background_buttons.sort_custom(func(a, b): return tr(a.get_text()) < tr(b.get_text()))
+	
+	for i in range(len(background_buttons)):
+		$Grid/BackgroundPanel/GridContainer.move_child(background_buttons[i], i)
 	
 	rand = RandomNumberGenerator.new()
 	
