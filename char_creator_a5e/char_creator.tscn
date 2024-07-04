@@ -74,7 +74,7 @@ offset_bottom = -0.120007
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Choose your Heritage"
+text = "HERITAGE_LABEL"
 horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/Grid/HeritagePanel"]
@@ -102,7 +102,7 @@ size_flags_vertical = 3
 tooltip_text = "test"
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Dragonborn"
+text = "HERITAGE_DRAG"
 
 [node name="DwarfButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -110,7 +110,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Dwarf"
+text = "HERITAGE_DWAR"
 
 [node name="ElfButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -118,7 +118,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Elf"
+text = "HERITAGE_ELF"
 
 [node name="GnomeButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -126,7 +126,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Gnome"
+text = "HERITAGE_GNOM"
 
 [node name="HalflingButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -134,7 +134,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Halfling"
+text = "HERITAGE_HALF"
 
 [node name="HumanButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -142,7 +142,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Human"
+text = "HERITAGE_HUMA"
 
 [node name="OrcButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -150,7 +150,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Orc"
+text = "HERITAGE_ORC"
 
 [node name="PlanetouchedButton" type="Button" parent="UI/Grid/HeritagePanel/VBoxContainer/Grid"]
 layout_mode = 2
@@ -158,7 +158,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("4_cmgen")
-text = "Planetouched"
+text = "HERITAGE_PLAN"
 
 [node name="Features" type="PanelContainer" parent="UI/Grid/HeritagePanel/VBoxContainer"]
 layout_mode = 2
@@ -168,7 +168,7 @@ layout_mode = 2
 
 [node name="GiftLabel" type="Label" parent="UI/Grid/HeritagePanel/VBoxContainer"]
 layout_mode = 2
-text = "Heritage Gift"
+text = "HGIFT_LABEL"
 
 [node name="GiftContainer" type="HBoxContainer" parent="UI/Grid/HeritagePanel/VBoxContainer"]
 layout_mode = 2
@@ -198,7 +198,7 @@ offset_bottom = -0.120007
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Choose your Culture"
+text = "CULTURE_LABEL"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="UI/Grid/CulturePanel"]
@@ -212,7 +212,7 @@ offset_bottom = -0.224007
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Suggested Cultures"
+text = "CULTURE_SUGG"
 horizontal_alignment = 1
 
 [node name="SuggestedGrid" type="GridContainer" parent="UI/Grid/CulturePanel"]
@@ -238,7 +238,7 @@ offset_bottom = 23.944
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Other Cultures"
+text = "CULTURE_OTHER"
 horizontal_alignment = 1
 
 [node name="Scroll" type="ScrollContainer" parent="UI/Grid/CulturePanel"]
@@ -261,250 +261,245 @@ layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Caravanner"
+text = "CULTURE_CARA"
 
 [node name="CircusfolkButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Circusfolk"
+text = "CULTURE_CIRC"
 
 [node name="CollegiateButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Collegiate"
+text = "CULTURE_COLL"
 
 [node name="CosmopolitanButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Cosmopolitan"
+text = "CULTURE_COSM"
 
 [node name="DeepDwarfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Deep Dwarf"
+text = "CULTURE_DEDW"
 
 [node name="DeepGnomeButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Deep Gnome"
+text = "CULTURE_DEGN"
 
 [node name="DragonboundButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Dragonbound"
+text = "CULTURE_DRBN"
 
 [node name="DragoncultButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Dragoncult"
+text = "CULTURE_DRCT"
 
 [node name="EladrinButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Eladrin"
+text = "CULTURE_ELAD"
 
 [node name="ForestGnomeButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Forest Gnome"
+text = "CULTURE_FORE"
 
 [node name="ForgottenFolxButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Forgotten
-Folx"
+text = "CULTURE_FORG"
 
 [node name="ForsakenButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Forsaken"
+text = "CULTURE_FORS"
 
 [node name="GodboundButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Godbound"
+text = "CULTURE_GODB"
 
 [node name="HighElfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "High Elf"
+text = "CULTURE_HIGH"
 
 [node name="HillDwarfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Hill Dwarf"
+text = "CULTURE_HILL"
 
 [node name="ImperialButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Imperial"
+text = "CULTURE_IMPE"
 
 [node name="ItinerantButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Itinerant"
+text = "CULTURE_ITIN"
 
 [node name="KithbainHalflingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Kithbáin
-Halfling"
+text = "CULTURE_KITH"
 
 [node name="LoneWandererButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Lone Wanderer"
+text = "CULTURE_LONE"
 
 [node name="MountainDwarfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Mountain
-Dwarf"
+text = "CULTURE_MOUN"
 
 [node name="MistbairnHalflingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Mistbairn
-Halfling"
+text = "CULTURE_MIST"
 
 [node name="NomadButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Nomad"
+text = "CULTURE_NOMA"
 
 [node name="SettlerButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Settler"
+text = "CULTURE_SETT"
 
 [node name="ShadowElfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Shadow Elf"
+text = "CULTURE_SHAD"
 
 [node name="SteamforgedButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Steamforged"
+text = "CULTURE_STEA"
 
 [node name="StoicOrcButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Stoic Orc"
+text = "CULTURE_STOI"
 
 [node name="StoneworthyButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Stoneworthy"
+text = "CULTURE_STON"
 
 [node name="StoutHalflingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Stout Halfling"
+text = "CULTURE_STOU"
 
 [node name="TinkerGnomeButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Tinker Gnome"
+text = "CULTURE_TINK"
 
 [node name="TunnelHalflingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Tunnel
-Halfling"
+text = "CULTURE_TUNN"
 
 [node name="TyrannizedButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Tyrannized"
+text = "CULTURE_TYRA"
 
 [node name="VillagerButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Villager"
+text = "CULTURE_VILL"
 
 [node name="WarhordlingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Warhordling"
+text = "CULTURE_WARH"
 
 [node name="WildlingButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Wildling"
+text = "CULTURE_WILD"
 
 [node name="WoodElfButton" type="Button" parent="UI/Grid/CulturePanel/Scroll/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("5_wb2r6")
-text = "Wood Elf"
+text = "CULTURE_WOOD"
 
 [node name="FeaturesScroll" type="ScrollContainer" parent="UI/Grid/CulturePanel"]
 layout_mode = 1
@@ -537,7 +532,7 @@ offset_bottom = -0.120007
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Choose your Class"
+text = "CLASS_LABEL"
 horizontal_alignment = 1
 
 [node name="Grid" type="GridContainer" parent="UI/Grid/ClassPanel"]
@@ -554,13 +549,13 @@ grow_vertical = 2
 size_flags_horizontal = 3
 columns = 3
 
-[node name="BarbarianButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+[node name="AdeptButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Barbarian"
+text = "CLASS_ADEP"
 
 [node name="BardButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -568,7 +563,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Bard"
+text = "CLASS_BARD"
+
+[node name="BerserkerButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+button_group = ExtResource("5_mia43")
+text = "CLASS_BERS"
 
 [node name="ClericButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -576,7 +579,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Cleric"
+text = "CLASS_CLER"
 
 [node name="DruidButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -584,7 +587,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Druid"
+text = "CLASS_DRUI"
 
 [node name="FighterButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -592,23 +595,23 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Fighter"
+text = "CLASS_FIGH"
 
-[node name="MonkButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+[node name="HeraldButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Monk"
+text = "CLASS_HERA"
 
-[node name="PaladinButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
+[node name="MarshalButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Paladin"
+text = "CLASS_MARS"
 
 [node name="RangerButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -616,7 +619,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Ranger"
+text = "CLASS_RANG"
 
 [node name="RogueButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -624,7 +627,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Rogue"
+text = "CLASS_ROGU"
 
 [node name="SorcererButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -632,7 +635,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Sorcerer"
+text = "CLASS_SORC"
 
 [node name="WarlockButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -640,7 +643,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Warlock"
+text = "CLASS_WARL"
 
 [node name="WizardButton" type="Button" parent="UI/Grid/ClassPanel/Grid"]
 layout_mode = 2
@@ -648,7 +651,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("5_mia43")
-text = "Wizard"
+text = "CLASS_WIZA"
 
 [node name="BackgroundPanel" type="Panel" parent="UI/Grid"]
 visible = false
@@ -666,7 +669,7 @@ offset_bottom = -0.120007
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Choose your Background"
+text = "BACKGROUND_LABEL"
 horizontal_alignment = 1
 
 [node name="GridContainer" type="GridContainer" parent="UI/Grid/BackgroundPanel"]
@@ -687,135 +690,135 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Acolyte"
+text = "BACKGROUND_ACOL"
 
 [node name="ArtisanButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Artisan"
+text = "BACKGROUND_ARTI"
 
 [node name="CharlatanButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Charlatan"
+text = "BACKGROUND_CHAR"
 
 [node name="CriminalButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Criminal"
+text = "BACKGROUND_CRIM"
 
 [node name="CultistButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Cultist"
+text = "BACKGROUND_CULT"
 
 [node name="EntertainerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Entertainer"
+text = "BACKGROUND_ENTE"
 
 [node name="ExileButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Exile"
+text = "BACKGROUND_EXIL"
 
 [node name="FarmerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Farmer"
+text = "BACKGROUND_FARM"
 
 [node name="FolkHeroButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Folk Hero"
+text = "BACKGROUND_FOLK"
 
 [node name="GamblerButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Gambler"
+text = "BACKGROUND_GAMB"
 
 [node name="GuardButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Guard"
+text = "BACKGROUND_GUAR"
 
 [node name="GuildMemberButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Guild Member"
+text = "BACKGROUND_GUIL"
 
 [node name="HermitButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Hermit"
+text = "BACKGROUND_HERM"
 
 [node name="MarauderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Marauder"
+text = "BACKGROUND_MARA"
 
 [node name="NobleButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Noble"
+text = "BACKGROUND_NOBL"
 
 [node name="OutlanderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Outlander"
+text = "BACKGROUND_OUTL"
 
 [node name="SageButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Sage"
+text = "BACKGROUND_SAGE"
 
 [node name="SailorButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Sailor"
+text = "BACKGROUND_SAIL"
 
 [node name="SoldierButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Soldier"
+text = "BACKGROUND_SOLD"
 
 [node name="TraderButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Trader"
+text = "BACKGROUND_TRAD"
 
 [node name="UrchinButton" type="Button" parent="UI/Grid/BackgroundPanel/GridContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = ExtResource("6_24rg5")
-text = "Urchin"
+text = "BACKGROUND_URCH"
 
 [node name="SpacePanel" type="ColorRect" parent="UI/Grid"]
 visible = false
@@ -833,13 +836,219 @@ size_flags_vertical = 8
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Back"
+text = "BUTTON_BACK"
 
 [node name="NextButton" type="Button" parent="UI/Grid/MiddlePanel"]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Next"
+text = "BUTTON_NEXT"
+
+[node name="CharacterPanel" type="Panel" parent="UI/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HeritageLabel" type="Label" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_right = 0.979
+anchor_bottom = 0.029
+offset_left = -0.0500011
+offset_top = 19.0
+offset_right = 0.000976562
+offset_bottom = 23.208
+horizontal_alignment = 1
+
+[node name="CultureLabel" type="Label" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_right = 0.979
+anchor_bottom = 0.08
+offset_left = -0.0500011
+offset_top = 52.0
+offset_right = 0.000976562
+offset_bottom = 23.16
+horizontal_alignment = 1
+
+[node name="ClassLabel" type="Label" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047
+anchor_right = 0.979
+anchor_bottom = 0.127
+offset_left = 0.0929985
+offset_top = 82.0
+offset_right = 0.000976562
+offset_bottom = 22.704
+horizontal_alignment = 1
+
+[node name="StarBox" type="HBoxContainer" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047
+anchor_right = 0.974
+anchor_bottom = 0.173
+offset_left = 0.0929985
+offset_top = 112.0
+offset_right = -0.0940247
+offset_bottom = 39.896
+
+[node name="Str" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dex" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Con" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Int" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wis" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cha" type="Label" parent="UI/Grid/CharacterPanel/StarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelBox" type="HBoxContainer" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047
+anchor_right = 0.974
+anchor_bottom = 0.235
+offset_left = 0.0930004
+offset_top = 151.0
+offset_right = -0.0940552
+offset_bottom = 38.72
+
+[node name="Str" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "STRENGTH_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dex" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "DEXTERITY_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Con" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "CONSTITUTION_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Int" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "INTELLIGENCE_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wis" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "WISDOM_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cha" type="Label" parent="UI/Grid/CharacterPanel/LabelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "CHARISMA_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModBox" type="HBoxContainer" parent="UI/Grid/CharacterPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047
+anchor_right = 0.974
+anchor_bottom = 0.295
+offset_left = 0.0930004
+offset_top = 190.0
+offset_right = -0.0940552
+offset_bottom = 38.84
+
+[node name="Str" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dex" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Con" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Int" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wis" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cha" type="Label" parent="UI/Grid/CharacterPanel/ModBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="background_changed" from="UI" to="." method="_on_ui_background_changed"]
 [connection signal="class_changed" from="UI" to="." method="_on_ui_class_changed"]
@@ -888,13 +1097,14 @@ text = "Next"
 [connection signal="toggled" from="UI/Grid/CulturePanel/Scroll/Grid/WarhordlingButton" to="UI" method="_on_warhordling_button_toggled"]
 [connection signal="toggled" from="UI/Grid/CulturePanel/Scroll/Grid/WildlingButton" to="UI" method="_on_wildling_button_toggled"]
 [connection signal="toggled" from="UI/Grid/CulturePanel/Scroll/Grid/WoodElfButton" to="UI" method="_on_wood_elf_button_toggled"]
-[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/BarbarianButton" to="UI" method="_on_barbarian_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/AdeptButton" to="UI" method="_on_monk_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/BardButton" to="UI" method="_on_bard_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/BerserkerButton" to="UI" method="_on_barbarian_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/ClericButton" to="UI" method="_on_cleric_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/DruidButton" to="UI" method="_on_druid_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/FighterButton" to="UI" method="_on_fighter_button_toggled"]
-[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/MonkButton" to="UI" method="_on_monk_button_toggled"]
-[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/PaladinButton" to="UI" method="_on_paladin_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/HeraldButton" to="UI" method="_on_paladin_button_toggled"]
+[connection signal="toggled" from="UI/Grid/ClassPanel/Grid/MarshalButton" to="UI" method="_on_fighter_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/RangerButton" to="UI" method="_on_ranger_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/RogueButton" to="UI" method="_on_rogue_button_toggled"]
 [connection signal="toggled" from="UI/Grid/ClassPanel/Grid/SorcererButton" to="UI" method="_on_sorcerer_button_toggled"]

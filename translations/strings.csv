@@ -1,0 +1,103 @@
+key,en_US,es
+HERITAGE_LABEL,Choose your Heritage,Elegir a su Ascendencia
+HERITAGE_DRAG,Dragonborn,Dracónido
+HERITAGE_ELF,Elf,Elfo
+HERITAGE_GNOM,Gnome,Gnomo
+HERITAGE_HALF,Halfling,Mediano
+HERITAGE_HUMA,Human,Humano
+HERITAGE_ORC,Orc,Orco
+HERITAGE_PLAN,Planetouched,De Planos
+HGIFT_LABEL,Heritage Gift,Regalo de Ascendencia
+CULTURE_LABEL,Choose your Culture,Elegir a su Cultura
+CULTURE_SUGG,Suggested Cultures,Culturas Sugeridas
+CULTURE_OTHER,Other Cultures,Otras Culturas
+CULTURE_CARA,Caravanner,Caravanner
+CULTURE_CIRC,Circusfolk,Pueblos del Circo
+CULTURE_COLL,Collegiate,Colegiado
+CULTURE_COSM,Cosmopolitan,Cosmopolita
+CULTURE_DEDW,Deep Dwarf,Enano de la Profundidade
+CULTURE_DRBN,Dragonbound,Saltar a Dragón
+CULTURE_DRCT,Dragoncult,Culto del Dragón
+CULTURE_ELAD,Eladrin,Eladrin
+CULTURE_FORE,Forest Gnome,Gnomo del Bosque
+CULTURE_FORG,"Forgotton
+Folx",Pueblos Olvidados
+CULTURE_FORS,Forsaken,Abandonado
+CULTURE_GODB,Godbound,Godbound
+CULTURE_HIGH,High Elf,Elfo del Altos
+CULTURE_HILL,Hill Dwarf,Enano de la Colinas
+CULTURE_DEGN,Deep Gnome,Gnomo de la Profundidade
+CULTURE_IMPE,Imperial,Imperial
+CULTURE_ITIN,Itinerant,Itinerante
+CULTURE_KITH,"Kithbáin
+Halfling",Mediano de Kitben
+CULTURE_LONE,"Lone
+Wanderer",Errante Solitario
+CULTURE_MOUN,"Mountain
+Dwarf",Enano de la Montaña
+CULTURE_MIST,"Mistbairn
+Halfling",Mediano de Mistben
+CULTURE_NOMA,Nomad,Nómada
+CULTURE_SETT,Settler,Colono
+CULTURE_SHAD,Shadow Elf,Elfo de las Sombras
+CULTURE_STEA,Steamforged,Forjado de Vapor
+CULTURE_STOI,Stoic Orc,Orco Estoico
+CULTURE_STON,Stoneworthy,Digno de Piedra
+CULTURE_STOU,Stout Halfling,Mediano Robusto
+CULTURE_TINK,Tinker Gnome,Gnomo de Retorciendo
+CULTURE_TUNN,Tunnel Halfling,Mediano del Túnel
+CULTURE_TYRA,Tyrannized,Tiranizado
+CULTURE_VILL,Villager,Aldeano
+CULTURE_WARH,Warhordling,Warhordling
+CULTURE_WILD,Wildling,Wildling
+CULTURE_WOOD,Wood Elf,Elfo del Bosque
+CLASS_LABEL,Choose your Class,Elegir a su Clase
+BACKGROUND_LABEL,Choose your Background,Elegir a su Trasfondo
+BACKGROUND_ACOL,Acolyte,Acólito
+BACKGROUND_ARTI,Artisan,Artesano
+BACKGROUND_CHAR,Charlatan,Charlatán
+BACKGROUND_CRIM,Criminal,Criminal
+BACKGROUND_CULT,Cultist,Cultisto
+BACKGROUND_ENTE,Entertainer,Artista
+BACKGROUND_EXIL,Exile,Exilio
+BACKGROUND_FARM,Farmer,Agricultor
+BACKGROUND_FOLK,Folk Hero,Héroe Popular
+BACKGROUND_GAMB,Gambler,Jugador
+BACKGROUND_GUAR,Guard,Protector
+BACKGROUND_GUIL,Guild Member,Miembro de Gremio
+BACKGROUND_HERM,Hermit,Ermitaño
+BACKGROUND_MARA,Marauder,Bandido
+BACKGROUND_NOBL,Noble,Nobiliario
+BACKGROUND_OUTL,Outlander,Outlander
+BACKGROUND_SAGE,Sage,Sabio
+BACKGROUND_SAIL,Sailor,Marinero
+BACKGROUND_SOLD,Soldier,Soldado
+BACKGROUND_TRAD,Trader,Comerciante
+BACKGROUND_URCH,Urchin,Erizo
+BUTTON_BACK,Back,Volver
+BUTTON_NEXT,Next,Siguiente
+STRENGTH_LABEL,STR,FUE
+DEXTERITY_LABEL,DEX,DES
+CONSTITUTION_LABEL,CON,CON
+INTELLIGENCE_LABEL,INT,INT
+WISDOM_LABEL,WIS,SAB
+CHARISMA_LABEL,CHA,CAR
+MENU_LABEL,Main Menu,Menú Principal
+NEW_GAME_5E,New Game (5E),Nuevo Juego (5E)
+NEW_GAME_A5E,New Game (A5E),Nuevo Juego (A5E)
+NEW_GAME_PF2E,New Game (PF2E),Nuevo Juego (PF2E)
+MENU_QUIT,Quit Game,Cerrar el Juego
+HERITAGE_DWAR,Dwarf,Enano
+CLASS_ADEP,Adept,Versado
+CLASS_BARD,Bard,Bardo
+CLASS_BERS,Berserker,Berserker
+CLASS_HERA,Herald,Heraldo
+CLASS_CLER,Cleric,Clérigo
+CLASS_DRUI,Druid,Druida
+CLASS_FIGH,Fighter,Guerrero
+CLASS_MARS,Marshal,Mariscal
+CLASS_RANG,Ranger,Explorador
+CLASS_ROGU,Rogue,Pícaro
+CLASS_SORC,Sorcerer,Hechicero
+CLASS_WARL,Warlock,Brujo
+CLASS_WIZA,Wizard,Mago

@@ -1,13 +1,13 @@
+Label
+HBoxContainer
+Panel
 VBoxContainer
 ScrollContainer
 ItemList
 Control
 Button
 GridContainer
-Panel
 RichTextLabel
-HBoxContainer
-Label
 PanelContainer
 ReferenceRect
 ColorRect
