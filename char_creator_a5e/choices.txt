@@ -1,0 +1,36 @@
+Dragon Breath Damage Type (Dragonborn Heritage Feature):
+    Acid
+    Cold
+    Fire
+    Force
+    Lightning
+    Necrotic
+    Poison
+    Psychic
+    Radiant
+    Thunder
+Dragon Breath Shape (Dragonborn Heritage Feature):
+    30-foot by 5-foot line
+    15-foot cone
+Creator's Blessing (Dwarf Heritage Feature):
+    Brewer's Supplies
+    Mason's Tools
+    Smith's Tools
+Fast Learner (Human Heritage Feature):
+    Additional Skill Proficiency
+Resident Expert (Human Heritage Gift Feature (Ingenious Focus), must be trained in said skill to choose it):
+    Animal Handling
+    Arcana
+    Culture
+    Engineering
+    History
+    Medicine
+    Nature
+    Religion
+Just Like Home (Orc Heritage Gift Feature (Just Like Home)):
+    Artic
+    Desert
+    Mountain
+    Swamp
+Magic Adept (Orc Heritage Gift Feature (Magic Adept)):
+    Wizard Cantrip
