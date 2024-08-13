@@ -1,6 +1,6 @@
-use godot::{classes::{Control, IControl, ItemList, TabContainer}, prelude::*};
+use godot::{classes::{Button, Control, IControl, ItemList, TabContainer}, prelude::*};
 
-#[derive(Default, GodotConvert, Var, Debug, Copy, Clone)]
+#[derive(Default, GodotConvert, Var, Debug, Copy, Clone, PartialEq)]
 #[godot(via = GString)]
 enum Heritage {
     #[default]
@@ -79,7 +79,72 @@ impl IControl for CharCreatorA5E {
     }
 
     fn process(&mut self, _delta: f64) {
-        godot_print!("{}", self.heritage.into_godot());
+        let next_button_vis = self.base().get_node_as::<Button>("NextButton").is_visible();
+        let _back_button_vis = self.base().get_node_as::<Button>("BackButton").is_visible();
+
+        if self.current_tab == 0 {
+            if self.heritage != Heritage::None && !next_button_vis {
+                self.base_mut().get_node_as::<Button>("NextButton").set_visible(true);
+            }
+        }
+    }
+}
+
+#[godot_api]
+impl CharCreatorA5E {
+    #[func]
+    pub fn tab_pressed(&mut self, _tab: i64) {
+        self.get_tabs().unwrap().set_current_tab(self.current_tab);
+    }
+
+    #[func]
+    pub fn tab_val_selected(&mut self, instance_id: i64, index: i64) {
+        let heritage_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage")).instance_id();
+        let heritage_gifts_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/HeritageGifts")).instance_id();
+        let culture_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Culture")).instance_id();
+        let instance = InstanceId::from_i64(instance_id);
+
+        if instance == heritage_id {
+            match Heritage::try_from(Variant::from(index)) {
+                Ok(heritage) => {
+                    self.heritage = heritage;
+                    self.base_mut().emit_signal("heritage_changed".into(), &[heritage.into()]);
+                },
+                Err(e) => godot_error!("{}", e)
+            }
+        } else if instance == culture_id {
+            // do something with that
+        } else if instance == heritage_gifts_id {
+            // do something with that
+        }
+    }
+
+    #[signal]
+    pub fn heritage_changed(&mut self, heritage: Variant);
+
+    #[signal]
+    pub fn culture_chagned(&mut self, culture: Variant);
+
+    #[func]
+    pub fn next_button(&mut self) {
+        match self.current_tab {
+            0 => {
+                self.current_tab = 1;
+                self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(1);
+                self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(false);
+            },
+            _ => ()
+        }
+    }
+
+    #[func]
+    pub fn back_button(&mut self) {
+        match self.current_tab {
+            1 => {
+                self.current_tab = 0;
+            },
+            _ => ()
+        }
     }
 }
 
@@ -99,28 +164,4 @@ impl CharCreatorA5EItemList {
         let instance_id = self.base().instance_id();
         self.base_mut().emit_signal("item_selected_instance".into(), &[Variant::from(instance_id.into_godot()), Variant::from(index)]);
     }
-}
-
-#[godot_api]
-impl CharCreatorA5E {
-    #[func]
-    pub fn tab_pressed(&mut self, _tab: i64) {
-        self.get_tabs().unwrap().set_current_tab(self.current_tab);
-    }
-
-    #[func]
-    pub fn heritage_selected(&mut self, instance_id: i64, index: i64) {
-        let heritage_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage")).instance_id();
-        let instance = InstanceId::from_i64(instance_id);
-
-        if instance == heritage_id {
-            match Heritage::try_from(Variant::from(index)) {
-                Ok(heritage) => self.heritage = heritage,
-                Err(e) => godot_error!("{}", e)
-            }
-        }
-    }
-
-    #[signal]
-    pub fn heritage_changed(&mut self, heritage: Heritage);
 }

@@ -1,4 +1,5 @@
 CharCreatorA5EItemList
+Button
 ItemList
 TabContainer
 HFlowContainer
@@ -11,5 +12,3 @@ Panel
 Control
 VBoxContainer
 ScrollContainer
-Button
-GridContainer
