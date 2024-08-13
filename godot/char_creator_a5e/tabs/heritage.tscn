@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cl2lb4xycrsln"]
+
+[node name="Items" type="CharCreatorA5EItemList"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+item_count = 8
+item_0/text = "Dragonborn"
+item_1/text = "Dwarf"
+item_2/text = "Elf"
+item_3/text = "Gnome"
+item_4/text = "Halfling"
+item_5/text = "Human"
+item_6/text = "Orc"
+item_7/text = "Planetouched"

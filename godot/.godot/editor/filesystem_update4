@@ -1,0 +1,6 @@
+res://char_creator_a5e/tabs/heritage.tscn
+res://cel_shader/godot-toon.gdshader
+res://cel_shader/color-gradient.tres
+res://cel_shader/fresnel-gradient.tres
+res://char_creator_a5e/char_creator.tscn
+res://char_creator_a5e/tabs/culture.tscn
