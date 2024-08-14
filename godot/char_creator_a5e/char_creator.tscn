@@ -132,6 +132,8 @@ text = "Back"
 [connection signal="tab_clicked" from="UI/TabbedPanel/TabContainer" to="UI" method="tab_pressed"]
 [connection signal="item_selected" from="UI/TabbedPanel/TabContainer/Heritage" to="UI/TabbedPanel/TabContainer/Heritage" method="item_selected"]
 [connection signal="item_selected_instance" from="UI/TabbedPanel/TabContainer/Heritage" to="UI" method="tab_val_selected"]
+[connection signal="item_selected" from="UI/TabbedPanel/TabContainer/Heritage Gifts" to="UI/TabbedPanel/TabContainer/Heritage Gifts" method="item_selected"]
+[connection signal="item_selected_instance" from="UI/TabbedPanel/TabContainer/Heritage Gifts" to="UI" method="tab_val_selected"]
 [connection signal="item_selected" from="UI/TabbedPanel/TabContainer/Culture" to="UI/TabbedPanel/TabContainer/Culture" method="item_selected"]
 [connection signal="item_selected_instance" from="UI/TabbedPanel/TabContainer/Culture" to="UI" method="tab_val_selected"]
 [connection signal="pressed" from="UI/NextButton" to="UI" method="next_button"]
