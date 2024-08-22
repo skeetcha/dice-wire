@@ -1,0 +1,44 @@
+Acolyte: Religion, and either Insight or Persuasion
+  + Extra language
+Artisan: Persuasion, and either Insight or History
+  + Artisan's tools or Smith's tools
+Charlatan: Deception, and either Insight or Sleight of Hand
+  + Disguise kit and Forgery Kit
+Criminal: Stealth, and either Deception or Intimidation
+  + Gaming set and Thieves' Tools
+Cultist: Religion, and either Arcana or Deception
+  + Extra language
+Entertainer: Performance, and either Acrobatics or Persuasion
+  + Gaming set and Musical Instrument
+Exile: Survival, and either History or Performance
+  + Two extra languages
+Farmer: Nature, and either Animal Handling or Survival
+Folk Hero: Survival, and either Animal Handling or Nature
+  + Artisan's Tools
+Gambler: Deception and either Insight or Sleight of Hand
+  + Gaming set
+Guard: Intimidation, and either Athletics or Investigation
+  + Extra language
+Guildmember (Perhaps a specific background for the campaign?): Two skills
+  + Artisan's tools or Musical Instrument
+Hermit: Religion, and either Medicine or Survival
+  + Herbalism kit
+Marauder: Survival, and either Intimidation or Stealth
+  + Artisan's tools
+Noble (Perhaps a specific background for the campaign?): History, and either Insight or Persuasion
+  + Gaming set
+  + Extra language
+Outlander: Survival, and either Athletics or Intimidation
+  + Herbalism kit
+  + Extra language
+Sage: History, and either Arcana or Religion
+  + Two extra languages
+Sailor: Athletics, and either Acrobatics or Perception
+  + Navigator's tools
+Soldier: Athletics, and either Animal Handling or Intimidation
+  + Gaming set
+Trader: Persuasion, and either Deception or Insight
+  + Extra language
+Urchin: Sleight of Hand, and either Deception or Stealth
+  + Disguise kit and Thieves' Tools
+

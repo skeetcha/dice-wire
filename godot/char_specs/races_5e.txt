@@ -1,0 +1,89 @@
+Dwarf
+=====
+Speed: 25 feet
+Darkvision 60 feet
+Dwarven Resilience: advantage to saves against poison, resistance against poison damage
+Dwarven Combat Training: proficiency with battleaxe, handaxe, light hammer, and warhammer
+Tool Proficiency: proficiency with smith's tools, brewer's supplies, or mason's tools
+Stonecunning: expertise in History checks related to the origin of stonework
+Languages: Common, Dwarvish
+
+Hill Dwarf
+----------
+Dwarven Toughness: HP max +1 and HP max +1 on level up
+
+Elf
+===
+Speed: 30 feet
+Darkvision: 60 feet
+Keen Senses: proficiency in Perception
+Fey Ancestry: advantage on saves against being charmed, immunity to magical sleep
+Languages: Common, Elvish
+
+High Elf
+--------
+Elf Weapon Training: proficiency with longsword, shortsword, shortbow, and longbow
+Cantrip: free wizard cantrip (using INT)
+Extra Language
+
+Halfling
+========
+Speed: 25 feet
+Lucky: re-roll 1s for attack rolls, ability checks, and saves
+Brave: advantage on saves against being frightened
+Halfling Nimbleness: can move through the space of any creature that is of a size larger than yours
+Languages: Common, Halfling
+
+Lightfoot
+---------
+Naturally Stealthy: can hide even when your are obscured only by a creature that is at least one size larger than you
+
+Human
+=====
+Speed: 30 feet
+Languages: Common plus one extra
+
+Dragonborn
+==========
+Speed: 30 feet
+Draconic Ancestry: Black (acid, line, dex), Blue (lightning, line, dex), Brass (fire, line, dex), Bronze (lightning, line, dex), Copper (acid, line, dex), Gold (fire, cone, dex), Green (poison, cone, con), Red (fire, cone, dex), Silver (cold, cone, con), White (cold, cone, con)
+Breath Weapon: DC 8 + Con mod + prof bonus; 2d6 damage on failure, half as much on success; damage type determined by ancestry; 3d6 at 6th, 4d6 at 11th level, and 5d6 at 16th level
+Damage Resistance: resistance to damage type associated with ancestry
+Languages: Common, Draconic
+
+Gnome
+=====
+Speed: 25 feet
+Darkvision 60 feet
+Gnome Cunning: advantage on Int, Wis, and Cha saves against magic
+Languages: Common, Gnomish
+
+Rock Gnome
+----------
+Artificer's KLore: expertise on History checks related to magic items, alchemical objects, or technological devices
+Tinker: proficiency with tinker's tools
+
+Half-Elf
+========
+Speed: 30 feet
+Darkvision 60 feet
+Fey Ancestry: advantage on saves against being charmed, immune to magical sleep
+Skill Versatility: proficiency in two skills
+Languages: Common, Elvish, and one extra
+
+Half-Orc
+========
+Speed: 30 feet
+Darkvision 60 feet
+Menacing: proficiency in Intimidation
+Relentless Endurance: remain at 1 hit point if dropped to 0 but killed outright; once per long rest
+Savage Attacks: on critical hit, one extra die to damage
+Languages: Common, Orc
+
+Tiefling
+========
+Speed: 30 feet
+Darkvision 60 feet
+Hellish Resistance: resistance to fire damage
+Infernal Legacy: thaumaturgy cantrip; at 3rd level, learn hellish rebuke as 2nd-level spell, once per long rest; at 5th level, learn darkness, once per long rest; use Cha to cast
+Languages: Common, Infernal

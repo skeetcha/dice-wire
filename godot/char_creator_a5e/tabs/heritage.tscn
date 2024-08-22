@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cl2lb4xycrsln"]
+
+[node name="Items" type="CharCreatorA5EItemList"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+item_count = 8
+item_0/text = "HERITAGE_DRAG"
+item_1/text = "HERITAGE_DWAR"
+item_2/text = "HERITAGE_ELF"
+item_3/text = "HERITAGE_GNOM"
+item_4/text = "HERITAGE_HALF"
+item_5/text = "HERITAGE_HUMA"
+item_6/text = "HERITAGE_ORC"
+item_7/text = "HERITAGE_PLAN"

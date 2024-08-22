@@ -1,0 +1,334 @@
+Dragon Breath Damage Type (Dragonborn Heritage Feature):
+    Acid
+    Cold
+    Fire
+    Force
+    Lightning
+    Necrotic
+    Poison
+    Psychic
+    Radiant
+    Thunder
+Dragon Breath Shape (Dragonborn Heritage Feature):
+    30-foot by 5-foot line
+    15-foot cone
+Creator's Blessing (Dwarf Heritage Feature):
+    Brewer's Supplies
+    Mason's Tools
+    Smith's Tools
+Fast Learner (Human Heritage Feature):
+    Additional Skill Proficiency
+Resident Expert (Human Heritage Gift Feature (Ingenious Focus), must be trained in said skill to choose it):
+    Animal Handling
+    Arcana
+    Culture
+    Engineering
+    History
+    Medicine
+    Nature
+    Religion
+Just Like Home (Orc Heritage Gift Feature (Just Like Home)):
+    Artic
+    Desert
+    Mountain
+    Swamp
+Magic Adept (Orc Heritage Gift Feature (Magic Adept)):
+    Wizard Cantrip
+Caravanner Additional Language
+Studied Discipline (Collegiate Culture Feature):
+    Architecture
+    Engineering
+    Fine Arts
+        Choose an artisan's tool you are proficient with
+    Magic
+    Mathematics
+    Medicine
+    Sciences
+        Two additional proficiencies from:
+            Arcana
+            History
+            Nature
+            Religion
+Collegiate Three Additional Languages
+Skill Versatility (Cosmopolitan Culture Feature):
+    Additional Skill Proficiency
+Well-Connected (Cosmopolitan Culture Feature):
+    Extra Connection from Any Background
+Cosmopolitan Two Additional Languages
+Dragonbound Teachings (Dragonbound Culture Feature):
+    Cleric or Wizard Cantrip
+Progenitor's Boon (Dragonboun Culture Feature):
+    Chromatic Dragon's Boon
+    Essence Dragon's Boon
+    Gem Dragon's Boon
+    Metallic Dragon's Boon
+        Additional skill proficiency plus expertise die from:
+            Arcana
+            History
+            Medicine
+            Nature
+            Religion
+Secrets of the Wyrm (Dragoncult Culture Feature):
+    Two skill proficiency from:
+        Arcana
+        Deception
+        Persuasion
+        Religion
+        Stealth
+Invocation of the Eladrin Lords (Eladrin Culture Feature):
+    Autumn (resistance)
+    Hiding (minor illusion)
+    Respite (mending)
+    Rot (chill touch)
+    Spring (druidcraft)
+    Stars (dancing lights)
+    Storm (shocking grasp)
+    Summer (produce flame)
+    Toxicity (pestilence)
+    Winter (ray of frost)
+Knowledge of the Faerie Courts (Eladrin Culture Feature):
+    Skill Proficiency from:
+            Arcana
+            Culture
+            Deception
+            History
+            Insight
+            Persuasion
+            Survival
+Forgotten Folx Additional Language
+Forsaken Two Additional Languages
+Godbound Additional Language
+High Elf Education (High Elf Culture Feature):
+    Additional Skill Proficiency
+Magical Versatility (High Elf Culture Feature):
+    Any Cantrip
+High Elf Additional Language
+Friendly (Hill Dwarf Culture Feature):
+    Skill Proficiency from:
+        Deception
+        Persuasion
+Wagoner (Hill Dwarf Culture Feature):
+    Proficiency from:
+        Animal Handling
+        Land Vehicles
+Hill Dwarf Two Additional Languages
+Learned Teachers (Imperial Culture Feature):
+    Additional Skill proficiency
+Imperial Additional Language
+I Know Someone (Itinerant Culture Feature):
+    Additional Connection from any background
+Many Cultures (Itinerant Culture Feature):
+    Intelligence
+    Wisdom
+Motive and Reason (Itinerant Culture Feature):
+    Homeland Seeker
+    Labor Migrant
+        Additional skill proficiency
+    Shadow Exile
+        Deception
+        Stealth
+    Refugee
+Itinerant Three Additional Languages
+Culture of My Own (Lone Wanderer Culture Feature):
+    Four additional skill or tool proficiencies
+Heirloom (Lone Wanderer Culture Feature):
+    Weapon worth 100 gold or less
+Lone Wanderer Two Additional Languages
+Mountain Dwarf Additional Language
+Wild and Unshackled (Mustbairn Halfling Culture Feature):
+    Two additional skill proficiencies from:
+        Acrobatics
+        Animal Handling
+        Nature
+        Religion
+        Survival
+Nature Minded (Nomad Culture Feature):
+    Skill Proficiency from:
+        Medicine
+        Nature
+        Perception
+Nomad Two Additional Languages
+Settler Two Additional Languages
+Shadow Lore (Shadow Elf Culture Feature):
+    Dancing Lights
+    Minor Illusion
+Mind Like a Steel Trap (Steamforged Culture Feature):
+    Proficiency and Expertise Die from:
+        History
+        Investigation
+        Nature
+Tech Savvy (Steamforged Culture Feature):
+    Artisan's tool proficiency
+War Scholar (Steamforged Culture Feature):
+    Student of Martial Arts
+    Student of Martial Science
+        1st degree combat maneuver
+Steamforged Additional Language
+Stoic Traditions (Stoic Orc Culture Feature):
+    Additional skill proficiency from:
+        Arcana
+        History
+        Insight
+        Medicine
+        Nature
+        Religion
+Ritualistic Focus (Stoic Orc Culture Feature):
+    Three 1st-level spells with the ritual tag
+Stoneworthy Additional Language
+Home Gardening (Stout Halfling Culture Feature):
+    Additional Proficiency from:
+        Animal Handling
+        Nature
+Stout Halfling Additional Language
+Tinker Gnome Additional Language
+Rebellious Tactics (Tunnel Halfling Culture Feature):
+    Additional Skill Proficiency from:
+        Acrobatics
+        Deception
+        Nature
+        Stealth
+All Hail the Tyrant (Tyrannized Culture Feature):
+    Additional Skill Proficiency from:
+        Deception
+        Intimidation
+Scars of the Scourge Scars/Scourge (Tyrannized Culture Feature):
+    Scars
+    Scourge
+Scars of the Scourge Damage Type (Tyrannized Culture Feature):
+    Acid
+    Cold
+    Fire
+    Force
+    Lightning
+    Necrotic
+    Poison
+    Psychic
+    Radiant
+    Thunder
+Tyrannized Additional Language
+Villager Additional Language
+War Horde Weapon Training (Warhordeling Culture Feature):
+    Two additional martial weapon proficiencies
+Warhordeling Additional Language
+Enhanced Vision (Wildling Culture Feature):
+    Nightwalker
+    Sunseeing
+Living Off the Land (Wildling Culture Feature):
+    Agriculturalist
+    Beastwarden
+    Land Hunter
+    Water Drifter
+Weather Sense (Wildling Culture Feature):
+    Terrain Type
+Wildling Additional Language
+Nature's Touch (Wood Elf Culture Feature):
+    Way with Animals
+    Way with Plants
+Background Free ASI
+Background Skill Proficiencies:
+    Acolyte
+        Insight
+        Persuasion
+    Artisan
+        Insight
+        History
+    Charlatan
+        Culture
+        Insight
+        Sleight of Hand
+    Criminal
+        Deception
+        Intimidation
+    Cultist
+        Arcana
+        Deception
+    Entertainer
+        Acrobatics
+        Culture
+        Persuasion
+    Exile
+        History
+        Performance
+    Farmer
+        Animal Handling
+        Survival
+    Folk Hero
+        Animal Handling
+        Nature
+    Gambler
+        Insight
+        Sleight of Hand
+    Guard
+        Athletics
+        Investigation
+    Guild Member
+        Any two skills
+    Hermit
+        Medicine
+        Survival
+    Marauder
+        Intimidation
+        Stealth
+    Noble
+        Animal Handling
+        Persuasion
+    Outlander
+        Athletics
+        Intimidation
+    Sage
+        Arcana
+        Culture
+        Engineering
+        Religion
+    Sailor
+        Acrobatics
+        Perception
+    Soldier
+        Animal Handling
+        Intimidation
+    Trader
+        Culture
+        Deception
+        Insight
+    Urchin
+        Deception
+        Stealth
+Background Tool Proficiencies:
+    Artisan
+        Artisan's Tools
+        Smith's Tools
+    Folk Hero (choose one of each)
+        Artisan's Tools
+        Vehicle
+    Guild Member
+        Artisan's Tools
+        Musical Instrument
+        Vehicle
+    Marauder
+        Artisan's Tools
+        Vehicle
+    Noble
+        Gaming set
+    Soldier
+        Gaming set
+    Trader
+        Vehicle
+Background Languages:
+    Acolyte
+        Additional language
+    Cultist
+        Additional language
+    Exile
+        Two additional languages
+    Guard
+        Additional language
+    Noble
+        Additional language
+    Outlander
+        Additional language
+    Sage
+        Two additional languages
+    Soldier
+        Additional language
+    Trader
+        Additional language

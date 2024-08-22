@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccgvgegxuj7yu"]
+
+[ext_resource type="Script" path="res://main_menu/main_menu_ui.gd" id="1_csunt"]
+
+[node name="MainMenu" type="Node3D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_csunt")
+
+[node name="Grid" type="GridContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="SpacePanel" type="ColorRect" parent="UI/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0)
+
+[node name="MainPanel" type="VFlowContainer" parent="UI/Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpacePanel" type="ColorRect" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.52
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.11
+text = "MENU_LABEL"
+horizontal_alignment = 1
+
+[node name="SpacePanel2" type="ColorRect" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0)
+
+[node name="NewGame5EButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "NEW_GAME_5E"
+
+[node name="NewGameA5EButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "NEW_GAME_A5E"
+
+[node name="NewGamePFButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "NEW_GAME_PF2E"
+
+[node name="QuitButton" type="Button" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+text = "MENU_QUIT"
+
+[node name="SpacePanel3" type="ColorRect" parent="UI/Grid/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.3
+color = Color(1, 1, 1, 0)
+
+[node name="SpacePanel2" type="ColorRect" parent="UI/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0)
+
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGame5EButton" to="UI" method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGameA5EButton" to="UI" method="_on_new_game_a_5e_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/NewGamePFButton" to="UI" method="_on_new_game_pf_button_pressed"]
+[connection signal="pressed" from="UI/Grid/MainPanel/QuitButton" to="UI" method="_on_quit_button_pressed"]

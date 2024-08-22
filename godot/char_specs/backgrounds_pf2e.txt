@@ -1,0 +1,39 @@
+Acolyte: Int, Wis
+Acrobat: Str, Dex
+Animal Whisperer: Wis, Cha
+Artisan: Str, Int
+Artist: Dex, Cha
+Bandit: Dex, Cha
+Barkeep: Con, Cha
+Barrister: Int, Cha
+Bounty Hunter: Str, Wis
+Charlatan: Int, Cha
+Cook: Con, Int
+Criminal: Dex, Int
+Cultist: Int, Cha
+Detective: Int, Wis
+Emissary: Int, Cha
+Entertainer: Dex, Cha
+Farmhand: Con, Wis
+Field Medic: Con, Wis
+Fortune Teller: Int, Cha
+Gambler: Dex, Cha
+Gladiator: Str, Cha
+Guard: Str, Cha
+Herbalist: Con, Wis
+Hermit: Con, Int
+Hunter: Dex, Wis
+Laborer: Str, Con
+Martial Disciple: Str, Dex
+Merchant: Int, Cha
+Miner: Str, Wis
+Noble: Int Cha
+Nomad: Con, Wis
+Prisoner: Str, Con
+Sailor: Str, Dex
+Scholar: Int, Wis
+Scout: Dex, Wis
+Street Urchin: Dex, Con
+Teacher: Int, Wis
+Tinker: Dex, Int
+Warrior: Str, Con
