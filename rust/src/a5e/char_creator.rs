@@ -1,4 +1,4 @@
-use godot::{classes::{Button, Control, IControl, ItemList, TabContainer, IItemList, Json}, prelude::*};
+use godot::{classes::{Button, Control, IControl, ItemList, TabContainer, IItemList, Json, VFlowContainer, Label, RichTextLabel}, prelude::*};
 use super::heritage_gift::Gift;
 use std::collections::HashMap;
 
@@ -136,11 +136,13 @@ impl CharCreatorA5E {
                     self.base_mut().emit_signal("heritage_changed".into(), &[heritage.into()]);
                     let heritages = vec!["dragonborn", "dwarf", "elf", "gnome", "halfling", "human", "orc", "planetouched"];
 
-                    let gift_names = self.heritage_gifts[heritages[index as usize]].iter().map(|gift| gift.name.clone()).collect::<Vec<String>>();
+                    let gifts = self.heritage_gifts[heritages[index as usize]].clone();
+                    let gift_names = gifts.iter().map(|gift| gift.name.clone()).collect::<Vec<String>>();
 
-                    for gift in &gift_names {
+                    for (i, gift) in gift_names.iter().enumerate() {
                         let name = self.base().tr_n(gift.clone().into(), gift.clone().into(), 1);
                         self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).add_item(name);
+                        self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).set_item_tooltip(i.try_into().unwrap(), gifts[i].get_features_as_gstring());
                     }
                 },
                 Err(e) => godot_error!("{}", e)
@@ -199,7 +201,9 @@ impl CharCreatorA5E {
 #[derive(GodotClass)]
 #[class(base=ItemList, init)]
 pub struct CharCreatorA5EItemList {
-    base: Base<ItemList>
+    base: Base<ItemList>,
+    #[export]
+    use_tooltip: bool
 }
 
 #[godot_api]
@@ -211,6 +215,26 @@ impl IItemList for CharCreatorA5EItemList {
             let item_text = self.base().get_item_text(i);
             let translated_text = self.base().tr_n(item_text.clone().into(), item_text.into(), 1);
             self.base_mut().set_item_text(i, translated_text);
+        }
+    }
+
+    fn make_custom_tooltip(&self, for_text: GString) -> Option<Gd<Object>> {
+        if self.use_tooltip {
+            let mut tooltip_container = VFlowContainer::new_alloc();
+            let gifts = Gift::get_features_from_gstring(for_text);
+
+            for gift in &gifts {
+                let scene = load::<PackedScene>("res://tooltip/tooltip.tscn").instantiate().unwrap();
+                godot_print!("{:?}", scene.find_child("Header".into()));
+                //scene.find_child("Header".into()).unwrap().set_text(gift.name.clone().into());
+                //scene.get_node_as::<Label>("VBoxContainer/Header").set_text(gift.name.clone().into());
+                //scene.get_node_as::<RichTextLabel>("VBoxContainer/Body").set_text(gift.desc.clone().into());
+                tooltip_container.add_child(scene);
+            }
+
+            Some(tooltip_container.upcast())
+        } else {
+            None
         }
     }
 }

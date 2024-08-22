@@ -1,5 +1,6 @@
 use godot::prelude::*;
 
+#[derive(Clone)]
 pub struct Gift {
     pub name: String,
     pub features: Vec<GiftFeature>
@@ -19,6 +20,18 @@ impl From<Variant> for Gift {
     }
 }
 
+impl Gift {
+    pub fn get_features_as_gstring(&self) -> GString {
+        let s = serde_json::to_string(&self.features).unwrap();
+        s.into()
+    }
+
+    pub fn get_features_from_gstring(features: GString) -> Vec<GiftFeature> {
+        serde_json::from_str(features.to_string().as_ref()).unwrap()
+    }
+}
+
+#[derive(serde::Serialize, serde::Deserialize, Clone)]
 pub struct GiftFeature {
     pub name: String,
     pub desc: String

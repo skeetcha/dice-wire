@@ -90,15 +90,20 @@ offset_right = 0.115021
 offset_bottom = 0.0400391
 
 [node name="Heritage" parent="UI/TabbedPanel/TabContainer" instance=ExtResource("2_8cu11")]
+use_tooltip = false
 layout_mode = 2
+tooltip_text = "[]"
 
 [node name="Heritage Gifts" parent="UI/TabbedPanel/TabContainer" instance=ExtResource("3_52nrk")]
+use_tooltip = true
 visible = false
 layout_mode = 2
 
 [node name="Culture" parent="UI/TabbedPanel/TabContainer" instance=ExtResource("3_so186")]
+use_tooltip = false
 visible = false
 layout_mode = 2
+tooltip_text = "[]"
 
 [node name="NextButton" type="Button" parent="UI"]
 visible = false
