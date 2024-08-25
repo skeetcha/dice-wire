@@ -1,3 +1,5 @@
+Panel
+VBoxContainer
 CharCreatorA5EItemList
 Button
 ItemList
@@ -8,7 +10,5 @@ PanelContainer
 Label
 CharCreatorA5E
 TabBar
-Panel
 Control
-VBoxContainer
 ScrollContainer

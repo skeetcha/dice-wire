@@ -1,6 +1,7 @@
-use godot::{classes::{Button, Control, IControl, ItemList, TabContainer, IItemList, Json, VFlowContainer, Label, RichTextLabel}, prelude::*};
+use godot::{classes::{control::MouseFilter, Button, Control, IControl, IItemList, ItemList, Json, Panel, TabContainer, VBoxContainer}, prelude::*};
 use super::heritage_gift::Gift;
 use std::collections::HashMap;
+use crate::utils::tooltip_label::TooltipLabel;
 
 #[derive(Default, GodotConvert, Var, Debug, Copy, Clone, PartialEq)]
 #[godot(via = GString)]
@@ -55,6 +56,22 @@ impl Into<Variant> for Heritage {
     }
 }
 
+impl Into<String> for Heritage {
+    fn into(self) -> String {
+        match self {
+            Self::None => String::from("none"),
+            Self::Dragonborn => String::from("dragonborn"),
+            Self::Dwarf => String::from("dwarf"),
+            Self::Elf => String::from("elf"),
+            Self::Gnome => String::from("gnome"),
+            Self::Halfling => String::from("halfling"),
+            Self::Human => String::from("human"),
+            Self::Orc => String::from("orc"),
+            Self::Planetouched => String::from("planetouched")
+        }
+    }
+}
+
 #[derive(GodotClass)]
 #[class(base=Control)]
 pub struct CharCreatorA5E {
@@ -70,7 +87,6 @@ pub struct CharCreatorA5E {
 #[godot_api]
 impl IControl for CharCreatorA5E {
     fn init(base: Base<Control>) -> Self {
-
         Self {
             heritage: Heritage::default(),
             heritage_gift: None,
@@ -135,14 +151,18 @@ impl CharCreatorA5E {
                     self.heritage = heritage;
                     self.base_mut().emit_signal("heritage_changed".into(), &[heritage.into()]);
                     let heritages = vec!["dragonborn", "dwarf", "elf", "gnome", "halfling", "human", "orc", "planetouched"];
+                    let item_num = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).get_item_count();
+
+                    for i in 0..item_num {
+                        self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).remove_item(i);
+                    }
 
                     let gifts = self.heritage_gifts[heritages[index as usize]].clone();
                     let gift_names = gifts.iter().map(|gift| gift.name.clone()).collect::<Vec<String>>();
 
-                    for (i, gift) in gift_names.iter().enumerate() {
+                    for gift in gift_names.iter() {
                         let name = self.base().tr_n(gift.clone().into(), gift.clone().into(), 1);
                         self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).add_item(name);
-                        self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).set_item_tooltip(i.try_into().unwrap(), gifts[i].get_features_as_gstring());
                     }
                 },
                 Err(e) => godot_error!("{}", e)
@@ -151,7 +171,27 @@ impl CharCreatorA5E {
             // do something with that
         } else if instance == heritage_gifts_id {
             self.heritage_gift = Some(index as i32);
+            let heritage_gifts = self.heritage_gifts.clone();
+            let heritage = self.heritage.clone();
+            let heritage_key: String = heritage.into();
             self.base_mut().emit_signal("heritage_gift_changed".into(), &[Variant::from(index)]);
+            let gift = heritage_gifts.get(&heritage_key).unwrap().get(index as usize).unwrap();
+            let child_num = self.base().get_node_as::<VBoxContainer>(GString::from("FeaturePanel/FeatureContainer")).get_child_count();
+
+            for i in (0..child_num).rev() {
+                let child = self.base().get_node_as::<VBoxContainer>(GString::from("FeaturePanel/FeatureContainer")).get_child(i).unwrap();
+                self.base_mut().get_node_as::<VBoxContainer>(GString::from("FeaturePanel/FeatureContainer")).remove_child(child);
+            }
+
+            for feature in gift.features.iter() {
+                let mut new_label = TooltipLabel::new_alloc();
+                new_label.set_text(GString::from(&feature.name));
+                new_label.set_tooltip_text(GString::from(&feature.desc));
+                new_label.set_mouse_filter(MouseFilter::STOP);
+                self.base_mut().get_node_as::<VBoxContainer>(GString::from("FeaturePanel/FeatureContainer")).add_child(new_label);
+            }
+
+            self.base_mut().get_node_as::<Panel>("FeaturePanel").set_visible(true);
         }
     }
 
@@ -178,6 +218,7 @@ impl CharCreatorA5E {
                 self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(2);
                 self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(false);
                 self.base_mut().get_node_as::<Button>(GString::from("BackButton")).set_visible(false);
+                self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(false);
             },
             _ => ()
         }
@@ -192,6 +233,14 @@ impl CharCreatorA5E {
                 let heritage = self.heritage;
                 self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(heritage != Heritage::None);
                 self.base_mut().get_node_as::<Button>(GString::from("BackButton")).set_visible(false);
+
+                let heritage_gifts = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts"));
+
+                for child in 0..heritage_gifts.get_item_count() {
+                    self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).remove_item(child);
+                }
+
+                self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(false);
             },
             _ => ()
         }
@@ -215,26 +264,6 @@ impl IItemList for CharCreatorA5EItemList {
             let item_text = self.base().get_item_text(i);
             let translated_text = self.base().tr_n(item_text.clone().into(), item_text.into(), 1);
             self.base_mut().set_item_text(i, translated_text);
-        }
-    }
-
-    fn make_custom_tooltip(&self, for_text: GString) -> Option<Gd<Object>> {
-        if self.use_tooltip {
-            let mut tooltip_container = VFlowContainer::new_alloc();
-            let gifts = Gift::get_features_from_gstring(for_text);
-
-            for gift in &gifts {
-                let scene = load::<PackedScene>("res://tooltip/tooltip.tscn").instantiate().unwrap();
-                godot_print!("{:?}", scene.find_child("Header".into()));
-                //scene.find_child("Header".into()).unwrap().set_text(gift.name.clone().into());
-                //scene.get_node_as::<Label>("VBoxContainer/Header").set_text(gift.name.clone().into());
-                //scene.get_node_as::<RichTextLabel>("VBoxContainer/Body").set_text(gift.desc.clone().into());
-                tooltip_container.add_child(scene);
-            }
-
-            Some(tooltip_container.upcast())
-        } else {
-            None
         }
     }
 }

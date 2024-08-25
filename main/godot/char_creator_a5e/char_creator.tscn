@@ -62,6 +62,10 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 9.53266
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 7.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -70,11 +74,11 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.01
 anchor_top = 0.019
-anchor_right = 0.413
+anchor_right = 0.31
 anchor_bottom = 0.991
 offset_left = -0.52
-offset_top = -0.312001
-offset_right = 0.223969
+offset_top = -0.311999
+offset_right = -0.119995
 offset_bottom = -0.16803
 
 [node name="TabContainer" type="TabContainer" parent="UI/TabbedPanel"]
@@ -90,7 +94,6 @@ offset_right = 0.115021
 offset_bottom = 0.0400391
 
 [node name="Heritage" parent="UI/TabbedPanel/TabContainer" instance=ExtResource("2_8cu11")]
-use_tooltip = false
 layout_mode = 2
 tooltip_text = "[]"
 
@@ -100,7 +103,6 @@ visible = false
 layout_mode = 2
 
 [node name="Culture" parent="UI/TabbedPanel/TabContainer" instance=ExtResource("3_so186")]
-use_tooltip = false
 visible = false
 layout_mode = 2
 tooltip_text = "[]"
@@ -109,29 +111,54 @@ tooltip_text = "[]"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.423
-anchor_top = 0.025
-anchor_right = 0.507
-anchor_bottom = 0.073
-offset_left = -0.296021
-offset_top = -0.200001
-offset_right = -0.0640259
-offset_bottom = -0.304005
+anchor_left = 0.331
+anchor_top = 0.019
+anchor_right = 0.415
+anchor_bottom = 0.066
+offset_left = -0.312042
+offset_top = -0.312001
+offset_right = -0.0800171
+offset_bottom = 0.231998
 text = "Next"
 
 [node name="BackButton" type="Button" parent="UI"]
 visible = false
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.423
+anchor_left = 0.331
 anchor_top = 0.086
-anchor_right = 0.507
+anchor_right = 0.415
 anchor_bottom = 0.134
-offset_left = -0.296021
+offset_left = -0.312042
 offset_top = 0.271999
-offset_right = -0.0640259
+offset_right = -0.0800171
 offset_bottom = 0.167999
 text = "Back"
+
+[node name="FeaturePanel" type="Panel" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.321
+anchor_top = 0.147
+anchor_right = 0.49
+anchor_bottom = 0.989
+offset_left = 0.207977
+offset_top = -0.255997
+offset_right = 0.52002
+offset_bottom = 0.127991
+
+[node name="FeatureContainer" type="VBoxContainer" parent="UI/FeaturePanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.021
+anchor_top = 0.005
+anchor_right = 0.979
+anchor_bottom = 0.991
+offset_left = -0.0950003
+offset_top = 0.27
+offset_right = 0.0950012
+offset_bottom = -0.0860596
 
 [connection signal="heritage_changed" from="UI" to="." method="_on_ui_heritage_changed"]
 [connection signal="tab_clicked" from="UI/TabbedPanel/TabContainer" to="UI" method="tab_pressed"]
