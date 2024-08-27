@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bda54ofulu54e"]
+
+[node name="Class" type="CharCreatorA5EItemList"]
+item_count = 12
+item_0/text = "CLASS_ADEP"
+item_1/text = "CLASS_BARD"
+item_2/text = "CLASS_BERS"
+item_3/text = "CLASS_HERA"
+item_4/text = "CLASS_DRUI"
+item_5/text = "CLASS_FIGH"
+item_6/text = "CLASS_MARS"
+item_7/text = "CLASS_RANG"
+item_8/text = "CLASS_ROGU"
+item_9/text = "CLASS_SORC"
+item_10/text = "CLASS_WARL"
+item_11/text = "CLASS_WIZA"
+
+[connection signal="item_selected" from="." to="." method="item_selected"]

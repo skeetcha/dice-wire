@@ -1,0 +1,134 @@
+{
+    "heritages": [
+        {
+            "name": "HERITAGE_DRAG",
+            "id": "dragonborn",
+            "size": "M",
+            "speed": {
+                "walk": 30
+            },
+            "features": [
+                {
+                    "name": "HERITAGE_DRAG2_NAME",
+                    "desc": "HERITAGE_DRAG2_DESC",
+                    "choices": [
+                        {
+                            "amount": 1,
+                            "items": [
+                                {
+                                    "name": "DAMAGE_TYPE_ACID",
+                                    "id": "acid"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_COLD",
+                                    "id": "cold"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_FIRE",
+                                    "id": "fire"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_FORCE",
+                                    "id": "force"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_LIGHTNING",
+                                    "id": "lightning"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_NECROTIC",
+                                    "id": "necrotic"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_POISON",
+                                    "id": "poison"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_PSYCHIC",
+                                    "id": "psychic"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_RADIANT",
+                                    "id": "radiant"
+                                },
+                                {
+                                    "name": "DAMAGE_TYPE_THUNDER",
+                                    "id": "thunder"
+                                }
+                            ],
+                            "name": "HERITAGE_DRAG2_CHOICE1_NAME"
+                        },
+                        {
+                            "amount": 1,
+                            "items": [
+                                {
+                                    "name": "DAMAGE_AREA_30_LINE",
+                                    "id": "30-foot line"
+                                },
+                                {
+                                    "name": "DAMAGE_AREA_15_CONE",
+                                    "id": "15-foot cone"
+                                }
+                            ],
+                            "name": "HERITAGE_DRAG2_CHOICE2_NAME"
+                        }
+                    ]
+                }
+            ],
+            "gifts": [
+                {
+                    "name": "HGIFT_DRAG1_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_DRAG1_FEAT1_NAME",
+                            "desc": "HGIFT_DRAG1_FEAT1_DESC"
+                        },
+                        {
+                            "name": "HGIFT_DRAG1_FEAT2_NAME",
+                            "desc": "HGIFT_DRAG1_FEAT2_DESC"
+                        },
+                        {
+                            "name": "HGIFT_DRAG1_FEAT3_NAME",
+                            "desc": "HGIFT_DRAG1_FEAT3_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_DRAG2_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_DRAG2_FEAT1_NAME",
+                            "desc": "HGIFT_DRAG2_FEAT1_DESC"
+                        },
+                        {
+                            "name": "HGIFT_DRAG2_FEAT2_NAME",
+                            "desc": "HGIFT_DRAG2_FEAT2_DESC"
+                        },
+                        {
+                            "name": "HGIFT_DRAG2_FEAT3_NAME",
+                            "desc": "HGIFT_DRAG2_FEAT3_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_DRAG3_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_DRAG3_FEAT1_NAME",
+                            "desc": "HGIFT_DRAG3_FEAT1_DESC"
+                        }
+                    ]
+                }
+            ],
+            "paragon": {
+                "static": {
+                    "name": "HPAR_DRAG_NAME",
+                    "desc": "HPAR_DRAG_DESC"
+                },
+                "choices": [
+                    
+                ]
+            }
+        }
+    ]
+}

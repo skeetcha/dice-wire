@@ -1,4 +1,4 @@
-use godot::{classes::{control::MouseFilter, Button, Control, IControl, IItemList, ItemList, Json, Panel, TabContainer, VBoxContainer}, prelude::*};
+use godot::{classes::{control::MouseFilter, Button, Control, HBoxContainer, IControl, IItemList, ItemList, Json, Label, Panel, RandomNumberGenerator, TabContainer, VBoxContainer}, prelude::*};
 use super::heritage_gift::Gift;
 use std::collections::HashMap;
 use crate::utils::tooltip_label::TooltipLabel;
@@ -72,16 +72,33 @@ impl Into<String> for Heritage {
     }
 }
 
+impl Heritage {
+    pub fn get_localization_str(&self) -> &'static str {
+        match self {
+            Self::None => "",
+            Self::Dragonborn => "HERITAGE_DRAG",
+            Self::Dwarf => "HERITAGE_DWAR",
+            Self::Elf => "HERITAGE_ELF",
+            Self::Gnome => "HERITAGE_GNOM",
+            Self::Halfling => "HERITAGE_HALF",
+            Self::Human => "HERITAGE_HUMA",
+            Self::Orc => "HERITAGE_ORC",
+            Self::Planetouched => "HERITAGE_PLAN"
+        }
+    }
+}
+
 #[derive(GodotClass)]
 #[class(base=Control)]
 pub struct CharCreatorA5E {
     heritage: Heritage,
     heritage_gift: Option<i32>,
+    culture: Option<i32>,
     #[export]
     tabs: Option<Gd<TabContainer>>,
     base: Base<Control>,
     current_tab: i32,
-    heritage_gifts: HashMap<String, Vec<Gift>>
+    heritage_gifts: HashMap<String, Vec<Gift>>,
 }
 
 #[godot_api]
@@ -90,6 +107,7 @@ impl IControl for CharCreatorA5E {
         Self {
             heritage: Heritage::default(),
             heritage_gift: None,
+            culture: None,
             tabs: None,
             base,
             current_tab: 0,
@@ -112,6 +130,10 @@ impl IControl for CharCreatorA5E {
 
             self.heritage_gifts.insert(String::from(*heritage), gifts);
         }
+
+        let mut hp_label = self.base().tr_n("MAX_HP_LABEL".into(), "MAX_HP_LABEL".into(), 1).to_string();
+        hp_label += ": 12";
+        self.base_mut().get_node_as::<Label>(GString::from("StatPanel/HPLabel")).set_text(GString::from(hp_label));
     }
 
     fn process(&mut self, _delta: f64) {
@@ -123,6 +145,12 @@ impl IControl for CharCreatorA5E {
             }
         } else if self.current_tab == 1 {
             if let Some(_) = self.heritage_gift {
+                if !next_button_vis {
+                    self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(true);
+                }
+            }
+        } else if self.current_tab == 2 {
+            if let Some(_) = self.culture {
                 if !next_button_vis {
                     self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(true);
                 }
@@ -143,6 +171,7 @@ impl CharCreatorA5E {
         let heritage_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage")).instance_id();
         let heritage_gifts_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).instance_id();
         let culture_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Culture")).instance_id();
+        let class_id = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Class")).instance_id();
         let instance = InstanceId::from_i64(instance_id);
 
         if instance == heritage_id {
@@ -164,11 +193,18 @@ impl CharCreatorA5E {
                         let name = self.base().tr_n(gift.clone().into(), gift.clone().into(), 1);
                         self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).add_item(name);
                     }
+
+                    let heritage_text = self.base().tr_n(heritage.get_localization_str().into(), heritage.get_localization_str().into(), 1);
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/HeritageLabel")).set_text(heritage_text);
                 },
                 Err(e) => godot_error!("{}", e)
             }
         } else if instance == culture_id {
-            // do something with that
+            self.culture = Some(index as i32);
+            let cultures = vec!["CULTURE_CARA", "CULTURE_CIRC", "CULTURE_COLL", "CULTURE_COSM", "CULTURE_DEDW", "CULTURE_DEGN", "CULTURE_DRBN", "CULTURE_DRCT", "CULTURE_ELAD", "CULTURE_FORE", "CULTURE_FORG", "CULTURE_FORS", "CULTURE_GODB", "CULTURE_HIGH", "CULTURE_HILL", "CULTURE_IMPE", "CULTURE_ITIN", "CULTURE_KITH", "CULTURE_LONE", "CULTURE_MOUN", "CULTURE_MIST", "CULTURE_NOMA", "CULTURE_SETT", "CULTURE_SHAD", "CULTURE_STEA", "CULTURE_STOI", "CULTURE_STON", "CULTURE_STOU", "CULTURE_TINK", "CULTURE_TUNN", "CULTURE_TYRA", "CULTURE_VILL", "CULTURE_WARH", "CULTURE_WILD", 
+            "CULTURE_WOOD"];
+            let culture_text = self.base().tr_n(cultures[index as usize].into(), cultures[index as usize].into(), 1);
+            self.base_mut().get_node_as::<Label>(GString::from("StatPanel/CultureLabel")).set_text(culture_text);
         } else if instance == heritage_gifts_id {
             self.heritage_gift = Some(index as i32);
             let heritage_gifts = self.heritage_gifts.clone();
@@ -192,6 +228,104 @@ impl CharCreatorA5E {
             }
 
             self.base_mut().get_node_as::<Panel>("FeaturePanel").set_visible(true);
+        } else if instance == class_id {
+            let stats = self.gen_stats();
+            let star_label = GString::from("⭐");
+            let labels: Vec<&'static str>;
+            let classes = vec!["CLASS_ADEP", "CLASS_BARD", "CLASS_BERS", "CLASS_HERA", "CLASS_DRUI", "CLASS_FIGH", "CLASS_MARS", "CLASS_RANG", "CLASS_ROGU", "CLASS_SORC", "CLASS_WARL", "CLASS_WIZA"];
+            let hp: i32;
+            let mut con = 0i32;
+        
+            for i in 0..6 {
+                self.base_mut().get_node_as::<HBoxContainer>(GString::from("StatPanel/StatStarBox")).get_child(i).unwrap().try_cast::<Label>().unwrap().set_text(GString::from(""));
+                self.base_mut().get_node_as::<HBoxContainer>(GString::from("StatPanel/StatNumberBox")).get_child(i).unwrap().try_cast::<Label>().unwrap().set_text(GString::from(""));
+            }
+
+            match index {
+                0 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/DexLabel")).set_text(star_label);
+                    labels = vec!["Dex", "Con", "Wis", "Str", "Cha", "Int"];
+                    hp = 8;
+                },
+                1 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/ChaLabel")).set_text(star_label);
+                    labels = vec!["Cha", "Dex", "Con", "Int", "Wis", "Str"];
+                    hp = 8;
+                },
+                2 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/StrLabel")).set_text(star_label);
+                    labels = vec!["Str", "Con", "Dex", "Wis", "Cha", "Int"];
+                    hp = 12;
+                },
+                3 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/WisLabel")).set_text(star_label);
+                    labels = vec!["Wis", "Str", "Con", "Cha", "Dex", "Int"];
+                    hp = 8;
+                },
+                4 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/WisLabel")).set_text(star_label);
+                    labels = vec!["Wis", "Dex", "Con", "Cha", "Str", "Int"];
+                    hp = 8;
+                },
+                5 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/StrLabel")).set_text(star_label);
+                    labels = vec!["Str", "Con", "Dex", "Wis", "Int", "Cha"];
+                    hp = 10;
+                },
+                6 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/StrLabel")).set_text(star_label);
+                    labels = vec!["Str", "Cha", "Con", "Dex", "Wis", "Int"];
+                    hp = 10;
+                },
+                7 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/StrLabel")).set_text(star_label);
+                    labels = vec!["Str", "Con", "Dex", "Wis", "Int", "Cha"];
+                    hp = 10;
+                },
+                8 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/DexLabel")).set_text(star_label);
+                    labels = vec!["Dex", "Wis", "Con", "Str", "Cha", "Int"];
+                    hp = 10;
+                },
+                9 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/DexLabel")).set_text(star_label);
+                    labels = vec!["Dex", "Con", "Int", "Wis", "Cha", "Str"];
+                    hp = 8;
+                },
+                10 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/ChaLabel")).set_text(star_label);
+                    labels = vec!["Cha", "Con", "Dex", "Int", "Wis", "Str"];
+                    hp = 6;
+                },
+                11 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/ChaLabel")).set_text(star_label);
+                    labels = vec!["Cha", "Con", "Dex", "Int", "Wis", "Str"];
+                    hp = 8;
+                },
+                12 => {
+                    self.base_mut().get_node_as::<Label>(GString::from("StatPanel/StatStarBox/IntLabel")).set_text(star_label);
+                    labels = vec!["Int", "Con", "Dex", "Cha", "Wis", "Str"];
+                    hp = 6;
+                },
+                _ => panic!("This shouldn't be here and if it is, well, then the panic is deserved")
+            }
+
+            for (i, label) in labels.iter().enumerate() {
+                self.base_mut().get_node_as::<Label>(GString::from(format!("StatPanel/StatNumberBox/{}Label", label))).set_text(GString::from(stats[i].to_string()));
+
+                if *label == "Con" {
+                    con = stats[i];
+                }
+            }
+
+            let mut class_label = self.base().tr_n("LEVEL_LABEL".into(), "LEVEL_LABEL".into(), 1).to_string();
+            class_label += " 1 ";
+            class_label += &self.base().tr_n(classes[index as usize].into(), classes[index as usize].into(), 1).to_string();
+            self.base_mut().get_node_as::<Label>(GString::from("StatPanel/ClassLabel")).set_text(GString::from(class_label));
+            let mut hp_label = self.base().tr_n("MAX_HP_LABEL".into(), "MAX_HP_LABEL".into(), 1).to_string();
+            hp_label += ": ";
+            hp_label += &(hp + ((con - 10) / 2)).to_string();
+            self.base_mut().get_node_as::<Label>(GString::from("StatPanel/HPLabel")).set_text(GString::from(hp_label));
         }
     }
 
@@ -212,13 +346,19 @@ impl CharCreatorA5E {
                 self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(1);
                 self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(false);
                 self.base_mut().get_node_as::<Button>(GString::from("BackButton")).set_visible(true);
+                let gift = self.heritage_gift;
+                self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(gift.is_some());
             },
             1 => {
                 self.current_tab = 2;
                 self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(2);
                 self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(false);
-                self.base_mut().get_node_as::<Button>(GString::from("BackButton")).set_visible(false);
                 self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(false);
+            },
+            2 => {
+                self.current_tab = 3;
+                self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(3);
+                self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(false);
             },
             _ => ()
         }
@@ -233,17 +373,44 @@ impl CharCreatorA5E {
                 let heritage = self.heritage;
                 self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(heritage != Heritage::None);
                 self.base_mut().get_node_as::<Button>(GString::from("BackButton")).set_visible(false);
-
-                let heritage_gifts = self.base().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts"));
-
-                for child in 0..heritage_gifts.get_item_count() {
-                    self.base_mut().get_node_as::<CharCreatorA5EItemList>(GString::from("TabbedPanel/TabContainer/Heritage Gifts")).remove_item(child);
-                }
-
                 self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(false);
+            },
+            2 => {
+                self.current_tab = 1;
+                self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(1);
+                let gift = self.heritage_gift;
+                self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(gift.is_some());
+                self.base_mut().get_node_as::<Panel>(GString::from("FeaturePanel")).set_visible(true);
+            },
+            3 => {
+                self.current_tab = 2;
+                self.base_mut().get_node_as::<TabContainer>(GString::from("TabbedPanel/TabContainer")).set_current_tab(2);
+                let culture = self.culture;
+                self.base_mut().get_node_as::<Button>(GString::from("NextButton")).set_visible(culture.is_some());
             },
             _ => ()
         }
+    }
+
+    fn gen_stats(&self) -> Vec<i32> {
+        let mut stats: Vec<i32> = Vec::new();
+        let mut rand = RandomNumberGenerator::new_gd();
+
+        for _ in 0..6 {
+            let mut numbers = Vec::new();
+
+            for _ in 0..4 {
+                numbers.push(rand.randi_range(1, 6));
+            }
+
+            numbers.sort();
+            numbers.remove(0);
+            stats.push(numbers.iter().fold(0, |acc, x| acc + x));
+        }
+
+        stats.sort();
+        stats = stats.iter().rev().map(|val| *val).collect();
+        stats.to_owned()
     }
 }
 

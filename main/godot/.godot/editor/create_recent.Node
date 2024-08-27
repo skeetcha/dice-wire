@@ -1,13 +1,13 @@
+Label
+HBoxContainer
 Panel
-VBoxContainer
 CharCreatorA5EItemList
+VBoxContainer
 Button
 ItemList
 TabContainer
 HFlowContainer
-HBoxContainer
 PanelContainer
-Label
 CharCreatorA5E
 TabBar
 Control
