@@ -4,11 +4,11 @@ compatibility_minimum = 4.1
 reloadable = true
 
 [libraries]
-linux.debug.x86_64 =     "res://../rust/target/debug/libvarhaven.so"
-linux.release.x86_64 =   "res://../rust/target/release/libvarhaven.so"
-windows.debug.x86_64 =   "res://../rust/target/debug/varhaven.dll"
-windows.release.x86_64 = "res://../rust/target/release/varhaven.dll"
-macos.debug =            "res://../rust/target/debug/libvarhaven.dylib"
-macos.release =          "res://../rust/target/release/libvarhaven.dylib"
-macos.debug.arm64 =      "res://../rust/target/debug/libvarhaven.dylib"
-macos.release.arm64 =    "res://../rust/target/release/libvarhaven.dylib"
+linux.debug.x86_64 =     "res://../rust/target/debug/libdice_wire_rs.so"
+linux.release.x86_64 =   "res://../rust/target/release/libdice_wire_rs.so"
+windows.debug.x86_64 =   "res://../rust/target/debug/dice_wire_rs.dll"
+windows.release.x86_64 = "res://../rust/target/release/dice_wire_rs.dll"
+macos.debug =            "res://../rust/target/debug/libdice_wire_rs.dylib"
+macos.release =          "res://../rust/target/release/libdice_wire_rs.dylib"
+macos.debug.arm64 =      "res://../rust/target/debug/libdice_wire_rs.dylib"
+macos.release.arm64 =    "res://../rust/target/release/libdice_wire_rs.dylib"
