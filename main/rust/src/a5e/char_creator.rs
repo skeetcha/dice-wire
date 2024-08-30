@@ -326,6 +326,7 @@ impl CharCreatorA5E {
             hp_label += ": ";
             hp_label += &(hp + ((con - 10) / 2)).to_string();
             self.base_mut().get_node_as::<Label>(GString::from("StatPanel/HPLabel")).set_text(GString::from(hp_label));
+            self.base_mut().emit_signal("class_changed".into(), &[Variant::from(index)]);
         }
     }
 
@@ -333,10 +334,13 @@ impl CharCreatorA5E {
     pub fn heritage_changed(&mut self, heritage: Variant);
 
     #[signal]
-    pub fn culture_chagned(&mut self, culture: Variant);
+    pub fn culture_changed(&mut self, culture: Variant);
 
     #[signal]
     pub fn heritage_gift_changed(&mut self, gift: i32);
+
+    #[signal]
+    pub fn class_changed(&mut self, class: i32);
 
     #[func]
     pub fn next_button(&mut self) {

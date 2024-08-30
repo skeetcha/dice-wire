@@ -1,0 +1,363 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2e6ujf5k3im7"]
+
+[ext_resource type="PackedScene" uid="uid://cl2lb4xycrsln" path="res://char_creator_a5e/tabs/heritage.tscn" id="1_0rqr6"]
+[ext_resource type="PackedScene" uid="uid://c0n5tbt5onlbg" path="res://char_creator_a5e/tabs/heritage_gifts.tscn" id="2_bic7r"]
+[ext_resource type="PackedScene" uid="uid://cbi7y8k8gloij" path="res://char_creator_a5e/tabs/culture.tscn" id="3_07r5d"]
+[ext_resource type="PackedScene" uid="uid://bda54ofulu54e" path="res://char_creator_a5e/tabs/class.tscn" id="4_frbux"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_erlra"]
+font_size = 14
+
+[node name="UI" type="CharCreatorA5E"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabbedPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.019
+anchor_right = 0.31
+anchor_bottom = 0.991
+offset_left = -0.52
+offset_top = -0.311999
+offset_right = -0.119995
+offset_bottom = -0.16803
+
+[node name="TabContainer" type="TabContainer" parent="TabbedPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.011
+anchor_top = 0.005
+anchor_right = 0.989
+anchor_bottom = 0.992
+offset_left = -0.115
+offset_top = -0.15
+offset_right = 0.115021
+offset_bottom = 0.0400391
+
+[node name="Heritage" parent="TabbedPanel/TabContainer" instance=ExtResource("1_0rqr6")]
+layout_mode = 2
+tooltip_text = "[]"
+
+[node name="Heritage Gifts" parent="TabbedPanel/TabContainer" instance=ExtResource("2_bic7r")]
+use_tooltip = true
+visible = false
+layout_mode = 2
+
+[node name="Culture" parent="TabbedPanel/TabContainer" instance=ExtResource("3_07r5d")]
+visible = false
+layout_mode = 2
+tooltip_text = "[]"
+item_count = 35
+item_0/text = "CULTURE_CARA"
+item_1/text = "CULTURE_CIRC"
+item_2/text = "CULTURE_COLL"
+item_3/text = "CULTURE_COSM"
+item_4/text = "CULTURE_DEDW"
+item_5/text = "CULTURE_DEGN"
+item_6/text = "CULTURE_DRBN"
+item_7/text = "CULTURE_DRCT"
+item_8/text = "CULTURE_ELAD"
+item_9/text = "CULTURE_FORE"
+item_10/text = "CULTURE_FORG"
+item_11/text = "CULTURE_FORS"
+item_12/text = "CULTURE_GODB"
+item_13/text = "CULTURE_HIGH"
+item_14/text = "CULTURE_HILL"
+item_15/text = "CULTURE_IMPE"
+item_16/text = "CULTURE_ITIN"
+item_17/text = "CULTURE_KITH"
+item_18/text = "CULTURE_LONE"
+item_19/text = "CULTURE_MOUN"
+item_20/text = "CULTURE_MIST"
+item_21/text = "CULTURE_NOMA"
+item_22/text = "CULTURE_SETT"
+item_23/text = "CULTURE_SHAD"
+item_24/text = "CULTURE_STEA"
+item_25/text = "CULTURE_STOI"
+item_26/text = "CULTURE_STON"
+item_27/text = "CULTURE_STOU"
+item_28/text = "CULTURE_TINK"
+item_29/text = "CULTURE_TUNN"
+item_30/text = "CULTURE_TYRA"
+item_31/text = "CULTURE_VILL"
+item_32/text = "CULTURE_WARH"
+item_33/text = "CULTURE_WILD"
+item_34/text = "CULTURE_WOOD"
+
+[node name="Class" parent="TabbedPanel/TabContainer" instance=ExtResource("4_frbux")]
+visible = false
+layout_mode = 2
+item_count = 13
+item_3/text = "CLASS_CLER"
+item_6/text = "CLASS_HERA"
+item_7/text = "CLASS_MARS"
+item_8/text = "CLASS_RANG"
+item_9/text = "CLASS_ROGU"
+item_10/text = "CLASS_SORC"
+item_11/text = "CLASS_WARL"
+item_12/text = "CLASS_WIZA"
+
+[node name="NextButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.331
+anchor_top = 0.019
+anchor_right = 0.415
+anchor_bottom = 0.066
+offset_left = -0.312042
+offset_top = -0.312001
+offset_right = -0.0800171
+offset_bottom = 0.231998
+text = "Next"
+
+[node name="BackButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.331
+anchor_top = 0.086
+anchor_right = 0.415
+anchor_bottom = 0.134
+offset_left = -0.312042
+offset_top = 0.271999
+offset_right = -0.0800171
+offset_bottom = 0.167999
+text = "Back"
+
+[node name="FeaturePanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.321
+anchor_top = 0.147
+anchor_right = 0.49
+anchor_bottom = 0.989
+offset_left = 0.207977
+offset_top = -0.255997
+offset_right = 0.52002
+offset_bottom = 0.127991
+
+[node name="FeatureContainer" type="VBoxContainer" parent="FeaturePanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.021
+anchor_top = 0.005
+anchor_right = 0.979
+anchor_bottom = 0.991
+offset_left = -0.0950003
+offset_top = 0.27
+offset_right = 0.0950012
+offset_bottom = -0.0860596
+
+[node name="StatPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71
+anchor_top = 0.028
+anchor_right = 0.981
+anchor_bottom = 0.801
+offset_left = 0.0799561
+offset_top = -0.144001
+offset_right = -0.112061
+offset_bottom = -0.0480347
+
+[node name="HeritageLabel" type="Label" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.012
+anchor_right = 0.984
+anchor_bottom = 0.058
+offset_left = 0.0079999
+offset_top = -0.0119996
+offset_right = -0.00799561
+offset_bottom = -0.0579987
+text = "Human"
+label_settings = SubResource("LabelSettings_erlra")
+horizontal_alignment = 1
+
+[node name="CultureLabel" type="Label" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.069
+anchor_right = 0.984
+anchor_bottom = 0.115
+offset_left = 0.0079999
+offset_top = 0.431004
+offset_right = -0.00799561
+offset_bottom = 0.385017
+text = "Villager"
+label_settings = SubResource("LabelSettings_erlra")
+horizontal_alignment = 1
+
+[node name="ClassLabel" type="Label" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.069
+anchor_right = 0.984
+anchor_bottom = 0.115
+offset_left = 0.0079999
+offset_top = 27.431
+offset_right = -0.00799561
+offset_bottom = 27.3851
+text = "Level 1 Berserker"
+label_settings = SubResource("LabelSettings_erlra")
+horizontal_alignment = 1
+
+[node name="StatLabelsBox" type="HBoxContainer" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.196
+anchor_right = 0.99
+anchor_bottom = 0.269
+offset_left = 0.152
+offset_top = -0.195999
+offset_right = 0.119965
+offset_bottom = 0.231003
+
+[node name="StrLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "STRENGTH_LABEL"
+
+[node name="DexLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "DEXTERITY_LABEL"
+
+[node name="ConLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "CONSTITUTION_LABEL"
+
+[node name="IntLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "INTELLIGENCE_LABEL"
+
+[node name="WisLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "WISDOM_LABEL"
+
+[node name="ChaLabel" type="Label" parent="StatPanel/StatLabelsBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "CHARISMA_LABEL"
+
+[node name="StatStarBox" type="HBoxContainer" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.253
+anchor_right = 0.99
+anchor_bottom = 0.327
+offset_left = 0.152
+offset_top = 0.246994
+offset_right = -0.880035
+offset_bottom = 0.173004
+
+[node name="StrLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="DexLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="ConLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="IntLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="WisLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="ChaLabel" type="Label" parent="StatPanel/StatStarBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="StatNumberBox" type="HBoxContainer" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.322
+anchor_right = 0.987
+anchor_bottom = 0.396
+offset_left = 0.152
+offset_top = -0.126999
+offset_right = 0.0559998
+offset_bottom = -0.201004
+
+[node name="StrLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="DexLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="ConLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="IntLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="WisLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="ChaLabel" type="Label" parent="StatPanel/StatNumberBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_alignment = 1
+
+[node name="HPLabel" type="Label" parent="StatPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.406
+anchor_right = 0.984
+anchor_bottom = 0.452
+offset_left = 0.0079999
+offset_top = 0.223999
+offset_right = -0.00799561
+offset_bottom = 0.178162
+label_settings = SubResource("LabelSettings_erlra")
+horizontal_alignment = 1
+
+[connection signal="tab_clicked" from="TabbedPanel/TabContainer" to="." method="tab_pressed"]
+[connection signal="item_selected" from="TabbedPanel/TabContainer/Heritage" to="TabbedPanel/TabContainer/Heritage" method="item_selected"]
+[connection signal="item_selected_instance" from="TabbedPanel/TabContainer/Heritage" to="." method="tab_val_selected"]
+[connection signal="item_selected" from="TabbedPanel/TabContainer/Heritage Gifts" to="TabbedPanel/TabContainer/Heritage Gifts" method="item_selected"]
+[connection signal="item_selected_instance" from="TabbedPanel/TabContainer/Heritage Gifts" to="." method="tab_val_selected"]
+[connection signal="item_selected_instance" from="TabbedPanel/TabContainer/Culture" to="." method="tab_val_selected"]
+[connection signal="item_selected_instance" from="TabbedPanel/TabContainer/Class" to="." method="tab_val_selected"]
+[connection signal="pressed" from="NextButton" to="." method="next_button"]
+[connection signal="pressed" from="BackButton" to="." method="back_button"]
