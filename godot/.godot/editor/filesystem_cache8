@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724982220
+::res://::1724982492
 icon.svg::CompressedTexture2D::7151425158301183390::1724516792::1724516792::1::::<><>::
 player.tscn::PackedScene::4641822628848271021::1724516792::0::1::::<><>::uid://rxoe4v2uxumd::::res://mannequiny/mannequiny-new.tscn
 rust.gdextension::GDExtension::-1::1724940018::0::1::::<><>::
@@ -11,10 +11,10 @@ THIRDPARTY.md::TextFile::-1::1724516792::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1724516792
 ::res://addons/godot-git-plugin/macos/::1724516792
 ::res://addons/godot-git-plugin/win64/::1724516792
-::res://cel_shader/::1724981983
+::res://cel_shader/::1724982231
 color-gradient.tres::GradientTexture1D::7328054036161745449::1724790201::0::1::::<><>::
 fresnel-gradient.tres::GradientTexture1D::5436186829284524673::1724790201::0::1::::<><>::
-godot-toon.gdshader::Shader::-1::1724981983::0::1::::<><>::
+godot-toon.gdshader::Shader::-1::1724982231::0::1::::<><>::
 ::res://char_creator_5e/::1724516792
 background_bg.tres::ButtonGroup::1456853392483723561::1724516792::0::1::::<><>::
 char_creator.gd::GDScript::-1::1724516792::0::1::::<>Node3D<>::
@@ -48,6 +48,8 @@ backgrounds_5e.txt::TextFile::-1::1724516792::0::1::::<><>::
 backgrounds_pf2e.txt::TextFile::-1::1724516792::0::1::::<><>::
 cultures.txt::TextFile::-1::1724516792::0::1::::<><>::
 races_5e.txt::TextFile::-1::1724516792::0::1::::<><>::
+::res://content/::1724982382
+::res://content/godot/::1724982382
 ::res://main_menu/::1724516792
 main_menu.tscn::PackedScene::4926891313232510764::1724516792::0::1::::<><>::res://main_menu/main_menu_ui.gd
 main_menu_ui.gd::GDScript::-1::1724516792::0::1::::<>Control<>::
