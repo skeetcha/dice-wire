@@ -3,7 +3,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var success = ProjectSettings.load_resource_pack("res://content.pck")
+	var success = ProjectSettings.load_resource_pack("content.pck")
 	
 	if success:
 		var scene: PackedScene = load("res://char_creator_3d/a5e.tscn")
