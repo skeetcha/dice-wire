@@ -1,5 +1,12 @@
 extends Control
 
+func _ready():
+	var success = ProjectSettings.load_resource_pack("content.pck")
+	
+	if not success:
+		print("Error loading content pack")
+		get_tree().quit()
+
 func _on_new_game_button_pressed():
 	#get_tree().change_scene_to_file("res://char_creator_5e/char_creator.tscn")
 	print(tr("5E_MESSAGE"))

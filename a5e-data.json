@@ -56,7 +56,8 @@
                                     "id": "thunder"
                                 }
                             ],
-                            "name": "HERITAGE_DRAG2_CHOICE1_NAME"
+                            "name": "HERITAGE_DRAG2_CHOICE1_NAME",
+                            "desc": "HERITAGE_DRAG2_CHOICE1_DESC"
                         },
                         {
                             "amount": 1,
@@ -70,7 +71,8 @@
                                     "id": "15-foot cone"
                                 }
                             ],
-                            "name": "HERITAGE_DRAG2_CHOICE2_NAME"
+                            "name": "HERITAGE_DRAG2_CHOICE2_NAME",
+                            "desc": "HERITAGE_DRAG2_CHOICE2_DESC"
                         }
                     ]
                 }
@@ -126,9 +128,272 @@
                     "desc": "HPAR_DRAG_DESC"
                 },
                 "choices": [
-                    
+                    {
+                        "name": "HPAR_DRAG1_NAME",
+                        "desc": "HPAR_DRAG1_DESC"
+                    },
+                    {
+                        "name": "HPAR_DRAG2_NAME",
+                        "desc": "HPAR_DRAG2_DESC"
+                    },
+                    {
+                        "name": "HPAR_DRAG3_NAME",
+                        "desc": "HPAR_DRAG3_DESC"
+                    }
                 ]
-            }
+            },
+            "cultures": [
+                "DRBN",
+                "DRCT"
+            ]
+        },
+        {
+            "name": "HERITAGE_DWAR",
+            "id": "dwarf",
+            "size": "M",
+            "speed": {
+                "walk": 25,
+                "speed_reduction": true
+            },
+            "features": [
+                {
+                    "name": "HERITAGE_DARKVISION",
+                    "desc": "HERITAGE_DWAR_DARKVISION"
+                },
+                {
+                    "name": "HERITAGE_DWAR3_NAME",
+                    "desc": "HERITAGE_DWAR3_DESC",
+                    "choices": [
+                        {
+                            "amount": 1,
+                            "items": [
+                                {
+                                    "name": "ARTISAN_BREW",
+                                    "id": "brewer"
+                                },
+                                {
+                                    "name": "ARTISAN_MASO",
+                                    "id": "mason"
+                                },
+                                {
+                                    "name": "TOOL_SMIT",
+                                    "id": "smith"
+                                }
+                            ],
+                            "name": "HERITAGE_DWAR3_CHOICE1_NAME",
+                            "desc": "HERITAGE_DWAR3_CHOICE1_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HERITAGE_DWAR4_NAME",
+                    "desc": "HERITAGE_DWAR4_DESC"
+                }
+            ],
+            "gifts": [
+                {
+                    "name": "HGIFT_DWAR1_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_DWAR1_FEAT1_NAME",
+                            "desc": "HGIFT_DWAR1_FEAT1_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_DWAR2_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_DWAR2_FEAT1_NAME",
+                            "desc": "HGIFT_DWAR2_FEAT1_DESC"
+                        }
+                    ]
+                }
+            ],
+            "paragon": {
+                "static": null,
+                "choices": [
+                    {
+                        "name": "HPAR_DWAR1_NAME",
+                        "desc": "HPAR_DWAR1_DESC"
+                    },
+                    {
+                        "name": "HPAR_DWAR2_NAME",
+                        "desc": "HPAR_DWAR2_DESC"
+                    }
+                ]
+            },
+            "cultures": [
+                "DEDW",
+                "FORS",
+                "GODB",
+                "HILL",
+                "MOUN"
+            ]
+        },
+        {
+            "name": "HERITAGE_ELF",
+            "id": "elf",
+            "size": "M",
+            "speed": {
+                "walk": 30
+            },
+            "features": [
+                {
+                    "name": "HERITAGE_DARKVISION",
+                    "desc": "HERITAGE_ELF_DARKVISION"
+                },
+                {
+                    "name": "HERITAGE_ELF3_NAME",
+                    "desc": "HERITAGE_ELF3_DESC"
+                },
+                {
+                    "name": "HERITAGE_ELF4_NAME",
+                    "desc": "HERITAGE_ELF4_DESC"
+                }
+            ],
+            "gifts": [
+                {
+                    "name": "HGIFT_ELF1_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_ELF1_FEAT1_NAME",
+                            "desc": "HGIFT_ELF1_FEAT1_DESC"
+                        },
+                        {
+                            "name": "HGIFT_ELF1_FEAT2_NAME",
+                            "desc": "HGIFT_ELF1_FEAT2_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_ELF2_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_ELF2_FEAT1_NAME",
+                            "desc": "HGIFT_ELF2_FEAT1_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_ELF3_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_ELF3_FEAT1_NAME",
+                            "desc": "HGIFT_ELF3_FEAT1_DESC"
+                        },
+                        {
+                            "name": "HGIFT_ELF3_FEAT2_NAME",
+                            "desc": "HGIFT_ELF3_FEAT2_DESC"
+                        },
+                        {
+                            "name": "HGIFT_ELF3_FEAT3_NAME",
+                            "desc": "HGIFT_ELF3_FEAT3_DESC"
+                        }
+                    ]
+                }
+            ],
+            "paragon": {
+                "static": null,
+                "choices": [
+                    {
+                        "name": "HPAR_ELF1_NAME",
+                        "desc": "HPAR_ELF1_DESC"
+                    },
+                    {
+                        "name": "HPAR_ELF2_NAME",
+                        "desc": "HPAR_ELF2_DESC"
+                    },
+                    {
+                        "name": "HPAR_ELF3_NAME",
+                        "desc": "HPAR_ELF3_DESC"
+                    }
+                ]
+            },
+            "cultures": [
+                "ELAD",
+                "HIGH",
+                "SHAD",
+                "WOOD"
+            ]
+        },
+        {
+            "name": "HERITAGE_GNOM",
+            "id": "gnome",
+            "size": "S",
+            "speed": {
+                "walk": 25
+            },
+            "features": [
+                {
+                    "name": "HERITAGE_DARKVISION",
+                    "desc": "HERITAGE_GNOM_DARKVISION"
+                },
+                {
+                    "name": "HERITAGE_GNOM3_NAME",
+                    "desc": "HERITAGE_GNOM3_DESC"
+                },
+                {
+                    "name": "HERITAGE_GNOM4_NAME",
+                    "desc": "HERITAGE_GNOM4_DESC"
+                }
+            ],
+            "gifts": [
+                {
+                    "name": "HGIFT_GNOM1_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_GNOM1_FEAT1_NAME",
+                            "desc": "HGIFT_GNOM1_FEAT1_DESC"
+                        }
+                    ]
+                },
+                {
+                    "name": "HGIFT_GNOM2_NAME",
+                    "features": [
+                        {
+                            "name": "HGIFT_GNOM2_FEAT1_NAME",
+                            "desc": "HGIFT_GNOM2_FEAT1_DESC"
+                        }
+                    ]
+                }
+            ],
+            "paragon": {
+                "static": null,
+                "choices": [
+                    {
+                        "name": "HPAR_GNOM1_NAME",
+                        "desc": "HPAR_GNOM1_DESC",
+                        "choices": [
+                            {
+                                "amount": 1,
+                                "items": [
+                                    {
+                                        "name": "STRENGTH_LABEL_LONG",
+                                        "id": "str"
+                                    },
+                                    {
+                                        "name": "DEXTERITY_LABEL_LONG",
+                                        "id": "dex"
+                                    },
+                                    {
+                                        "name": "CONSTITUTION_LABEL_LABEL",
+                                        "id": "con"
+                                    }
+                                ],
+                                "name": "HPAR_GNOM1_CHOICE1_NAME",
+                                "desc": "HPAR_GNOM1_CHOICE1_DESC"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "cultures": [
+                "DEGN",
+                "FORE",
+                "FORG",
+                "TINK"
+            ]
         }
     ]
 }
