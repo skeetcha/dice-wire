@@ -1,0 +1,39 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-02-25",
+        "version": "0.0.1"
+    },
+    "attribute": [
+        {
+            "id": "str",
+            "name": "Strength",
+            "group": "primary",
+            "description": "Strength measures your character's physical power. Strength is important if your character plans to engage in hand-to-hand combat. Your Strength modifier gets added to melee damage rolls and determines how much your character can carry."
+        },
+        {
+            "id": "dex",
+            "name": "Dexterity",
+            "group": "primary",
+            "description": "Dexterity measures your character's agility, balance, and reflexes. Dexterity is important if your character plans to make attacks with ranged weapons or use stealth to surprise foes. Your Dexterity modifier is also added to your character's AC and Reflex saving throws."
+        },
+        {
+            "id": "con",
+            "name": "Constitution",
+            "group": "primary",
+            "description": "Constitution measures your character's overall health and stamina. Constitution is an important statistic for all characters, especially those who fight in close combat. Your Constitution modifier is added to your Hit Points and Fortitude saving throws."
+        },
+        {
+            "id": "int",
+            "name": "Intelligence",
+            "group": "primary",
+            "description": "Wisdom measures your character's common sense, awareness, and intuition. Your Wisdom modifier is added to your Perception and Will saving throws."
+        },
+        {
+            "id": "cha",
+            "name": "Charisma",
+            "group": "primary",
+            "description": "Charisma measures your character's personal magnetism and strength of personality. A high Charisma score helps you influence the thoughts and moods of others."
+        }
+    ]
+}

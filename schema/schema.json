@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "dice-wire-schema.json",
+    "title": "Data",
+    "description": "Data for the Dice Wire Framework",
+    "type": "object",
+    "$defs": {
+        "attribute": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the attribute"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the attribute"
+                    },
+                    "group": {
+                        "type": "string",
+                        "description": "The group the attribute belongs to."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "The description of the attribute."
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "group",
+                    "description"
+                ]
+            }
+        }
+    },
+    "properties": {
+        "_meta": {
+            "description": "Metadata for the included arrays",
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "string",
+                    "description": "The source version, e.g. \"1.2.3\""
+                },
+                "dateUpdated": {
+                    "type": "string",
+                    "description": "The date that the source was updated, in the format YYYY-MM-DD (RFC3339).",
+                    "format": "date"
+                }
+            }
+        },
+        "attribute": {
+            "$ref": "#/$defs/attribute"
+        }
+    },
+    "required": [
+        "_meta"
+    ]
+}
