@@ -18,22 +18,114 @@
                         "type": "string",
                         "description": "The name of the attribute"
                     },
-                    "group": {
-                        "type": "string",
-                        "description": "The group the attribute belongs to."
-                    },
                     "description": {
                         "type": "string",
                         "description": "The description of the attribute."
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "object",
+                            "value"
+                        ],
+                        "description": "The type of attribute this holds in the data"
+                    },
+                    "objectName": {
+                        "type": "string",
+                        "description": "The name of the object (e.g. race, class, etc.)"
                     }
                 },
                 "required": [
                     "id",
                     "name",
-                    "group",
-                    "description"
-                ]
+                    "description",
+                    "type"
+                ],
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "object"
+                        }
+                    }
+                },
+                "then": {
+                    "required": [
+                        "objectName"
+                    ]
+                }
             }
+        },
+        "skill": {
+            "type": "object",
+            "properties": {
+                "proficiency": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "description": "The values that proficiency can be, and are referenced by the level-up system",
+                            "items": {
+                                "type": "number",
+                                "minItems": 1
+                            }
+                        },
+                        {
+                            "type": "array",
+                            "description": "The tiers of proficiency that are referenced by the level-up system",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "description": "The name of this proficiency tier"
+                                    },
+                                    "formula": {
+                                        "type": "string",
+                                        "description": "The formula to use for calculating this tier's proficiency value"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "formula"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "description": "The id of the skill"
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The name of the skill"
+                            },
+                            "attribute": {
+                                "type": "string",
+                                "description": "The id of the attribute that this skill uses"
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "A description of the skill"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "name",
+                            "attribute",
+                            "description"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "proficiency",
+                "skills"
+            ]
         }
     },
     "properties": {
@@ -54,6 +146,9 @@
         },
         "attribute": {
             "$ref": "#/$defs/attribute"
+        },
+        "skill": {
+            "$ref": "#/$defs/skill"
         }
     },
     "required": [
