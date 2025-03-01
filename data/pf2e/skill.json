@@ -1,0 +1,51 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-02-28",
+        "version": "0.0.1"
+    },
+    "skill": {
+        "proficiency": [
+            {
+                "name": "Untrained",
+                "formula": "0"
+            },
+            {
+                "name": "Trained",
+                "formula": "2 + @level"
+            },
+            {
+                "name": "Expert",
+                "formula": "4 + @level"
+            },
+            {
+                "name": "Master",
+                "formula": "6 + @level"
+            },
+            {
+                "name": "Legendary",
+                "formula": "8 + @level"
+            }
+        ],
+        "skills": [
+            {
+                "id": "acr",
+                "name": "Acrobatics",
+                "attribute": "dex",
+                "description": "Acrobatics measures your ability to perform tasks requiring coordination and grace. When you use the Escape basic action, you can use your Acrobatics modifier instead of your unarmed attack modifier. You can also use it for the basic actions Arrest a Fall and Grab an Edge instead of Reflex."
+            },
+            {
+                "id": "arc",
+                "name": "Arcana",
+                "attribute": "int",
+                "description": "Arcana measures how much you know about arcane magic and creatures."
+            },
+            {
+                "id": "ath",
+                "name": "Athletics",
+                "attribute": "str",
+                "description": "Athletics allows you to perform deeds of physical prowess. Most Athletics actions let you move about the environment (Climb, High Jump, Long Jump, Swim) or control your opponent's movement in combat (Grapple, Reposition, Shove, Trip, and Disarm). Escape: When you use the Escape basic action, you can use your Athletics modifier instead of your unarmed attack modifier."
+            }
+        ]
+    }
+}
