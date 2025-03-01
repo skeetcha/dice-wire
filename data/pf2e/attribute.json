@@ -8,32 +8,101 @@
         {
             "id": "str",
             "name": "Strength",
-            "group": "primary",
-            "description": "Strength measures your character's physical power. Strength is important if your character plans to engage in hand-to-hand combat. Your Strength modifier gets added to melee damage rolls and determines how much your character can carry."
+            "description": "Strength measures your character's physical power. Strength is important if your character plans to engage in hand-to-hand combat. Your Strength modifier gets added to melee damage rolls and determines how much your character can carry.",
+            "type": "value"
         },
         {
             "id": "dex",
             "name": "Dexterity",
-            "group": "primary",
-            "description": "Dexterity measures your character's agility, balance, and reflexes. Dexterity is important if your character plans to make attacks with ranged weapons or use stealth to surprise foes. Your Dexterity modifier is also added to your character's AC and Reflex saving throws."
+            "description": "Dexterity measures your character's agility, balance, and reflexes. Dexterity is important if your character plans to make attacks with ranged weapons or use stealth to surprise foes. Your Dexterity modifier is also added to your character's AC and Reflex saving throws.",
+            "type": "value"
         },
         {
             "id": "con",
             "name": "Constitution",
-            "group": "primary",
-            "description": "Constitution measures your character's overall health and stamina. Constitution is an important statistic for all characters, especially those who fight in close combat. Your Constitution modifier is added to your Hit Points and Fortitude saving throws."
+            "description": "Constitution measures your character's overall health and stamina. Constitution is an important statistic for all characters, especially those who fight in close combat. Your Constitution modifier is added to your Hit Points and Fortitude saving throws.",
+            "type": "value"
         },
         {
             "id": "int",
             "name": "Intelligence",
-            "group": "primary",
-            "description": "Wisdom measures your character's common sense, awareness, and intuition. Your Wisdom modifier is added to your Perception and Will saving throws."
+            "description": "Intelligence measures how well your character can learn and reason. A high Intelligence allows your character to analyze situations and understand patterns, and it means they can become trained in additional skills and might be able to master additional languages.",
+            "type": "value"
+        },
+        {
+            "id": "wis",
+            "name": "Wisdom",
+            "description": "Wisdom measures your character's common sense, awareness, and intuition. Your Wisdom modifier is added to your Perception and Will saving throws.",
+            "type": "value"
         },
         {
             "id": "cha",
             "name": "Charisma",
-            "group": "primary",
-            "description": "Charisma measures your character's personal magnetism and strength of personality. A high Charisma score helps you influence the thoughts and moods of others."
+            "description": "Charisma measures your character's personal magnetism and strength of personality. A high Charisma score helps you influence the thoughts and moods of others.",
+            "type": "value"
+        },
+        {
+            "id": "ancestry",
+            "name": "Ancestry",
+            "description": "Your character's ancestry determines which people they call their own, whether it's diverse and ambitious humans, insular but vivacious elves, traditionalist and family-focused dwarves, or any of the other folk who call Golarion home. A character's ancestry and their experiences prior to their life as an adventurer—represented by a background—might be key parts of their identity, shape how they see the world, and help them find their place in it.",
+            "type": "object",
+            "objectName": "ancestry"
+        },
+        {
+            "id": "background",
+            "name": "Background",
+            "description": "Your character's background might represent their upbringing, an aptitude they've been honing since their youth, or another aspect of their life before they became an adventurer.",
+            "type": "object",
+            "objectName": "background"
+        },
+        {
+            "id": "class",
+            "name": "Class",
+            "description": "A class gives your character access to a suite of heroic abilities, determines how effectively they fight, and governs how easily they can shake off or avoid certain harmful effects.",
+            "type": "object",
+            "objectName": "class"
+        },
+        {
+            "id": "freeAttributeBoosts",
+            "name": "Free Attribute Boosts",
+            "description": "Your character gains four free attribute boosts at level 1.",
+            "type": "value"
+        },
+        {
+            "id": "hp",
+            "name": "Hit Points",
+            "description": "Your maximum Hit Point value represents your health, wherewithal, and heroic drive when you're in good health and rested.",
+            "type": "value"
+        },
+        {
+            "id": "ac",
+            "name": "Armor Class",
+            "description": "Attack rolls are compared to a special Difficulty Class called Armor Class (AC), which measures how hard it is for your foes to hit you with Strikes, spell attack rolls, and other attacks.",
+            "type": "value"
+        },
+        {
+            "id": "fort",
+            "name": "Fortitude",
+            "description": "Fortitude saving throws allow you to reduce the effects of abilities and afflictions that can debilitate the body. They use your Constitution modifier.",
+            "type": "value"
+        },
+        {
+            "id": "ref",
+            "name": "Reflex",
+            "description": "Reflex saving throws measure how well you can respond quickly to a situation and how gracefully you can avoid effects that have been thrown at you. They use your Dexterity modifier.",
+            "type": "value"
+        },
+        {
+            "id": "will",
+            "name": "Will",
+            "description": "Will saving throws measure how well you can resist attacks to your mind and spirit. They use your Wisdom modifier.",
+            "type": "value"
+        },
+        {
+            "id": "level",
+            "name": "Level",
+            "description": "Your character's level.",
+            "type": "value"
         }
     ]
 }
