@@ -1,0 +1,89 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-03-02",
+        "version": "0.0.1"
+    },
+    "damageType": [
+        {
+            "id": "p",
+            "name": "Piercing",
+            "description": "Piercing damage is dealt from stabs and punctures, whether from a dragon's fangs or the thrust of a spear."
+        },
+        {
+            "id": "s",
+            "name": "Slashing",
+            "description": "Slashing damage is delivered by a cut, be it the swing of the sword or the blow from a scythe blades trap."
+        },
+        {
+            "id": "b",
+            "name": "Bludgeoning",
+            "description": "Bludgeoning damage comes from weapons and hazards that deal blunt-force trauma, like a hit from a club or being dashed against rocks."
+        },
+        {
+            "id": "acid",
+            "name": "Acid",
+            "description": "Acid damage can be delivered by gases, liquids, and certain solids that dissolve flesh, and sometimes harder materials."
+        },
+        {
+            "id": "cold",
+            "name": "Cold",
+            "description": "Cold damage freezes material by way of contact with chilling gases and ice."
+        },
+        {
+            "id": "elec",
+            "name": "Electricity",
+            "description": "Electricity damage comes from the discharge of powerful lightning and sparks."
+        },
+        {
+            "id": "fire",
+            "name": "Fire",
+            "description": "Fire damage burns through heat and combustion."
+        },
+        {
+            "id": "son",
+            "name": "Sonic",
+            "description": "Sonic damage assaults matter with high-frequency vibration and sound waves."
+        },
+        {
+            "id": "vit",
+            "name": "Vitality",
+            "description": "Vitality damage harms only undead creatures, withering undead bodies and disrupting incorporeal undead."
+        },
+        {
+            "id": "void",
+            "name": "Void",
+            "description": "Void damage saps life, damaging only living creatures."
+        },
+        {
+            "id": "for",
+            "name": "Force",
+            "description": "Powerful and pure magical energy can manifest itself as force damage. Few things can resist this type of damage—not even incorporeal creatures such as ghosts and wraiths."
+        },
+        {
+            "id": "spir",
+            "name": "Spirit",
+            "description": "Directly affecting the spiritual essence of a creature, spirit damage can damage a target projecting its consciousness or possessing another creature even if the target's body is elsewhere. The possessed creature isn't harmed by the blast. Spirit damage doesn't harm creatures that have no spirit, such as constructs. Many effects that deal spirit damage also have the sanctified, holy, or unholy trait."
+        },
+        {
+            "id": "men",
+            "name": "Mental",
+            "description": "Sometimes an effect can target the mind with enough psychic force to actually deal damage to the creature. When it does, it deals mental damage. Mindless creatures and those with only programmed or rudimentary intelligence are often immune to mental damage and effects."
+        },
+        {
+            "id": "pois",
+            "name": "Poison",
+            "description": "Venoms, toxins and the like can deal poison damage, which affects creatures by way of contact, ingestion, inhalation, or injury. In addition to coming from monster attacks, alchemical items, and spells, poison damage is often caused by ongoing afflictions, which follow special rules described here."
+        },
+        {
+            "id": "bleed",
+            "name": "Bleed",
+            "description": "Another special type of physical damage is bleed damage. This is persistent damage that represents loss of blood. As such, it has no effect on nonliving creatures or living creatures that don't need blood to live. Weaknesses and resistances to physical damage apply. Bleed damage ends automatically if you're healed to your full Hit Points."
+        },
+        {
+            "id": "prec",
+            "name": "Precision",
+            "description": "Sometimes you are able to make the most of your attack through sheer precision. When you hit with an ability that grants you precision damage, you increase the attack's listed damage, using the same damage type, rather than tracking a separate pool of damage. For example, a nonmagical dagger Strike that deals 1d6 precision damage from a rogue's sneak attack increases the piercing damage by 1d6.\n\nSome creatures are immune to precision damage, regardless of the damage type; these are often amorphous creatures that lack vulnerable anatomy. A creature immune to precision damage would ignore the 1d6 precision damage in the example above, but it would still take the rest of the piercing damage from the Strike. Since precision damage is always the same type of damage as the attack it's augmenting, a creature that is resistant to physical damage, like a gargoyle, would resist not only the dagger's damage but also the precision damage, even though it is not specifically resistant to precision damage."
+        }
+    ]
+}
