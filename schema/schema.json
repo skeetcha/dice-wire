@@ -111,6 +111,11 @@
                             "description": {
                                 "type": "string",
                                 "description": "A description of the skill"
+                            },
+                            "canAddLabel": {
+                                "type": "boolean",
+                                "description": "Can the skill have a label added? (e.g. Pathfinder 2nd edition's Lore skills)",
+                                "default": false
                             }
                         },
                         "required": [
@@ -126,6 +131,30 @@
                 "proficiency",
                 "skills"
             ]
+        },
+        "damageType": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the damage type"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the damage type"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "The description of the damage type"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name"
+                ]
+            }
         }
     },
     "properties": {
@@ -149,6 +178,9 @@
         },
         "skill": {
             "$ref": "#/$defs/skill"
+        },
+        "damageType": {
+            "$ref": "#/$defs/damageType"
         }
     },
     "required": [
