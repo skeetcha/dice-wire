@@ -1,0 +1,29 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-03-03",
+        "version": "0.0.1"
+    },
+    "speed": [
+        {
+            "id": "walk",
+            "name": "Speed"
+        },
+        {
+            "id": "burrow",
+            "name": "Burrow Speed"
+        },
+        {
+            "id": "climb",
+            "name": "Climb Speed"
+        },
+        {
+            "id": "fly",
+            "name": "Fly Speed"
+        },
+        {
+            "id": "swim",
+            "name": "Swim Speed"
+        }
+    ]
+}
