@@ -155,6 +155,117 @@
                     "name"
                 ]
             }
+        },
+        "ancestry": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the ancestry"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the ancestry"
+                    },
+                    "features": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "The id of a feature of the ancestry"
+                        },
+                        "description": "The features of the ancestry"
+                    },
+                    "hp": {
+                        "type": "number",
+                        "description": "The amount of HP that a character of this ancestry gets, if any"
+                    },
+                    "size": {
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        ],
+                        "description": "The id of the size of a creature of this ancestry. If a player can choose from more than one size for this ancestry, include them here as an array"
+                    },
+                    "speed": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "The id of the speed type"
+                                },
+                                "value": {
+                                    "type": "number",
+                                    "description": "The amount of squares of that speed type this ancestry grants (each square is 5 feet in imperial units or 1 meter in metric units)",
+                                    "minimum": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "features",
+                    "size",
+                    "speed"
+                ]
+            }
+        },
+        "size": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the size"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the size"
+                    },
+                    "squares": {
+                        "type": "number",
+                        "description": "How many squares does a creature of this size take up?"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "squares"
+                ]
+            }
+        },
+        "speed": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The id of the speed type"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the speed type"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name"
+                ]
+            }
         }
     },
     "properties": {
@@ -181,6 +292,15 @@
         },
         "damageType": {
             "$ref": "#/$defs/damageType"
+        },
+        "ancestry": {
+            "$ref": "#/$defs/ancestry"
+        },
+        "size": {
+            "$ref": "#/$defs/size"
+        },
+        "speed": {
+            "$ref": "#/$defs/speed"
         }
     },
     "required": [
