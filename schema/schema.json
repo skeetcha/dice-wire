@@ -211,6 +211,59 @@
                                 }
                             }
                         }
+                    },
+                    "boosts": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "The id of an attribute to boost"
+                        },
+                        "description": "An array of attributes that this ancestry grants boosts to (if any)"
+                    },
+                    "penalties": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "The id of an attribute to penalize"
+                        },
+                        "description": "An array of attributes that this ancestry grants penalties (sometimes called flaws) to (if any)"
+                    },
+                    "languages": {
+                        "type": "object",
+                        "properties": {
+                            "granted": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string",
+                                    "description": "The name of a language that this ancestry grants"
+                                },
+                                "description": "An array of languages this ancestry grants"
+                            },
+                            "additional": {
+                                "type": "object",
+                                "properties": {
+                                    "amount": {
+                                        "type": "string",
+                                        "description": "A formula describing how many additional languages this ancestry grants"
+                                    },
+                                    "languages": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "description": "The name of a language that this ancestry grants"
+                                        },
+                                        "description": "An array of additional languages this ancestry can grant"
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "languages"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "granted"
+                        ]
                     }
                 },
                 "required": [
