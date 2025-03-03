@@ -1,0 +1,39 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-03-03",
+        "version": "0.0.1"
+    },
+    "size": [
+        {
+            "id": "tiny",
+            "name": "Tiny",
+            "squares": 1
+        },
+        {
+            "id": "small",
+            "name": "Small",
+            "squares": 1
+        },
+        {
+            "id": "medium",
+            "name": "Medium",
+            "squares": 1
+        },
+        {
+            "id": "large",
+            "name": "Large",
+            "squares": 2
+        },
+        {
+            "id": "huge",
+            "name": "Huge",
+            "squares": 3
+        },
+        {
+            "id": "gargantuan",
+            "name": "Gargantuan",
+            "squares": 4
+        }
+    ]
+}
