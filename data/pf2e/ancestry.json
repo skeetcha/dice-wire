@@ -1,0 +1,50 @@
+{
+    "$schema": "../../schema/schema.json",
+    "_meta": {
+        "dateUpdated": "2025-03-03",
+        "version": "0.0.1"
+    },
+    "ancestry": [
+        {
+            "id": "dwarf",
+            "name": "Dwarf",
+            "features": [
+                "darkvision",
+                "clan-dagger"
+            ],
+            "size": "medium",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 4
+                }
+            ],
+            "boosts": [
+                "con",
+                "wis",
+                "any"
+            ],
+            "penalties": [
+                "cha"
+            ],
+            "hp": 10,
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Dwarven"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Gnomish",
+                        "Goblin",
+                        "Jotun",
+                        "Orcish",
+                        "Petran",
+                        "Sakvroth"
+                    ]
+                }
+            }
+        }
+    ]
+}
