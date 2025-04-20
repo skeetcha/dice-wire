@@ -45,6 +45,283 @@
                     ]
                 }
             }
+        },
+        {
+            "id": "elf",
+            "name": "Elf",
+            "features": [
+                "low-light-vision"
+            ],
+            "size": "medium",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 6
+                }
+            ],
+            "hp": 6,
+            "boosts": [
+                "dex",
+                "int",
+                "any"
+            ],
+            "penalties": [
+                "con"
+            ],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Elven"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Draconic",
+                        "Empyrean",
+                        "Fey",
+                        "Gnomish",
+                        "Goblin",
+                        "Kholo",
+                        "Orcish"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "gnome",
+            "name": "Gnome",
+            "features": [
+                "low-light-vision"
+            ],
+            "size": "small",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 8,
+            "boosts": [
+                "con",
+                "cha",
+                "any"
+            ],
+            "penalties": [
+                "str"
+            ],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Fey",
+                    "Gnomish"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Draconic",
+                        "Dwarven",
+                        "Elven",
+                        "Goblin",
+                        "Jotun",
+                        "Orcish"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "goblin",
+            "name": "Goblin",
+            "features": [
+                "darkvision"
+            ],
+            "size": "small",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 6,
+            "boosts": [
+                "dex",
+                "cha",
+                "any"
+            ],
+            "penalties": [
+                "wis"
+            ],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Goblin"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Draconic",
+                        "Dwarven",
+                        "Gnomish",
+                        "Halfling",
+                        "Kholo",
+                        "Orcish"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "halfling",
+            "name": "Halfling",
+            "features": [
+                "keen-eyes"
+            ],
+            "size": "small",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 6,
+            "boosts": [
+                "dex",
+                "wis",
+                "any"
+            ],
+            "penalties": [
+                "str"
+            ],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Halfling"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Dwarven",
+                        "Elven",
+                        "Gnomish",
+                        "Goblin"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "human",
+            "name": "Human",
+            "features": [],
+            "size": "medium",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 8,
+            "boosts": [
+                "any",
+                "any"
+            ],
+            "penalties": [],
+            "languages": {
+                "granted": [
+                    "Common"
+                ],
+                "additional": {
+                    "amount": "@int + 1",
+                    "languages": [
+                        "Sakvroth",
+                        "Fey",
+                        "Draconic",
+                        "Dwarven",
+                        "Elven",
+                        "Gnomish",
+                        "Goblin",
+                        "Halfling",
+                        "Jotun",
+                        "Orcish",
+                        "Tanuki",
+                        "Wayang",
+                        "Yaksha"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "leshy",
+            "name": "Leshy",
+            "features": [
+                "low-light-vision",
+                "plant-nourishment"
+            ],
+            "size": "small",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 8,
+            "boosts": [
+                "con",
+                "wis",
+                "any"
+            ],
+            "penalties": [
+                "int"
+            ],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Fey"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Draconic",
+                        "Elven",
+                        "Gnomish",
+                        "Goblin",
+                        "Halfling",
+                        "Sakvroth"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "orc",
+            "name": "Orc",
+            "features": [
+                "darkvision"
+            ],
+            "size": "medium",
+            "speed": [
+                {
+                    "id": "walk",
+                    "value": 5
+                }
+            ],
+            "hp": 10,
+            "boosts": [
+                "any",
+                "any"
+            ],
+            "penalties": [],
+            "languages": {
+                "granted": [
+                    "Common",
+                    "Orcish"
+                ],
+                "additional": {
+                    "amount": "@int",
+                    "languages": [
+                        "Goblin",
+                        "Jotun",
+                        "Petran",
+                        "Sakvroth"
+                    ]
+                }
+            }
         }
     ]
 }
