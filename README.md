@@ -1,4 +1,7 @@
 # dice-wire
+
+**NOTICE: This repository is no longer being updated in favor of [tangled.sh](https://tangled.sh/@cass.cityboundforest.com/dice-wire).**
+
 A framework for the Godot engine to create TTRPG games for Advanced 5th Edition, Pathfinder 2nd Edition, and more.
 
 OGL 5th Edition will be added once more content is released into its System Reference Document (SRD) in Feburary 2025, and thus able to be used under the Creative Commons license.
